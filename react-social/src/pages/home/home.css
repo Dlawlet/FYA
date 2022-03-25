@@ -515,10 +515,23 @@ body {
     order: 9999
 }
 
+.swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child {
+    margin-inline-start:var(--swiper-centered-offset-before)}
+
+.swiper-centered.swiper-horizontal>.swiper-wrapper: before {
+    height:100%;
+    min-height: 1px;
+    width: var(--swiper-centered-offset-after)
+}
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child {
     margin-block-start:var(--swiper-centered-offset-before)}
 
+.swiper-centered.swiper-vertical>.swiper-wrapper: before {
+    height:var(--swiper-centered-offset-after);
+    min-width: 1px;
+    width: 100%
+}
 
 .swiper-centered>.swiper-wrapper>.swiper-slide {
     scroll-snap-align: center center
@@ -890,10 +903,7 @@ button.swiper-pagination-bullet {
     text-decoration: underline
 }
 
-.link:after {
-    fill: #fff;
-    background: transparent url(https://ringtwice.be/packs/assets/images/icons/white/arrow-right2998dc0fa298fc43d5b5.svg) 50% no-repeat
-}
+
 
 .link:focus,.link:hover {
     text-decoration: none
@@ -1150,16 +1160,14 @@ button.swiper-pagination-bullet {
     }
 }
 
-
 .hero-img {
     background-color: #333;
-    height: 150%;
+    height: 100%;
     left: 0;
+    position: absolute;
     top: 0;
     width: 100%;
-    z-index: -2;
-    position: absolute;
-    
+    z-index: -1
 }
 
 .hero-img__img {
@@ -1180,7 +1188,6 @@ button.swiper-pagination-bullet {
     opacity: 0.6;
     position: absolute;
 }
-
 
 .hero-img:after {
     content: "";
@@ -1234,116 +1241,6 @@ button.swiper-pagination-bullet {
 
 .hero-banner:focus,.hero-banner:hover {
     background-color: rgba(0,0,0,.5)
-}
-
-.topbar {
-    width: 100%
-}
-
-.topbar__logo {
-    height: auto;
-    margin-bottom: 45px;
-    max-width: 14.375rem;
-    width: 50%
-}
-
-@media(min-width: 992px) {
-    .topbar__logo {
-        max-width:11.25rem
-    }
-}
-
-.topbar__nav {
-    background-color: #fff;
-    display: block!important;
-    max-height: 0;
-    max-width: 0;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 100px;
-    transform: translateY(-100px);
-    transition: opacity .2s linear,transform .2s cubic-bezier(.33,.45,.24,1.01);
-    visibility: hidden;
-    width: 100%
-}
-
-@media(min-width: 992px) {
-    .topbar__nav {
-        background-color:transparent;
-        max-height: none;
-        max-width: none;
-        opacity: 1;
-        overflow: visible;
-        padding: 0;
-        visibility: visible;
-        width: auto
-    }
-}
-
-.topbar__nav-toggle {
-    height: 52px;
-    padding: 12px;
-    position: absolute;
-    right: 0;
-    top: 20px;
-    width: 52px
-}
-
-.mobile-menu-active .topbar__nav-toggle {
-    position: fixed;
-    z-index: 110
-}
-
-.mobile-menu-active .topbar__nav {
-    height: 100%;
-    max-height: none;
-    max-width: none;
-    opacity: 1;
-    padding: 20px 12px;
-    position: fixed;
-    visibility: visible;
-    z-index: 100
-}
-
-@media(min-width: 992px) {
-    .topbar__nav-list {
-        align-items:center;
-        display: flex
-    }
-}
-
-.topbar__nav-item {
-    padding: 20px 12px 12px
-}
-
-@media(max-width: 991.98px) {
-    .topbar__nav-item {
-        border-top:1px solid #e5e5e5;
-        margin: 0 -12px;
-        padding: 0
-    }
-
-    .topbar__nav-item a,.topbar__nav-item button {
-        background: 0 0;
-        border: 0;
-        border-radius: 0;
-        color: #666;
-        display: block;
-        font-size: 1rem;
-        font-weight: 400;
-        padding: 20px;
-        text-align: left;
-        text-decoration: none;
-        width: 100%
-    }
-}
-
-@media(min-width: 992px) {
-    .topbar__nav-item--lang {
-        order:-1
-    }
 }
 
 .form-input,.form-input:disabled {
@@ -2933,8 +2830,7 @@ footer .XmasTreeFooter:hover {
     font-size: 2.25rem;
     font-weight: 300;
     line-height: 2.25rem;
-    margin-bottom: 40px;
-    color: #F2F2F2;
+    margin-bottom: 40px
 }
 
 @media(min-width: 992px) {

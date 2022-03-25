@@ -1,28 +1,45 @@
 .profile{
     display: flex;
     background: #F2F2F2;
+    z-index: -1;
+
     
+}
+.topbar{
+    z-index: +1;
+    height: 30vw;
 }
 
 .profileRight{
     flex: 9;
-    
-    
 }
 
 .profileRightBottom{
     display: flex;
-    
+    position: inherit;
 }
 
 .profileCover{
-    height: 320px;
-    position: relative;
+    height: 350px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+
+
 }
+.profileCover::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), black);
+    opacity: 0.6;
+    position: absolute;}
 
 .profileCoverImg{
     width: 100%;
-    height: 250px;
+    height: 25vw;
     object-fit: cover;
 }
 
@@ -33,7 +50,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 150px;
+    top: 20vw;
     margin: auto;
     object-fit: cover;
     border: 3px solid white;
@@ -45,12 +62,14 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 1%;
+
 
     
 }
 
 .profileInfoName{
-    margin-top: 35px;
+    margin-top: 0px;
     font-size: 24px;
     margin-bottom: 0px;
 }

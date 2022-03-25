@@ -1,5 +1,6 @@
 import "./profile.css";
 import Topbar from "../../components/topbar/Topbar";
+import Sidebar from "../../components/sidebar/Sidebar";
 import Feed from "../../components/feed/Feed";
 import Rightbar from "../../components/rightbar/Rightbar";
 import { useEffect, useState } from "react";
@@ -21,8 +22,8 @@ export default function Profile() {
 
   return (
     <>
-      <Topbar />
-      <div className="profile">
+      <div className="topbar">
+      <Topbar /></div>
         <div className="profileRight">
           <div className="profileRightTop">
             <div className="profileCover">
@@ -55,7 +56,6 @@ export default function Profile() {
             <Rightbar user={user} />
           </div>
         </div>
-      </div>
     </>
   );
 }

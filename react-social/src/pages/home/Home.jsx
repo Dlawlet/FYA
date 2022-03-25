@@ -1,4 +1,4 @@
-
+import Topbar from "../../components/topbar/Topbar";
 import "./home.css"
 import React from 'react';
 
@@ -12,58 +12,7 @@ export default function Home(){
     <>
        <div>
         <header className="hero">
-          <nav className="topbar">
-            <figure className="topbar__logo">
-              <img className="img-fluid" alt="FYA ex ListMinut" width={162} height={43} src="https://svgsilh.com/svg/297272-2196f3.svg" />
-              <figcaption className="sr-only">
-                FYA
-              </figcaption>
-            </figure>
-            <div className="topbar__nav">
-              <ul className="topbar__nav-list">
-                <li className="topbar__nav-item">
-                  <a className="btn btn-border-light" href="https://ringtwice.be/fr/devenir-prestataire">
-                    Entreprises
-                  </a>
-                </li>
-                <li className="topbar__nav-item">
-                  <a className="btn" href="/fr/task_creation">
-                    Sign / Log
-                  </a>
-                </li>
-                <li className="topbar__nav-item">
-                  <a className="btn-sso btn-light btn-seamless d-none d-lg-block" data-test="signup-page-link" href="/users/sign_in?locale=fr" title="Se connecter / S'inscrire">
-                    <svg fill="currentColor" height={42} viewBox="0 0 42 42" width={42} xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 0.525024C9.39919 0.525024 0 9.68924 0 21C0 32.3108 9.39919 41.475 21 41.475C32.6008 41.475 42 32.3108 42 21C42 9.68924 32.6008 0.525024 21 0.525024ZM21 8.45083C25.1153 8.45083 28.4516 11.7037 28.4516 15.7162C28.4516 19.7286 25.1153 22.9815 21 22.9815C16.8847 22.9815 13.5484 19.7286 13.5484 15.7162C13.5484 11.7037 16.8847 8.45083 21 8.45083ZM21 36.8516C16.0294 36.8516 11.5754 34.6555 8.59476 31.221C10.1867 28.2984 13.3028 26.2839 16.9355 26.2839C17.1387 26.2839 17.3419 26.3169 17.5367 26.3747C18.6375 26.7215 19.7891 26.9444 21 26.9444C22.2109 26.9444 23.371 26.7215 24.4633 26.3747C24.6581 26.3169 24.8613 26.2839 25.0645 26.2839C28.6972 26.2839 31.8133 28.2984 33.4052 31.221C30.4246 34.6555 25.9706 36.8516 21 36.8516Z" />
-                    </svg>
-                  </a>
-                  <a className="btn d-block d-lg-none" href="/users/sign_in?locale=fr">
-                    Se connecter / S'inscrire
-                  </a>
-                </li>
-                <li className="topbar__nav-item topbar__nav-item--lang">
-                  <div className="btn-dropdown js-dropdown">
-                    <button className="btn btn-light btn-dropdown__trigger js-dropdown-toggle" type="button">
-                      <svg className="me-1" fill="currentColor" height={16} viewBox="0 0 16 16" width={16} xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.75 0.25C3.46875 0.25 0 3.71875 0 8C0 12.2812 3.46875 15.75 7.75 15.75C12.0312 15.75 15.5 12.2812 15.5 8C15.5 3.71875 12.0312 0.25 7.75 0.25ZM13.3438 5.25H11.25C11.0312 4.125 10.6875 3.125 10.25 2.3125C11.5938 2.90625 12.6875 3.9375 13.3438 5.25ZM7.75 1.75C8.3125 1.75 9.25 3.0625 9.71875 5.25H5.75C6.21875 3.0625 7.15625 1.75 7.75 1.75ZM1.5 8C1.5 7.59375 1.53125 7.15625 1.625 6.75H4.03125C4 7.1875 4 7.59375 4 8C4 8.4375 4 8.84375 4.03125 9.25H1.625C1.53125 8.875 1.5 8.4375 1.5 8ZM2.125 10.75H4.21875C4.4375 11.9062 4.78125 12.9062 5.21875 13.7188C3.875 13.125 2.78125 12.0625 2.125 10.75ZM4.21875 5.25H2.125C2.78125 3.9375 3.875 2.90625 5.21875 2.3125C4.78125 3.125 4.4375 4.125 4.21875 5.25ZM7.75 14.25C7.15625 14.25 6.21875 12.9688 5.75 10.75H9.71875C9.25 12.9688 8.3125 14.25 7.75 14.25ZM9.9375 9.25H5.53125C5.5 8.875 5.5 8.4375 5.5 8C5.5 7.5625 5.5 7.15625 5.53125 6.75H9.9375C9.96875 7.15625 10 7.5625 10 8C10 8.4375 9.96875 8.875 9.9375 9.25ZM10.25 13.7188C10.6875 12.9062 11.0312 11.9062 11.25 10.75H13.3438C12.6875 12.0625 11.5938 13.125 10.25 13.7188ZM11.4375 9.25C11.4688 8.84375 11.5 8.4375 11.5 8C11.5 7.59375 11.4688 7.1875 11.4375 6.75H13.875C13.9375 7.15625 14 7.59375 14 8C14 8.4375 13.9375 8.875 13.875 9.25H11.4375Z" />
-                      </svg>
-                      Français
-                      <svg className="d-lg-none btn-dropdown__icon" fill="currentColor" height={9} viewBox="0 0 14 9" width={14} xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.7812 1.25012L13.1875 0.625122C13.0312 0.468872 12.7812 0.468872 12.6562 0.625122L7 6.28137L1.3125 0.625122C1.1875 0.468872 0.9375 0.468872 0.78125 0.625122L0.1875 1.25012C0.03125 1.37512 0.03125 1.62512 0.1875 1.78137L6.71875 8.31262C6.875 8.46887 7.09375 8.46887 7.25 8.31262L13.7812 1.78137C13.9375 1.62512 13.9375 1.37512 13.7812 1.25012Z" />
-                      </svg>
-                    </button>
-                    <ul className="btn-dropdown__list">
-                      <li>
-                        <a className="btn btn-bg-light" href="/nl">
-                          Nederlands
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          <Topbar/>
           <div className="wrapper hero-cta__wrapper">
             <a className="hero-banner" href="https://youtube.com" rel="opener" target="_self">
               <span className="pill theme-even bg-color">
