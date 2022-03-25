@@ -24,7 +24,6 @@ export default function Profile() {
     <>
       <Topbar />
       <div className="profile">
-        <Sidebar />
         <div className="profileRight">
           <div className="profileRightTop">
             <div className="profileCover">
