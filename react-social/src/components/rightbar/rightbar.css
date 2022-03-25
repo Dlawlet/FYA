@@ -1,0 +1,192 @@
+.rightbar {
+  flex: 3;
+}
+
+.rightbarWrapper {
+  padding: 20px 20px 0 0;
+}
+
+.birthdayContainer {
+  display: flex;
+  align-items: center;
+}
+
+.birthdayImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.birthdayText {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.rightbarAd {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.rightbarTitle{
+    margin-bottom: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.rightbarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.rightbarTitle{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.rightbarInfo{
+  margin-bottom: 30px;
+}
+
+.rightbarInfoItem{
+  margin-bottom: 10px;
+}
+
+.rightbarInfoKey{
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
+}
+
+.rightbarInfoValue{
+  font-weight: 300;
+}
+
+
+
+.rightbarRate{
+  display: flex;
+  margin-top: 50px;
+}
+
+.rightbarRatingButton{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #1872f2;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.example-warper {
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 2px var(--ifm-link-color) dashed;
+  margin: 10px;
+  white-space: pre-line;
+}
+
+.example-warper .button,
+.popup-content .button {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #000000;
+  cursor: pointer;
+  padding: 0px 30px;
+  display: inline-block;
+  margin: 10px 15px;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  outline: none;
+  position: relative;
+  font-size: 14px;
+  border: 3px dashed var(--ifm-link-color);
+  background-color: #fdfcfc;
+  /* border-radius: 15px 15px 15px 15px; */
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal {
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin: 30px 0;
+  align-items: center;
+  width: fit-content;
+}
+.modal > .header {
+  width: 95%;
+  /*border-bottom: 1px solid rgb(58, 55, 55);*/
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-left: 2%;
+  margin-bottom: 10px;
+  
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+  display: block;
+}
+.modal > .actions {
+  margin: auto;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  right: 13%;
+  top: 15px;
+  font-size: 24px;
+  border-radius: 18px;
+  border: 1px solid #aaa9a99d;
+  background-color: #aaa9a99d;
+}
+
+.rateMessage{
+  width: 90%;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid rgb(10, 59, 43);
+  font-size: 18px;
+  padding-left: 20px;
+  margin: 2%
+}
+
+.profileRating{
+  size: 450%;
+  align-items: center;
+  
+}

@@ -1,0 +1,41 @@
+.feed{
+    flex:5.5
+}
+
+.feedWrapper{
+    padding: 20px;
+}
+
+.profileCertification{width: 100%;height: fit-content;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin: 30px 0;
+    overflow: auto;
+  }
+
+.profileStatistiques{width: 100%;height: fit-content;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  margin: 30px 0;
+
+
+
+}
+
+.profileActivity{width: 100%;height: fit-content;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin: 30px 0;
+    overflow: auto;
+  }
+
+.profileLifePath{width: 100%;height: fit-content;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  margin: 30px 0;
+  overflow: auto;
+}
