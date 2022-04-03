@@ -1,4 +1,4 @@
-.profiler{
+.profile{
     display: flex; 
     z-index: -1;
 
@@ -66,9 +66,12 @@
 }
 
 .profileInfoName{
-    margin-top: 0vw;
+    margin-top: -0.1vw;
     margin-bottom: 0px;
-    font-size: 3vw; 
+    font-size: 4vw; 
+    font-weight: 600;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.90);
 }
 
 .profileInfoDesc{
@@ -77,3 +80,8 @@
     margin-bottom: 0px;
     
 }
+@media only screen and (min-width: 1024px) {
+    .profileInfoName{
+        font-size: 3vw;
+        margin-top: 0.5vw;
+    }}

@@ -8,10 +8,11 @@
     padding-left: 2.5% ;
     padding-right: 2.5% ;
     padding-top: 0.5% ;
+    padding-bottom: 2.5%;
     
 }
 
-.profileCertification {width: 90vw;height: auto;
+.profileCertification {width: 90vw;height: fit-content;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
     box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
@@ -19,7 +20,7 @@
     background: white;
     display:inline-table;
     margin-bottom: 2vw;}
-.profileNote {width: 90vw;height: auto;
+.profileNote {width: 90vw;height: fit-content;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
@@ -45,6 +46,9 @@
       width: 80vw;
       margin-bottom: 2vw;
     }
+    .css-nypl32, [data-css-nypl32]{
+      font-size: 1vw;
+    }
   }
   
 
@@ -54,6 +58,7 @@
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   background: white;
   margin-bottom: 2vw;
+  overflow: auto;
 }
 
 .profileActivity{width: 90vw;height: fit-content;
@@ -75,3 +80,12 @@
   margin-bottom: 2vw;
 
 }
+
+.css-nypl32, [data-css-nypl32] {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 1.5vw;
+  font-weight: 600;
+  font-size: 3vw;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.90);}

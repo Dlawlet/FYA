@@ -4,6 +4,7 @@ import Feed from "../../components/feed/Feed";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router";
+import Footbar from "../../components/footbar/Footbar";
 
 export default function Profile() {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
@@ -22,7 +23,7 @@ export default function Profile() {
     <>
       <div className="topbar" style={{ zIndex: 10 }}>
       <Topbar /></div>
-          <div className="profileRightTop">
+      <div className="profileRightTop">
             <div className="profileCover">
               <img
                 className="profileCoverImg"
@@ -48,7 +49,8 @@ export default function Profile() {
               <span className="profileInfoDesc">{user.desc}</span>
             </div>
             <Feed username={username} />
-        </div>
+      </div>
+      <Footbar/>
     </>
   );
 }

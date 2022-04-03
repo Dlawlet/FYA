@@ -2,24 +2,9 @@ import "./rightbar.css";
 import { useState } from "react";
 import { Rating } from 'react-simple-star-rating';
 import Popup from 'reactjs-popup';
+
 export default function Rightbar({ user }) {
 
-  const HomeRightbar = () => {
-    return (
-      <>
-        <div className="birthdayContainer">
-          <img className="birthdayImg" src="assets/gift.png" alt="" />
-          <span className="birthdayText">
-            <b>Pola Foster</b> and <b>3 other friends</b> have a birhday today.
-          </span>
-        </div>
-        <img className="rightbarAd" src="assets/ad.png" alt="" />
-        <h4 className="rightbarTitle">Online Friends</h4>
-        <ul className="rightbarFriendList">
-        </ul>
-      </>
-    );
-  };
 
   const ProfileRightbar = () => {
     const [rating, setRating] = useState(0) // initial rating value
@@ -30,23 +15,23 @@ export default function Rightbar({ user }) {
   }
     return (
       <>
-        <h2 className="rightbarTitle">User's Sommary</h2>
+        <h2 data-css-nypl32="">Sommaire</h2>
         <div className="rightbarInfo">
           <div className="rightbarInfoItem">
-            <span className="rightbarInfoKey">City:</span>
+            <span className="rightbarInfoKey">Ville:</span>
             <span className="rightbarInfoValue">{user.city}</span>
           </div>
           <div className="rightbarInfoItem">
-            <span className="rightbarInfoKey">From:</span>
+            <span className="rightbarInfoKey">Pays:</span>
             <span className="rightbarInfoValue">{user.from}</span>
           </div>
           <div className="rightbarInfoItem">
-            <span className="rightbarInfoKey">Relationship:</span>
+            <span className="rightbarInfoKey">profession:</span>
             <span className="rightbarInfoValue">
               {user.relationship === 1
-                ? "Single"
+                ? "Etudiant"
                 : user.relationship === 2
-                ? "Married"
+                ? "Proffeseur"
                 : "-"}
             </span>
           </div>
@@ -111,7 +96,7 @@ export default function Rightbar({ user }) {
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-        {user ? <ProfileRightbar /> : <HomeRightbar />}
+        <ProfileRightbar />
       </div>
     </div>
   );

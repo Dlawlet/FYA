@@ -54,16 +54,43 @@ export default function Feed({ username }) {
         <div className="feedWrapper">
           <div>
             <div className="profileCertification">
-              <h1 style={{ marginLeft: 10 }}> Certifications </h1>
-                <h3 style={{ marginLeft: 30 , zIndex: -10}}> Carte de d'identifié : <h5 style={{ display: "inline" }}>non verifié</h5> </h3>
-                <h3 style={{ marginLeft: 30 , zIndex: -10}}> Lieu d'habitation : <h5 style={{ display: "inline" }}>non verifié</h5> </h3>
-                <h3 style={{ marginLeft: 30 , zIndex: -10}}> Plus haut diplome-<h6 style={{ display: "inline", color:"gray" }}>Master</h6>: <h5 style={{ display: "inline" }}>non verifié</h5> </h3>
-            </div>
+                <h2 data-css-nypl32="">Certifications</h2>
+                <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Carte d'identité</span>
+                      <span className="rightbarInfoValue">{user.city}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Domicile</span>
+                      <span className="rightbarInfoValue">{user.from}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Diplome</span>
+                      <span className="rightbarInfoValue">{user.from}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Casier</span>
+                      <span className="rightbarInfoValue">{user.from}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Compte Bancaire</span>
+                      <span className="rightbarInfoValue">{user.from}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey"> ✅ | Profession</span>
+                      <span className="rightbarInfoValue">
+                        {user.relationship === 1
+                          ? "Etudiant"
+                          : user.relationship === 2
+                          ? "Proffeseur"
+                          : "-"}
+                      </span>
+          </div>
+              </div>
             <div  className="profileNote">
             <Rightbar user={user} /> </div>
           </div>
           <div className="profileStatistiques">
-            <h1 style={{ marginLeft: 10 }}>Statistics </h1> 
+          <h2 data-css-nypl32="">Statistiques</h2>
 
             
           <ResponsiveContainer width="100%" height={400}>
@@ -106,19 +133,71 @@ export default function Feed({ username }) {
 
           </div>  
           <div className="profileActivity">
-            <h1 style={{ marginLeft: 10 }}>Activity </h1>  
-            <h3 style={{ marginLeft: 30 }}>👍 Pierre Jofang vous a donné 5 étoiles </h3>
-            <h3 style={{ marginLeft: 30 }}> ★ Vous avez notez l'entreprise Mbam  </h3>
-            <h3 style={{ marginLeft: 30 }}> ✉ Monti Paul vous a laisser un commentaire </h3>
-          </div>  
+          <h2 data-css-nypl32="">Activités</h2>
+                <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Carte d'identité</span>
+                      <span className="rightbarInfoValue">{user.city}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Domicile</span>
+                      <span className="rightbarInfoValue">{user.from}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Diplome</span>
+                      <span className="rightbarInfoValue">{user.from}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Casier</span>
+                      <span className="rightbarInfoValue">{user.from}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Compte Bancaire</span>
+                      <span className="rightbarInfoValue">{user.from}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey"> ✅ | Profession</span>
+                      <span className="rightbarInfoValue">
+                        {user.relationship === 1
+                          ? "Etudiant"
+                          : user.relationship === 2
+                          ? "Proffeseur"
+                          : "-"}
+                      </span>
+          </div>
+              </div> 
           <div className="profileLifePath">
-            <h1 style={{ marginLeft: 10 }}>Life path </h1>  
-            <h3 style={{ marginLeft: 30 }}> Prix et distinctions: champion régional de Karaté  </h3>
-            <h3 style={{ marginLeft: 30 }}> Profession : Mangeur d'argent  </h3>
-            <h3 style={{ marginLeft: 30 }}> Etudes Supérieurs  blabla blabla bla bla </h3>
-            <h3 style={{ marginLeft: 30 }}> Etudes secondaires  blabla blabla bla bla </h3>
-            <h3 style={{ marginLeft: 30 }}> Etudes primaires  blabla blabla bla bla </h3>
-            <h3 style={{ marginLeft: 30 }}> née le 01/01/2000 Sexe M</h3>
+          <h2 data-css-nypl32="">Parcours</h2>  
+                <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Carte d'identité</span>
+                      <span className="rightbarInfoValue">{user.city}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Domicile</span>
+                      <span className="rightbarInfoValue">{user.from}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Diplome</span>
+                      <span className="rightbarInfoValue">{user.from}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Casier</span>
+                      <span className="rightbarInfoValue">{user.from}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey">✅ | Compte Bancaire</span>
+                      <span className="rightbarInfoValue">{user.from}</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                      <span className="rightbarInfoKey"> ✅ | Profession</span>
+                      <span className="rightbarInfoValue">
+                        {user.relationship === 1
+                          ? "Etudiant"
+                          : user.relationship === 2
+                          ? "Proffeseur"
+                          : "-"}
+                      </span>
+          </div>
+              
           </div>  
         </div>
       </div>
