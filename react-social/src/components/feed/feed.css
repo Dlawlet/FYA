@@ -1,47 +1,77 @@
 .feed{
     flex:8;
-  margin-top: 1%;
-    margin-left: 2%;
+  margin-top: 4%;
+    background: #faf7f4;
 }
 
 .feedWrapper{
-    padding: 20px;
+    padding-left: 2.5% ;
+    padding-right: 2.5% ;
+    padding-top: 0.5% ;
+    
 }
 
-.profileCertification{width: 100%;height: fit-content;
+.profileCertification {width: 90vw;height: auto;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
     box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    margin: 30px 0;
     overflow: auto;
     background: white;
-  }
-
-.profileStatistiques{width: 100%;height: fit-content;
+    display:inline-table;
+    margin-bottom: 2vw;}
+.profileNote {width: 90vw;height: auto;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-  margin: 30px 0;
-  background: white;
-
-
-
-}
-
-.profileActivity{width: 100%;height: fit-content;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    margin: 30px 0;
-    overflow: auto;
-    background: white;
-  }
-
-.profileLifePath{width: 100%;height: fit-content;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-  margin: 30px 0;
   overflow: auto;
   background: white;
+  display:inline-table;
+  margin-bottom: 2vw;}
+
+
+  @media only screen and (min-width: 1024px) {
+    .profileCertification  {
+      width: 43.1vw;
+      margin-bottom: 2vw;
+      margin-inline-end: 1.5vw;
+      height:25vw;   }
+    .profileNote{
+      width: 43.1vw;
+      margin-bottom: 2vw;
+      margin-inline-start: 1.5vw;
+      height:25vw;
+    }
+    .profileStatistiques .profileLifePath .profileActivity{
+      width: 80vw;
+      margin-bottom: 2vw;
+    }
+  }
+  
+
+.profileStatistiques{width: 90vw;height: fit-content;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  background: white;
+  margin-bottom: 2vw;
+}
+
+.profileActivity{width: 90vw;height: fit-content;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    overflow: auto;
+    background: white;
+    margin-bottom: 2vw;
+
+  }
+
+.profileLifePath{width: 90vw;height: fit-content;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  overflow: auto;
+  background: white;
+  margin-bottom: 2vw;
+
 }

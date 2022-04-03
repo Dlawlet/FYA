@@ -1,12 +1,13 @@
 .topbar {
   width: 100%;
+  z-index: 1;
 }
 
 .topbar__logo {
   height: auto;
   margin-bottom: 45px;
   max-width: 14.375rem;
-  width: 50%
+  width: 15vw
 }
 
 @media(min-width: 992px) {

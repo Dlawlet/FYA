@@ -1,75 +1,37 @@
-.rightbar {
-  flex: 3;
-  margin-top: 5%;
-}
-
-.rightbarWrapper {
-  padding: 20px 20px 0 0;
-}
-
-.birthdayContainer {
-  display: flex;
-  align-items: center;
-}
-
-.birthdayImg {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-
-.birthdayText {
-  font-weight: 300;
-  font-size: 15px;
-}
-
-.rightbarAd {
-  width: 100%;
-  border-radius: 10px;
-  margin: 30px 0;
-}
-
-.rightbarTitle{
-    margin-bottom: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.rightbarFriendList {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 
 .rightbarTitle{
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
+  margin-left: 30;
 }
 
 .rightbarInfo{
   margin-bottom: 30px;
+  margin-left: 30;
+
 }
 
 .rightbarInfoItem{
   margin-bottom: 10px;
+  margin-left: 30;
+
 }
 
 .rightbarInfoKey{
   font-weight: 500;
   margin-right: 15px;
   color: #555;
+  margin-left: 30;
+
 }
 
 .rightbarInfoValue{
   font-weight: 300;
+  margin-left: 30;
+
 }
 
-
-
-.rightbarRate{
-  display: flex;
-  margin-top: 50px;
-}
 
 .rightbarRatingButton{
   margin-top: 30px;
@@ -84,18 +46,9 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  margin-left: 30;
+
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .example-warper {
   padding: 20px 5%;

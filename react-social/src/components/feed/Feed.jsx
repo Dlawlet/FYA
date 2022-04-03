@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import "./feed.css";
+import Rightbar from "../../components/rightbar/Rightbar";
 import axios from "axios";
 import { AuthContext } from "../../context/AuthContext";
 import {
@@ -51,11 +52,15 @@ export default function Feed({ username }) {
     return (
       <div className="feed">
         <div className="feedWrapper">
-          <div className="profileCertification">
-            <h1 style={{ marginLeft: 10 }}> Certifications </h1>
-              <h3 style={{ marginLeft: 30 , zIndex: -10}}> Carte de d'identifié : <h5 style={{ display: "inline" }}>non verifié</h5> </h3>
-              <h3 style={{ marginLeft: 30 , zIndex: -10}}> Lieu d'habitation : <h5 style={{ display: "inline" }}>non verifié</h5> </h3>
-              <h3 style={{ marginLeft: 30 , zIndex: -10}}> Plus haut diplome-<h6 style={{ display: "inline", color:"gray" }}>Master</h6>: <h5 style={{ display: "inline" }}>non verifié</h5> </h3>
+          <div>
+            <div className="profileCertification">
+              <h1 style={{ marginLeft: 10 }}> Certifications </h1>
+                <h3 style={{ marginLeft: 30 , zIndex: -10}}> Carte de d'identifié : <h5 style={{ display: "inline" }}>non verifié</h5> </h3>
+                <h3 style={{ marginLeft: 30 , zIndex: -10}}> Lieu d'habitation : <h5 style={{ display: "inline" }}>non verifié</h5> </h3>
+                <h3 style={{ marginLeft: 30 , zIndex: -10}}> Plus haut diplome-<h6 style={{ display: "inline", color:"gray" }}>Master</h6>: <h5 style={{ display: "inline" }}>non verifié</h5> </h3>
+            </div>
+            <div  className="profileNote">
+            <Rightbar user={user} /> </div>
           </div>
           <div className="profileStatistiques">
             <h1 style={{ marginLeft: 10 }}>Statistics </h1> 
