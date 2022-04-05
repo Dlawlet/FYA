@@ -12,7 +12,9 @@
 
 @media(min-width: 992px) {
   .topbar__logo {
-      max-width:11.25rem
+      max-width:11.25rem;
+      margin-top: 0.5vw;
+      margin-left: 1vw;
   }
 }
 

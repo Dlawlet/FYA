@@ -34,17 +34,19 @@ export default function Topbar() {
           </a>
         </li>
         <li className="topbar__nav-item">
-          <a className="btn" href="https://youtube.com">
+          <button className="btn"
+             onClick={() => {localStorage.clear("token");window.location.href='/login'}}>
             Sign / Log
-          </a>
+          </button>
         </li>
         <li className="topbar__nav-item">
-          <Link to={`/profile/${user.username}`}>
-          <img title="Se connecter / S'inscrire"
-              src={
+         <Link to={user? `/profile/${user.username}` : 'https://youtube.com' }>
+           <img title="Se connecter / S'inscrire"
+              src={ user?
                 user.profilePicture
                   ? PF + user.profilePicture
                   : PF + "person/noAvatar.png"
+                    : PF + "person/noAvatar.png"
               }
               alt=""
               className="topbarImg"

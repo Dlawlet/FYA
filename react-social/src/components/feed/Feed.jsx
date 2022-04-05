@@ -41,13 +41,6 @@ export default function Feed({ username }) {
     fetchPosts();
   }, [username, user._id]);
 
-  const HomeFeed = () => {
-    return (
-      <div>
-          {(!username || username === user.username) }
-      </div>);
-  };
-
   const ProfileFeed = () => {
     return (
       <div className="feed">
@@ -219,7 +212,7 @@ export default function Feed({ username }) {
   return (
     <div className="feed">
       <div className="feedWrapper">
-        {user ? <ProfileFeed /> : <HomeFeed/>}
+        {<ProfileFeed />}
       </div>
     </div>
   );

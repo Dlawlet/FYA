@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" caseSensitive={false} element={user ? <Home /> : <Register/> } />
+        <Route path="/" caseSensitive={false} element={<Home /> } />
         <Route path="/profile/:username" caseSensitive={false} element={user ? <Profile /> : <Login/>} />
         <Route path="/login" caseSensitive={false} element={user ?  <Navigate to ="/" /> : <Login /> } />
         <Route path="/register" caseSensitive={false} element={user ?  <Navigate to ="/" /> :  <Register />} />

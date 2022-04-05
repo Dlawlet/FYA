@@ -84,4 +84,72 @@
     .profileInfoName{
         font-size: 3vw;
         margin-top: 0.5vw;
-    }}
+    }
+    .profileRight{
+        flex: 25;
+    }
+    
+    
+    .profileCover{
+        height: 300px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    
+    
+    }
+    .profileCover::before{
+        content: "";
+        width: 100vw;
+        height: 33vw;
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0), black);
+        opacity: 0.6;
+        position: absolute;}
+    
+    .profileCoverImg{
+        width: 100%;
+        height: 25vw;
+        object-fit: cover;
+    }
+    
+    .profileUserImg{
+        width: 16vw;
+        height: 16vw;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        right: 1;
+        top: 18vw;
+        margin-left: 2vw;
+    
+        object-fit: cover;
+        border: 3px solid white;
+        margin-bottom: 0px;
+    
+    }
+    
+    
+    .profileInfo{
+        display: flex;
+        align-items:baseline;
+        flex-direction: column;
+        justify-content: left;
+        font-size: 1.25vw;
+        margin-left: 19vw;  
+        margin-top: -5vw;
+    }
+    
+    .profileInfoName{
+        margin-top: 1vw;
+        margin-bottom: 0.5vw;
+        font-size: 3vw; 
+        font-weight: 600;
+        line-height: 40px;
+    }
+    
+    .profileInfoDesc{
+        margin-top: 0px;
+        font-weight: 300;
+        margin-bottom: 0px;}}
