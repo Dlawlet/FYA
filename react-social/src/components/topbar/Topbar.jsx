@@ -13,7 +13,7 @@ export default function Topbar() {
      
     <figure className="topbar__logo">
     <Link to="/">
-      <img className="img-fluid" alt="FYA ex ListMinut" width={162} height={43} src="https://svgsilh.com/svg/297272-2196f3.svg" />
+      <img className="img-fluid" alt="FYA" width={162} height={43} src={PF + "Ncemtopbar.png"} />
       </Link>
       <figcaption className="sr-only">
         FYA
