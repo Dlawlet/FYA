@@ -48,7 +48,7 @@ export default function Profile() {
               <h4 className="profileInfoName">{user.username}</h4>
               <span className="profileInfoDesc">{user.desc}</span>
             </div>
-            <Feed username={username} />
+            <Feed user={user} />
       </div>
       <Footbar/>
     </>

@@ -23,23 +23,22 @@ for (let num = 6; num >= 0; num--) {
   });
 }
 
-export default function Feed({ username }) {
+export default function Feed({ user }) {
   const [, setPosts] = useState([]);
-  const { user } = useContext(AuthContext);
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const res = username
-        ? await axios.get("/posts/profile/" + username)
-        : await axios.get("posts/timeline/" + user._id);
-      setPosts(
-        res.data.sort((p1, p2) => {
-          return new Date(p2.createdAt) - new Date(p1.createdAt);
-        })
-      );
-    };
-    fetchPosts();
-  }, [username, user._id]);
+  const { user: currentUser, dispatch } = useContext(AuthContext);
+  const [followed, setFollowed] = useState(
+    currentUser.followings.includes(user?.id)
+  );
+  const handleClick = async () => {
+    try {
+      if (followed) {
+       // TODO replace followed with rated
+      } else {
+        // TODO
+      }
+    } catch (err) {
+    }
+  };
 
   const ProfileFeed = () => {
     return (

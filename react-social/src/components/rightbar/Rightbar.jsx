@@ -1,11 +1,15 @@
 import "./rightbar.css";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Rating } from 'react-simple-star-rating';
 import Popup from 'reactjs-popup';
+import { AuthContext } from "../../context/AuthContext";
 
 export default function Rightbar({ user }) {
 
-
+  const { user: currentUser, dispatch } = useContext(AuthContext);
+  const [followed, setFollowed] = useState(
+    currentUser.followings.includes(user?.id)
+  );
   const ProfileRightbar = () => {
     const [rating, setRating] = useState(0) // initial rating value
     // Catch Rating value
@@ -45,6 +49,7 @@ export default function Rightbar({ user }) {
                       transition={true}
               />
           </div>
+          { user.username !== currentUser.username ? 
           <Popup trigger={<button className="rightbarRatingButton"> Noter {user.username} </button>}
             modal
             lockScroll={true}
@@ -87,7 +92,7 @@ export default function Rightbar({ user }) {
         </div>
       </div>
     )}
-          </Popup>      
+          </Popup>  : <button className="rightbarRatingButton"> Bien joué {user.username} </button> }
         </div>
         
       </>
