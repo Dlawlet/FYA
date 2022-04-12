@@ -7,14 +7,13 @@ const Postschema = new mongoose.Schema({
  },
  desc: {
     type:String,
-    max:500
+    max:500,
+    required:true
  },
- img:{
-    type: String,
- },
- likes: {
-     type: Array,
-     default: [],
+
+ rate: {
+     type: Number,
+     required:true
  },
 },
 {timestamps:true})

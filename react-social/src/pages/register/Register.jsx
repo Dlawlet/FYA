@@ -40,13 +40,13 @@ export default function Register() {
     <div className="Signup__MainContainer-nzwlft-2 bCuFza">
       <a href="/" className="Signup__LogoLink-nzwlft-3 kTNIBg snip-a">
         <img
-          src={PF + "slim_ncem.png"}
+          src={PF + "Ncem.png"}
           className="Signup__LogoImage-nzwlft-4 dFpMSY snip-img"
         />
       </a>
       <div className="Signup__MainContent-nzwlft-5 iQIiZr">
         <h1 className="Signup__Heading-nzwlft-6 bMoMti snip-h1">
-          Sign Up For Ncem
+          Sign Up For Ncemh
         </h1>
         <div className="Signup__FormContainer-nzwlft-7 glxDmC">
           <div className="Signup__SocialButtonsContainer-nzwlft-8 kPatmB">

@@ -28,11 +28,11 @@ const UserSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    followers: {
+    Raters: {
       type: Array,
       default: [],
     },
-    followings: {
+    ratings: {
       type: Array,
       default: [],
     },
@@ -55,6 +55,42 @@ const UserSchema = new mongoose.Schema(
     relationship: {
       type: Number,
       enum: [1, 2, 3],
+    },
+    certifLevel: {
+      type: Number,
+      default:1
+    },
+    cniCheck: {
+      type: Boolean,
+      default: false,
+    },
+    cniPicture: {
+      type: String,
+      default: "",
+    },
+    houseCheck: {
+      type: Boolean,
+      default: false,
+    },
+    houseLocation: {
+      type: String,
+      default: "",
+    },
+    bankCheck: {
+      type: Boolean,
+      default: false,
+    },
+    bankPdf: {
+      type: String,
+      default: "",
+    },
+    eduCheck: {
+      type: Boolean,
+      default: false,
+    },
+    eduPdf: {
+      type: String,
+      default: "",
     },
   },
   { timestamps: true }
