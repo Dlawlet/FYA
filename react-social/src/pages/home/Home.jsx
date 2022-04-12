@@ -2,6 +2,7 @@ import Topbar from "../../components/topbar/Topbar";
 import "./home.css"
 import React from 'react';
 import Footbar from "../../components/footbar/Footbar";
+import ReactPlayer from 'react-player'
 
 
 export default function Home(){
@@ -19,7 +20,7 @@ export default function Home(){
               <span className="pill theme-even bg-color">
                 Nouveau
               </span>
-              Fya est désormais disponible dans tout le Cameroun
+              Ncemh est désormais disponible dans tout le Cameroun
               <i className="icon-arrow-right" />
             </a>
             <h1 className="page-title hero-cta">
@@ -47,16 +48,14 @@ export default function Home(){
             </form>
           </div>
           <picture className="hero-img">
-            <img  alt="Des collaborateurs de confiance FYA" className="hero-img__img" size="150vw" src={PF+"img5.jpg"}/>
+            <img  alt="Des collaborateurs de confiance Ncemh" className="hero-img__img" size="150vw" src={PF+"img5.jpg"}/>
           </picture> 
         </header>
         <nav className="sticky-head js-sticky-nav">
           <div className="sticky-head__inner">
             <figure className="sticky-head__logo">
-              <img className="img-fluid d-xl-none" alt="RingTwice" loading="lazy" width={12} height={24} src="https://ringtwice.be/packs/assets/images/logos/header-logo-bullets1f14ff386aca8123633d.svg" />
-              <img className="img-fluid d-none d-xl-block" alt="RingTwice  ex ListMinut" loading="lazy" width={162} height={43} src="https://ringtwice.be/packs/assets/images/logos/header-logo-dark-ex888e0f0cc201b45ecb04.svg" />
               <figcaption className="sr-only">
-                FYA
+                Ncemh
               </figcaption>
             </figure>
             <div className="form-input-wrapper form-input-wrapper__sticky js-search-modal-toggle js-search-modal-toggle-fixed">
@@ -117,13 +116,6 @@ export default function Home(){
                 </div>
               </div>
             </li>
-            <li className="swiper-slide word-slider__item js-tooltip-toggle">
-              <svg fill="currentColor" height={26} viewBox="0 0 35 26" width={35} xmlns="http://www.w3.org/2000/svg">
-                <path clipRule="evenodd" d="M26.6372 7.85286C31.1242 7.85286 34.0689 11.2534 34.0689 16.4065V17.6336H23.3775C23.4466 20.0881 25.4803 21.8055 28.0398 21.8055C29.6176 21.8055 30.9143 21.4201 32.3518 20.6489L33.3686 23.3476C31.51 24.6452 29.3015 25.1708 27.3385 25.1708C23.122 25.1708 20.6772 22.935 19.6599 19.9987C18.0928 23.3054 14.6016 25.1708 10.6511 25.1708C8.40772 25.1708 6.5498 24.75 5.18262 23.9792V0H9.38985V8.34368C10.371 8.06332 11.3878 7.85286 12.6144 7.85286C15.7033 7.85286 18.6318 9.36443 19.8904 12.4162C21.0353 9.71323 23.3799 7.85286 26.6372 7.85286ZM9.38985 21.42C10.0202 21.6305 10.6162 21.7354 11.4577 21.7354C14.2621 21.7354 16.3307 19.3517 16.3307 16.2662C16.3307 13.6725 14.6129 11.3935 11.7379 11.3935C10.6861 11.3935 9.98529 11.6741 9.38985 11.9195V21.42ZM26.5326 11.008C24.4989 11.008 23.2719 12.831 23.2719 14.6539H29.7222C29.653 12.8662 28.6699 11.008 26.5326 11.008Z" fillRule="evenodd" fill="#231F20" />
-                <path d="M0 22.6533C0 23.9282 0.987945 24.9159 2.23113 24.9159C3.44211 24.9159 4.43003 23.9282 4.43003 22.6533C4.43003 21.3468 3.44211 20.359 2.23113 20.359C0.987945 20.359 0 21.3468 0 22.6533Z" fill="#231F20" />
-              </svg>
-              Plateforme agréée
-            </li>
           </ul>
           <button className="swiper-button-prev btn-seamless word-slider__btn word-slider__btn-prev d-lg-none" type="button">
             <svg fill="currentColor" height={14} viewBox="0 0 8 14" width={8} xmlns="http://www.w3.org/2000/svg">
@@ -155,29 +147,19 @@ export default function Home(){
                   Laura
                 </h3>
                 <h4>
-                  Prof de langues à Haaltert
+                  Prof de langues à Yaoundé
                 </h4>
-                <a className="faux-link d-lg-none" href="/fr/professeurs-particuliers" rel="nofollow" />
               </header>
               <div className="worker-detail x-50 x-100-lg">
                 <div className="round-mask bg-color worker-detail__inner">
                   <p className="worker-detail__body">
-                    Laura, prof de langues passionnée, fait partie de nos 5.844 professeurs particuliers.
+                    Laura, prof de langues passionnée, fait partie de nos professeurs particuliers certifiée avec un bon indice de confiance.
                   </p>
-                  <a className="btn btn-sm with-faux-link" href="/fr/professeurs-particuliers">
-                    <span className="d-none d-lg-inline">
-                      Découvrir les profils
-                    </span>
-                    <i className="icon-arrow-right" />
-                  </a>
-                  <a className="faux-link" href="/fr/professeurs-particuliers" rel="nofollow">
-                    Découvrir les profils
-                  </a>
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet="https://ringtwice.be/packs/assets/images/landing/workers/workers-1__18007ef0daa271643623cf1.jpg?180w 180w, https://ringtwice.be/packs/assets/images/landing/workers/workers-1__2858b48b7c2560fc753abdd.jpg?285w 285w, https://ringtwice.be/packs/assets/images/landing/workers/workers-1__360b5b94535c7f464d997ad.jpg?360w 360w, https://ringtwice.be/packs/assets/images/landing/workers/workers-1__57012f9e64b5bf0ee33b665.jpg?570w 570w" type="image/jpeg" />
-                <img alt="Laura" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/workers/workers-1__18007ef0daa271643623cf1.jpg" />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "laura.jpg"} type="image/jpeg" />
+                <img alt="Laura" sizes="100vw" loading="lazy" src={PF + "laura.jpg"}/>
               </picture>
             </article>
             <article className="worker x-25-lg theme-even">
@@ -187,60 +169,40 @@ export default function Home(){
                   <span className="pill theme-pro bg-color">Pro</span>
                 </h3>
                 <h4>
-                  Électricien à Ganshoren
+                  Électricien à Buea
                 </h4>
-                <a className="faux-link d-lg-none" href="/fr/bricoleur" rel="nofollow" />
               </header>
               <div className="worker-detail x-50 x-100-lg">
                 <div className="round-mask bg-color worker-detail__inner">
                   <p className="worker-detail__body">
-                    Mathias fait partie de nos 8.078 bricoleurs de confiance, prêts à rendre service à leurs collaborateurs moins habiles.
+                    Mathias fait partie de nos bricoleurs de confiance, prêts à rendre service à leurs collaborateurs moins habiles.
                   </p>
-                  <a className="btn btn-sm with-faux-link" href="/fr/bricoleur">
-                    <span className="d-none d-lg-inline">
-                      Découvrir les profils
-                    </span>
-                    <i className="icon-arrow-right" />
-                  </a>
-                  <a className="faux-link" href="/fr/bricoleur" rel="nofollow">
-                    Découvrir les profils
-                  </a>
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet="https://ringtwice.be/packs/assets/images/landing/workers/workers-2__180ebb0b9cd4e1f277eab66.jpg?180w 180w, https://ringtwice.be/packs/assets/images/landing/workers/workers-2__28588b8dd817e64dde6e71c.jpg?285w 285w, https://ringtwice.be/packs/assets/images/landing/workers/workers-2__3603cc50d41c679a69ff9cb.jpg?360w 360w, https://ringtwice.be/packs/assets/images/landing/workers/workers-2__5709739ab5983504dd46cdb.jpg?570w 570w" type="image/jpeg" />
-                <img alt="Mathias" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/workers/workers-2__180ebb0b9cd4e1f277eab66.jpg" />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "mathias.jpg"} type="image/jpeg" />
+                <img alt="Mathias" sizes="100vw" loading="lazy" src={PF + "mathias.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-odd">
               <header className="worker-header x-50 x-100-lg shadow-inner">
                 <h3 className="element-title">
-                  Kunga
+                  Kunge
                 </h3>
                 <h4>
-                  Prof de yoga à Ixelles
+                  Graphiste à Douala
                 </h4>
-                <a className="faux-link d-lg-none" href="/fr/soins" rel="nofollow" />
               </header>
               <div className="worker-detail x-50 x-100-lg">
                 <div className="round-mask bg-color worker-detail__inner">
                   <p className="worker-detail__body">
-                    Comme 3.694 autres inscrits, Kunga aime offrir des moments de détente à ses collaborateurs.
+                    Comme nos autres inscrits, Kunge aime sublimer ses collaborateurs sur dessins papiers et virtuels .
                   </p>
-                  <a className="btn btn-sm with-faux-link" href="/fr/soins">
-                    <span className="d-none d-lg-inline">
-                      Découvrir les profils
-                    </span>
-                    <i className="icon-arrow-right" />
-                  </a>
-                  <a className="faux-link" href="/fr/soins" rel="nofollow">
-                    Découvrir les profils
-                  </a>
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet="https://ringtwice.be/packs/assets/images/landing/workers/workers-3__1803131965f8cf740e49a18.jpg?180w 180w, https://ringtwice.be/packs/assets/images/landing/workers/workers-3__285022fb4093fee38db9cb4.jpg?285w 285w, https://ringtwice.be/packs/assets/images/landing/workers/workers-3__3606d15bd773c5da50b4528.jpg?360w 360w, https://ringtwice.be/packs/assets/images/landing/workers/workers-3__570272c8293a42a756d8129.jpg?570w 570w" type="image/jpeg" />
-                <img alt="Kunga" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/workers/workers-3__1803131965f8cf740e49a18.jpg" />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "kunge.jpg"} type="image/jpeg" />
+                <img alt="Kunga" sizes="100vw" loading="lazy" src={PF + "kunge.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-even">
@@ -249,29 +211,19 @@ export default function Home(){
                   Sophie
                 </h3>
                 <h4>
-                  Petsitter à Laeken
+                  Ingénieure civil à Balmayo
                 </h4>
-                <a className="faux-link d-lg-none" href="/fr/garde-animaux" rel="nofollow" />
               </header>
               <div className="worker-detail x-50 x-100-lg">
                 <div className="round-mask bg-color worker-detail__inner">
                   <p className="worker-detail__body">
-                    Sophie, amoureuse des animaux, fait partie des 11.257 gardes chien de confiance qui prennent soin des animaux de leurs collaborateurs.
+                    Sophie, amoureuse des animaux, fait partie des ingénieurs de confiance qui prennent soin des projects de leurs collaborateurs.
                   </p>
-                  <a className="btn btn-sm with-faux-link" href="/fr/garde-animaux">
-                    <span className="d-none d-lg-inline">
-                      Découvrir les profils
-                    </span>
-                    <i className="icon-arrow-right" />
-                  </a>
-                  <a className="faux-link" href="/fr/garde-animaux" rel="nofollow">
-                    Découvrir les profils
-                  </a>
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet="https://ringtwice.be/packs/assets/images/landing/workers/workers-4__18068340c87291e9c0e9155.jpg?180w 180w, https://ringtwice.be/packs/assets/images/landing/workers/workers-4__28572bce461d5b1742713b6.jpg?285w 285w, https://ringtwice.be/packs/assets/images/landing/workers/workers-4__3602ddfb507b3f2ecf97be9.jpg?360w 360w, https://ringtwice.be/packs/assets/images/landing/workers/workers-4__570a5f154464eae41312b4f.jpg?570w 570w" type="image/jpeg" />
-                <img alt="Sophie" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/workers/workers-4__18068340c87291e9c0e9155.jpg" />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "sophie.jpg"} type="image/jpeg" />
+                <img alt="Sophie" sizes="100vw" loading="lazy" src={PF + "sophie.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-odd d-none d-lg-flex">
@@ -280,29 +232,19 @@ export default function Home(){
                   Olivier
                 </h3>
                 <h4>
-                  Jardinier à Uccle
+                  Photograph à Bonamoussadi
                 </h4>
-                <a className="faux-link d-lg-none" href="/fr/entretien-jardin" rel="nofollow" />
               </header>
               <div className="worker-detail x-50 x-100-lg">
                 <div className="round-mask bg-color worker-detail__inner">
                   <p className="worker-detail__body">
-                    Comme 5.735 autres jardiniers, Olivier se dépasse chaque jour pour embellir les jardins de ses collaborateurs.
+                    Comme nos autres photographes, Olivier se dépasse chaque jour pour embellir les jardins de ses collaborateurs.
                   </p>
-                  <a className="btn btn-sm with-faux-link" href="/fr/entretien-jardin">
-                    <span className="d-none d-lg-inline">
-                      Découvrir les profils
-                    </span>
-                    <i className="icon-arrow-right" />
-                  </a>
-                  <a className="faux-link" href="/fr/entretien-jardin" rel="nofollow">
-                    Découvrir les profils
-                  </a>
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet="https://ringtwice.be/packs/assets/images/landing/workers/workers-5__18040793538b73eeb09fb75.jpg?180w 180w, https://ringtwice.be/packs/assets/images/landing/workers/workers-5__2850e4a0bd83f80f9f8cd90.jpg?285w 285w, https://ringtwice.be/packs/assets/images/landing/workers/workers-5__360d4542e23bb84a7cb50fb.jpg?360w 360w, https://ringtwice.be/packs/assets/images/landing/workers/workers-5__570875dc92fd8b989b4915b.jpg?570w 570w" type="image/jpeg" />
-                <img alt="Olivier" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/workers/workers-5__18040793538b73eeb09fb75.jpg" />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "olivier.jpg"} type="image/jpeg" />
+                <img alt="Olivier" sizes="100vw" loading="lazy" src={PF + "olivier.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-even d-none d-lg-flex">
@@ -311,29 +253,19 @@ export default function Home(){
                   Andrée
                 </h3>
                 <h4>
-                  Aide-ménagère à Jemeppe
+                  Esthéticienne à Japoma
                 </h4>
-                <a className="faux-link d-lg-none" href="/fr/aide-menagere" rel="nofollow" />
               </header>
               <div className="worker-detail x-50 x-100-lg">
                 <div className="round-mask bg-color worker-detail__inner">
                   <p className="worker-detail__body">
-                    Andrée et 9.171 autres fées du logis, ne demandent qu'à aider leurs collaborateurs pour leurs tâches ménagères.
+                    Andrée et les autres esthéticiennes, ne demandent qu'à aider leurs collaborateurs pour redonner du peps à leur apparence .
                   </p>
-                  <a className="btn btn-sm with-faux-link" href="/fr/aide-menagere">
-                    <span className="d-none d-lg-inline">
-                      Découvrir les profils
-                    </span>
-                    <i className="icon-arrow-right" />
-                  </a>
-                  <a className="faux-link" href="/fr/aide-menagere" rel="nofollow">
-                    Découvrir les profils
-                  </a>
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet="https://ringtwice.be/packs/assets/images/landing/workers/workers-6__180827074c38314c14ed184.jpg?180w 180w, https://ringtwice.be/packs/assets/images/landing/workers/workers-6__285781e79fa19b633f14145.jpg?285w 285w, https://ringtwice.be/packs/assets/images/landing/workers/workers-6__36022f31b63076be71f5efd.jpg?360w 360w, https://ringtwice.be/packs/assets/images/landing/workers/workers-6__57024024860129ca1d6aea7.jpg?570w 570w" type="image/jpeg" />
-                <img alt="Andrée" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/workers/workers-6__180827074c38314c14ed184.jpg" />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "andre.jpg"} type="image/jpeg" />
+                <img alt="Andrée" sizes="100vw" loading="lazy" src={PF + "andre.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-odd d-none d-lg-flex">
@@ -342,29 +274,19 @@ export default function Home(){
                   Loukou
                 </h3>
                 <h4>
-                  Babysitter à Gembloux
+                  Stagiaire comptable à Limbé
                 </h4>
-                <a className="faux-link d-lg-none" href="/fr/garde-enfants" rel="nofollow" />
               </header>
               <div className="worker-detail x-50 x-100-lg">
                 <div className="round-mask bg-color worker-detail__inner">
                   <p className="worker-detail__body">
-                    Loukou fait partie des 9.945 babysitters disponibles pour s'occuper des enfants de leurs collaborateurs comme si c'était les leurs.
+                    Loukou fait partie des étudiants disponibles pour aider leurs collaborateurs suivants leurs domains d'étude.
                   </p>
-                  <a className="btn btn-sm with-faux-link" href="/fr/garde-enfants">
-                    <span className="d-none d-lg-inline">
-                      Découvrir les profils
-                    </span>
-                    <i className="icon-arrow-right" />
-                  </a>
-                  <a className="faux-link" href="/fr/garde-enfants" rel="nofollow">
-                    Découvrir les profils
-                  </a>
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet="https://ringtwice.be/packs/assets/images/landing/workers/workers-7__180f8a28e934a64729a686b.jpg?180w 180w, https://ringtwice.be/packs/assets/images/landing/workers/workers-7__2853f7119f964659e835906.jpg?285w 285w, https://ringtwice.be/packs/assets/images/landing/workers/workers-7__360e77fe131d76999c41deb.jpg?360w 360w, https://ringtwice.be/packs/assets/images/landing/workers/workers-7__5706f6f6f20e634c1b0b04b.jpg?570w 570w" type="image/jpeg" />
-                <img alt="Loukou" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/workers/workers-7__180f8a28e934a64729a686b.jpg" />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "loukou.jpg"} type="image/jpeg" />
+                <img alt="Loukou" sizes="100vw" loading="lazy" src={PF + "loukou.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-even d-none d-lg-flex">
@@ -374,29 +296,19 @@ export default function Home(){
                   <span className="pill theme-pro bg-color">Pro</span>
                 </h3>
                 <h4>
-                  Traiteur à Woluwé
+                  Traiteur à Waga
                 </h4>
-                <a className="faux-link d-lg-none" href="/fr/chef-a-domicile" rel="nofollow" />
               </header>
               <div className="worker-detail x-50 x-100-lg">
                 <div className="round-mask bg-color worker-detail__inner">
                   <p className="worker-detail__body">
-                    Gregory et 2.277 autres cuisiniers aiment mettre la main à la pâte pour régaler leurs collaborateurs les plus gourmands et gourmets.
+                    Gregory et les autres cuisiniers aiment mettre la main à la pâte pour régaler leurs collaborateurs les plus gourmands et gourmets.
                   </p>
-                  <a className="btn btn-sm with-faux-link" href="/fr/chef-a-domicile">
-                    <span className="d-none d-lg-inline">
-                      Découvrir les profils
-                    </span>
-                    <i className="icon-arrow-right" />
-                  </a>
-                  <a className="faux-link" href="/fr/chef-a-domicile" rel="nofollow">
-                    Découvrir les profils
-                  </a>
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet="https://ringtwice.be/packs/assets/images/landing/workers/workers-8__180618ef915f3aa7a3b9ee7.jpg?180w 180w, https://ringtwice.be/packs/assets/images/landing/workers/workers-8__2853c2e1ef9dbb1910d6d72.jpg?285w 285w, https://ringtwice.be/packs/assets/images/landing/workers/workers-8__360d41a1b049e060526eb69.jpg?360w 360w, https://ringtwice.be/packs/assets/images/landing/workers/workers-8__570485248717a22a3c675db.jpg?570w 570w" type="image/jpeg" />
-                <img alt="Gregory" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/workers/workers-8__180618ef915f3aa7a3b9ee7.jpg" />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "gregory.jpg"} type="image/jpeg" />
+                <img alt="Gregory" sizes="100vw" loading="lazy" src={PF + "gregory.jpg"} />
               </picture>
             </article>
           </div>
@@ -410,17 +322,16 @@ export default function Home(){
           </header>
           <div className="wrapper">
             <div className="video-placeholder__wrapper wrapper--lg">
-              <figure className="img-ratio img-ratio-16x9 video-placeholder js-embed-placeholder" data-embed-url="https://www.youtube.com/embed/jTs0PTPv8Q8?autoplay=1&rel=0">
-                <img sizes="(min-width: 1140px) calc(1140px / 1.5), 100vw" srcSet="https://ringtwice.be/packs/assets/images/landing/video/video__28046975528fd4e782e9abc.jpg 280w, https://ringtwice.be/packs/assets/images/landing/video/video__560edfd8d321c49e9d4ac34.jpg 560w, https://ringtwice.be/packs/assets/images/landing/video/video__8489c2028aea5b9c02a839c.jpg 848w, https://ringtwice.be/packs/assets/images/landing/video/video__1696cb5ab7c46d4b99cf7842.jpg 1696w" alt="FYA comment ça marche" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/video/video__28046975528fd4e782e9abc.jpg" />
-                <button className="video-placeholder__cta btn-seamless js-embed-placeholder-play">
-                  <i className="icon-play" />
-                  <span className="sr-only">
-                    Jouer la video
-                  </span>
-                </button>
-                <figcaption className="sr-only js-embed-placeholder-title">
-                  Une communauté qui s'entraide
-                </figcaption>
+              <figure className="  video-placeholder" >
+              <ReactPlayer
+              width={'100%'}
+              height={'100%'}
+              config={{ file: { attributes: {
+                autoPlay: true,
+                muted: true
+              }}}}
+              controls
+              url = {PF + "collabvid.mp4"}/>
               </figure>
               <span className="bubble-shape theme-odd bg-color video-placeholder__shape" />
               <span className="bubble-shape theme-even bg-color video-placeholder__shape" />
@@ -431,23 +342,23 @@ export default function Home(){
                   Un collaborateur a besoin d'aide
                 </h3>
                 <p>
-                  Une demande de service est introduite et Ring&nbsp;Twice avertit les talents à proximité.
+                  Vous avez des projets et souhaitez vous rassurer du sérieux de vos futurs partenaires.
                 </p>
               </li>
               <li className="insentive border-bottom-sm">
                 <h3 className="element-title insentive__title">
-                  Une offre est acceptée
+                  Consulter le profil de votre futur collaborateur
                 </h3>
                 <p>
-                  De multiples critères de confiance tels que les avis, le profil, le prix, ... sont mis en avant.
+                  De multiples critères de confiance tels que les avis, le profil, les certifications... viennent s'ajouter à l'indice de confiance
                 </p>
               </li>
               <li className="insentive border-bottom-sm">
                 <h3 className="element-title insentive__title">
-                  Une belle rencontre est initiée
+                  Evaluer vos rencontres
                 </h3>
                 <p>
-                  La prestation a lieu en toute confiance. Le paiement en ligne également.
+                  Laissez  un avis à ceux avec qui vous interagissez afin d'aider la communauté.
                 </p>
               </li>
             </ol>
@@ -464,7 +375,7 @@ export default function Home(){
               <button className="bubble-nav__item btn-seamless theme-even" type="button">
                 <figure className="bubble-nav__shape bubble-shape bg-color">
                   <picture className="bubble-nav__shape-img">
-                    <img srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-1__thumb@2xe5bc7307dbc8dd3e64e5.jpg 2x" alt="Michel" width={70} height={70} loading="lazy" importance="low" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-1__thumb20140363c46822e13bff.jpg" />
+                    <img  alt="Michel" width={70} height={70} loading="lazy" importance="low"  />
                   </picture>
                   <figcaption>
                     Michel
@@ -477,7 +388,7 @@ export default function Home(){
               <button className="bubble-nav__item btn-seamless theme-odd" type="button">
                 <figure className="bubble-nav__shape bubble-shape bg-color">
                   <picture className="bubble-nav__shape-img">
-                    <img srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-2__thumb@2xbd39cb67f5c3b32bf661.jpg 2x" alt="Carol" width={70} height={70} loading="lazy" importance="low" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-2__thumb7019a2a2a9dcc7c7183b.jpg" />
+                    <img alt="Carol" width={70} height={70} loading="lazy" importance="low" />
                   </picture>
                   <figcaption>
                     Carol
@@ -490,7 +401,7 @@ export default function Home(){
               <button className="bubble-nav__item btn-seamless theme-odd" type="button">
                 <figure className="bubble-nav__shape bubble-shape bg-color">
                   <picture className="bubble-nav__shape-img">
-                    <img srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-3__thumb@2x1d4ad46ef3029a0b3cbc.jpg 2x" alt="Kalil" width={70} height={70} loading="lazy" importance="low" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-3__thumb924d2e696b755501b724.jpg" />
+                    <img alt="Kalil" width={70} height={70} loading="lazy" importance="low"  />
                   </picture>
                   <figcaption>
                     Kalil
@@ -503,7 +414,7 @@ export default function Home(){
               <button className="bubble-nav__item btn-seamless theme-even" type="button">
                 <figure className="bubble-nav__shape bubble-shape bg-color">
                   <picture className="bubble-nav__shape-img">
-                    <img srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-4__thumb@2xab3b0a044b37dd8f4ca7.jpg 2x" alt="Emilie" width={70} height={70} loading="lazy" importance="low" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-4__thumb5faf6ebab9604fdd73f2.jpg" />
+                    <img alt="Emilie" width={70} height={70} loading="lazy" importance="low" />
                   </picture>
                   <figcaption>
                     Emilie
@@ -516,7 +427,7 @@ export default function Home(){
               <button className="bubble-nav__item btn-seamless theme-even is-active" type="button">
                 <figure className="bubble-nav__shape bubble-shape bg-color">
                   <picture className="bubble-nav__shape-img">
-                    <img srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-5__thumb@2xfdb6dcd89f062d11d7cd.jpg 2x" alt="Marc" width={70} height={70} loading="lazy" importance="low" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-5__thumba37161cbdbf1c63a031f.jpg" />
+                    <img srcSet={PF + "marc2.jpg"} alt="Marc" width={70} height={70} loading="lazy" importance="low" src={PF + "marc.jpg"}/>
                   </picture>
                   <figcaption>
                     Marc
@@ -529,7 +440,7 @@ export default function Home(){
               <button className="bubble-nav__item btn-seamless theme-odd" type="button">
                 <figure className="bubble-nav__shape bubble-shape bg-color">
                   <picture className="bubble-nav__shape-img">
-                    <img srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-6__thumb@2x086b3360d0027167c533.jpg 2x" alt="Alexandre" width={70} height={70} loading="lazy" importance="low" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-6__thumbf77e0a96d0f85db4e7c0.jpg" />
+                    <img  alt="Alexandre" width={70} height={70} loading="lazy" importance="low" />
                   </picture>
                   <figcaption>
                     Alexandre
@@ -542,7 +453,7 @@ export default function Home(){
               <button className="bubble-nav__item btn-seamless theme-odd" type="button">
                 <figure className="bubble-nav__shape bubble-shape bg-color">
                   <picture className="bubble-nav__shape-img">
-                    <img srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-7__thumb@2x64ddac9fa34db68bf2f9.jpg 2x" alt="Petra" width={70} height={70} loading="lazy" importance="low" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-7__thumbb99eb53cbf6615e95c4d.jpg" />
+                    <img alt="Petra" width={70} height={70} loading="lazy" importance="low"/>
                   </picture>
                   <figcaption>
                     Petra
@@ -555,7 +466,7 @@ export default function Home(){
               <button className="bubble-nav__item btn-seamless theme-even" type="button">
                 <figure className="bubble-nav__shape bubble-shape bg-color">
                   <picture className="bubble-nav__shape-img">
-                    <img srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-8__thumb@2x9e1c4e77a4a171335f0a.jpg 2x" alt="Thierry" width={70} height={70} loading="lazy" importance="low" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-8__thumb059515b947a068bd026e.jpg" />
+                    <img alt="Thierry" width={70} height={70} loading="lazy" importance="low" />
                   </picture>
                   <figcaption>
                     Thierry
@@ -566,93 +477,9 @@ export default function Home(){
                 </span>
               </button>
             </nav>
-            <div className="round-blockquote__slider js-swiper-user-reviews swiper-initialized swiper-horizontal swiper-pointer-events">
-              <div className="swiper-wrapper" style={{transform: 'translate3d(-1560px, 0px, 0px)', transitionDuration: '0ms'}}>
-                <div className="round-blockquote swiper-slide theme-even" type="button" style={{width: '390px'}}>
-                  <div className="bubble-shape bg-color round-blockquote__shape">
-                    <blockquote className="round-blockquote__shape-content">
-                      <p>
-                        <em>
-                          "&nbsp;Je suis pensionné depuis 5 ans, mais FYA me permet de rester actif en faisant ce que j'aime&nbsp;!&nbsp;"
-                        </em>
-                      </p>
-                      <cite className="round-blockquote__cite">
-                        <strong>Michel</strong>, Mons
-                      </cite>
-                    </blockquote>
-                  </div>
-                  <picture className="round-blockquote__img bubble-shape">
-                    <source sizes="(min-width: 992px) calc(1140px / 3.5), calc(100vw - 40px)" srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-1__30027c1a456b59a1e2c22c5.jpg?300w 300w, https://ringtwice.be/packs/assets/images/landing/stories/stories-1__3505c0fdb065b7456de81b6.jpg?350w 350w, https://ringtwice.be/packs/assets/images/landing/stories/stories-1__600f0d724221a43b9540167.jpg?600w 600w, https://ringtwice.be/packs/assets/images/landing/stories/stories-1__70000ebc4c42abbfea9f48a.jpg?700w 700w" type="image/jpeg" />
-                    <img alt="Gregory" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-1__30027c1a456b59a1e2c22c5.jpg" />
-                    <figcaption className="sr-only">
-                      Michel
-                    </figcaption>
-                  </picture>
-                </div>
-                <div className="round-blockquote swiper-slide theme-odd" type="button" style={{width: '390px'}}>
-                  <div className="bubble-shape bg-color round-blockquote__shape">
-                    <blockquote className="round-blockquote__shape-content">
-                      <p>
-                        <em>
-                          "&nbsp;Aux USA j'utilisais une app similaire. J'étais tellement contente de découvrir FYA en rentrant&nbsp;!&nbsp;"
-                        </em>
-                      </p>
-                      <cite className="round-blockquote__cite">
-                        <strong>Carol</strong>, Woluwé
-                      </cite>
-                    </blockquote>
-                  </div>
-                  <picture className="round-blockquote__img bubble-shape">
-                    <source sizes="(min-width: 992px) calc(1140px / 3.5), calc(100vw - 40px)" srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-2__300548e93abcdb058803321.jpg?300w 300w, https://ringtwice.be/packs/assets/images/landing/stories/stories-2__3506f1ac7485380d5fdad48.jpg?350w 350w, https://ringtwice.be/packs/assets/images/landing/stories/stories-2__600c7e7e84e5abfd223ebfe.jpg?600w 600w, https://ringtwice.be/packs/assets/images/landing/stories/stories-2__7005dd852c8788629727873.jpg?700w 700w" type="image/jpeg" />
-                    <img alt="Gregory" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-2__300548e93abcdb058803321.jpg" />
-                    <figcaption className="sr-only">
-                      Carol
-                    </figcaption>
-                  </picture>
-                </div>
-                <div className="round-blockquote swiper-slide theme-odd" type="button" style={{width: '390px'}}>
-                  <div className="bubble-shape bg-color round-blockquote__shape">
-                    <blockquote className="round-blockquote__shape-content">
-                      <p>
-                        <em>
-                          "&nbsp;En 4 mois j'ai atteint le plafond comme particulier. J'ai compris que j'étais prêt à devenir indépendant.&nbsp;"
-                        </em>
-                      </p>
-                      <cite className="round-blockquote__cite">
-                        <strong>Kalil</strong>, Deurne
-                      </cite>
-                    </blockquote>
-                  </div>
-                  <picture className="round-blockquote__img bubble-shape">
-                    <source sizes="(min-width: 992px) calc(1140px / 3.5), calc(100vw - 40px)" srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-3__3005f6d17bf5390492fc175.jpg?300w 300w, https://ringtwice.be/packs/assets/images/landing/stories/stories-3__35044c51a5540d26df10649.jpg?350w 350w, https://ringtwice.be/packs/assets/images/landing/stories/stories-3__60067faa5915a15e15291ad.jpg?600w 600w, https://ringtwice.be/packs/assets/images/landing/stories/stories-3__70033cb22dc4f456b3e1fef.jpg?700w 700w" type="image/jpeg" />
-                    <img alt="Gregory" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-3__3005f6d17bf5390492fc175.jpg" />
-                    <figcaption className="sr-only">
-                      Kalil
-                    </figcaption>
-                  </picture>
-                </div>
-                <div className="round-blockquote swiper-slide theme-even swiper-slide-prev" type="button" style={{width: '390px'}}>
-                  <div className="bubble-shape bg-color round-blockquote__shape">
-                    <blockquote className="round-blockquote__shape-content">
-                      <p>
-                        <em>
-                          "&nbsp;C'est génial de pouvoir avoir un petit coup de main de temps en temps. En plus, c'est 100% légal&nbsp;!&nbsp;"
-                        </em>
-                      </p>
-                      <cite className="round-blockquote__cite">
-                        <strong>Emilie</strong>, Anvers
-                      </cite>
-                    </blockquote>
-                  </div>
-                  <picture className="round-blockquote__img bubble-shape">
-                    <source sizes="(min-width: 992px) calc(1140px / 3.5), calc(100vw - 40px)" srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-4__3004793c8ce2d231c9f49b4.jpg?300w 300w, https://ringtwice.be/packs/assets/images/landing/stories/stories-4__350157c33c4daee13059091.jpg?350w 350w, https://ringtwice.be/packs/assets/images/landing/stories/stories-4__60005a676d465acaaac5cfb.jpg?600w 600w, https://ringtwice.be/packs/assets/images/landing/stories/stories-4__700120ab6f745e930b2c072.jpg?700w 700w" type="image/jpeg" />
-                    <img alt="Gregory" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-4__3004793c8ce2d231c9f49b4.jpg" />
-                    <figcaption className="sr-only">
-                      Emilie
-                    </figcaption>
-                  </picture>
-                </div>
-                <div className="round-blockquote swiper-slide theme-even swiper-slide-active" type="button" style={{width: '390px'}}>
+            
+              
+                <div className="round-blockquote swiper-slide theme-even swiper-slide-active" type="button" style={{width: '390px', marginLeft: '6px'}}>
                   <div className="bubble-shape bg-color round-blockquote__shape">
                     <blockquote className="round-blockquote__shape-content">
                       <p>
@@ -661,93 +488,28 @@ export default function Home(){
                         </em>
                       </p>
                       <cite className="round-blockquote__cite">
-                        <strong>Marc</strong>, Hove
+                        <strong>Marc</strong>, Bertoua
                       </cite>
                     </blockquote>
                   </div>
                   <picture className="round-blockquote__img bubble-shape">
-                    <source sizes="(min-width: 992px) calc(1140px / 3.5), calc(100vw - 40px)" srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-5__30010db24ed8ae2a1555194.jpg?300w 300w, https://ringtwice.be/packs/assets/images/landing/stories/stories-5__350d0f3f545f7f11fb0fd62.jpg?350w 350w, https://ringtwice.be/packs/assets/images/landing/stories/stories-5__6003ba63306fbe3072d346a.jpg?600w 600w, https://ringtwice.be/packs/assets/images/landing/stories/stories-5__700da598b623dfa119007d0.jpg?700w 700w" type="image/jpeg" />
-                    <img alt="Gregory" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-5__30010db24ed8ae2a1555194.jpg" />
+                    <source sizes="(min-width: 992px) calc(1140px / 3.5), calc(100vw - 40px)" srcSet={PF + "marc.jpg"} type="image/jpeg" />
+                    <img alt="Gregory" sizes="100vw" loading="lazy" src={PF + "marc.jpg"} />
                     <figcaption className="sr-only">
                       Marc
                     </figcaption>
                   </picture>
                 </div>
-                <div className="round-blockquote swiper-slide theme-odd swiper-slide-next" type="button" style={{width: '390px'}}>
-                  <div className="bubble-shape bg-color round-blockquote__shape">
-                    <blockquote className="round-blockquote__shape-content">
-                      <p>
-                        <em>
-                          "&nbsp;C'est super de pouvoir trouver autant de personnes de confiance autour de chez soi.&nbsp;"
-                        </em>
-                      </p>
-                      <cite className="round-blockquote__cite">
-                        <strong>Alexandre</strong>, Saint-Gilles
-                      </cite>
-                    </blockquote>
-                  </div>
-                  <picture className="round-blockquote__img bubble-shape">
-                    <source sizes="(min-width: 992px) calc(1140px / 3.5), calc(100vw - 40px)" srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-6__3002900d7697d9382e934f4.jpg?300w 300w, https://ringtwice.be/packs/assets/images/landing/stories/stories-6__3503f48fdab405c59f77aef.jpg?350w 350w, https://ringtwice.be/packs/assets/images/landing/stories/stories-6__60021ae91e3f6fee8833ee0.jpg?600w 600w, https://ringtwice.be/packs/assets/images/landing/stories/stories-6__700c630dbff4f125c5f65aa.jpg?700w 700w" type="image/jpeg" />
-                    <img alt="Gregory" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-6__3002900d7697d9382e934f4.jpg" />
-                    <figcaption className="sr-only">
-                      Alexandre
-                    </figcaption>
-                  </picture>
-                </div>
-                <div className="round-blockquote swiper-slide theme-odd" type="button" style={{width: '390px'}}>
-                  <div className="bubble-shape bg-color round-blockquote__shape">
-                    <blockquote className="round-blockquote__shape-content">
-                      <p>
-                        <em>
-                          "&nbsp;Ce que je préfère, c'est quand mon élève m'appelle en fin d'année pour m'annoncer qu'il a réussi&nbsp;!&nbsp;"
-                        </em>
-                      </p>
-                      <cite className="round-blockquote__cite">
-                        <strong>Petra</strong>, Woluwé
-                      </cite>
-                    </blockquote>
-                  </div>
-                  <picture className="round-blockquote__img bubble-shape">
-                    <source sizes="(min-width: 992px) calc(1140px / 3.5), calc(100vw - 40px)" srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-7__300665dade4601a0bc47c6f.jpg?300w 300w, https://ringtwice.be/packs/assets/images/landing/stories/stories-7__350afd2cb10ed51a0b4815b.jpg?350w 350w, https://ringtwice.be/packs/assets/images/landing/stories/stories-7__600f30536eaa7b88ea5f30d.jpg?600w 600w, https://ringtwice.be/packs/assets/images/landing/stories/stories-7__7008d49e30a55c720895cf0.jpg?700w 700w" type="image/jpeg" />
-                    <img alt="Gregory" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-7__300665dade4601a0bc47c6f.jpg" />
-                    <figcaption className="sr-only">
-                      Petra
-                    </figcaption>
-                  </picture>
-                </div>
-                <div className="round-blockquote swiper-slide theme-even" type="button" style={{width: '390px'}}>
-                  <div className="bubble-shape bg-color round-blockquote__shape">
-                    <blockquote className="round-blockquote__shape-content">
-                      <p>
-                        <em>
-                          "&nbsp;J'ai trouvé très facilement de l'aide et grâce aux évaluations, je sais que je peux avoir confiance&nbsp;!&nbsp;"
-                        </em>
-                      </p>
-                      <cite className="round-blockquote__cite">
-                        <strong>Thierry</strong>, La Hulpe
-                      </cite>
-                    </blockquote>
-                  </div>
-                  <picture className="round-blockquote__img bubble-shape">
-                    <source sizes="(min-width: 992px) calc(1140px / 3.5), calc(100vw - 40px)" srcSet="https://ringtwice.be/packs/assets/images/landing/stories/stories-8__300c0a501e84df4a95e2f1f.jpg?300w 300w, https://ringtwice.be/packs/assets/images/landing/stories/stories-8__3503628be73df4269af427e.jpg?350w 350w, https://ringtwice.be/packs/assets/images/landing/stories/stories-8__60047f76f73ea16e4301746.jpg?600w 600w, https://ringtwice.be/packs/assets/images/landing/stories/stories-8__70039b9f37f272f20e809a4.jpg?700w 700w" type="image/jpeg" />
-                    <img alt="Gregory" sizes="100vw" loading="lazy" src="https://ringtwice.be/packs/assets/images/landing/stories/stories-8__300c0a501e84df4a95e2f1f.jpg" />
-                    <figcaption className="sr-only">
-                      Thierry
-                    </figcaption>
-                  </picture>
-                </div>
-              </div>
-              <div className="swiper-pagination d-lg-none swiper-pagination-bullets swiper-pagination-horizontal"><span className="swiper-pagination-bullet" /><span className="swiper-pagination-bullet" /><span className="swiper-pagination-bullet" /><span className="swiper-pagination-bullet" /><span className="swiper-pagination-bullet swiper-pagination-bullet-active" /><span className="swiper-pagination-bullet" /><span className="swiper-pagination-bullet" /><span className="swiper-pagination-bullet" /></div>
-            </div>
+              
+            
           </div>
         </section>
         <section className="section pt-0 text-center floating-frame__container">
           <figure className="section__banner">
             <picture className="img-ratio img-ratio-section-banner">
-              <source media="(min-width: 992px)" sizes="100vw" srcSet="https://ringtwice.be/packs/assets/images/landing/subscription/subscription-choice__9925cea436d5d510a3fb7bf.jpg?992w 992w, https://ringtwice.be/packs/assets/images/landing/subscription/subscription-choice__1200939dd9c29215a2defc09.jpg?1200w 1200w, https://ringtwice.be/packs/assets/images/landing/subscription/subscription-choice__1400be0b142177613f9294f3.jpg?1440w 1440w, https://ringtwice.be/packs/assets/images/landing/subscription/subscription-choice__19203daa1f9fd22486ab28e0.jpg?1920w 1920w, https://ringtwice.be/packs/assets/images/landing/subscription/subscription-choice__2560ad03391e461c1766ecf3.jpg?2560w 2560w" type="image/jpeg" />
-              <img srcSet="https://ringtwice.be/packs/assets/images/landing/subscription/subscription-choice__380f7830f2056c7443fd17d.jpg?1x 1x, https://ringtwice.be/packs/assets/images/landing/subscription/subscription-choice__760f27b349b3055fb720e34.jpg?2x 2x" alt="FYA inscription" loading="lazy" className="img-fluid" sizes="100vw" src="https://ringtwice.be/packs/assets/images/landing/subscription/subscription-choice__380f7830f2056c7443fd17d.jpg" />
+              <source media="(min-width: 992px)" sizes="100vw" srcSet={PF + "collaboration.jpg"} type="image/jpeg" />
+              <img srcSet={PF + "collaboration.jpg"} />
             </picture>
-            <div className="target-mask" />
           </figure>
           <div className="floating-frame__list">
             <article className="border-bottom-sm floating-frame">
@@ -757,12 +519,9 @@ export default function Home(){
                 </h3>
               </header>
               <p className="mb-2 text-muted">
-                Offrez-vous l'accès à une communauté de 36.587 prestataires actifs.
+                Offrez-vous l'accès à une communauté  prestataires actifs avec les meilleurs indices de confiance .
               </p>
-              <a className="btn" href="/fr/task_creation">
-                Demander un service
-                <i className="icon-arrow-right" />
-              </a>
+
             </article>
             <article className="floating-frame">
               <header>
@@ -771,20 +530,14 @@ export default function Home(){
                 </h3>
               </header>
               <p className="mb-2 text-muted">
-                Accédez gratuitement à plus de 15.000 demandes de service par mois.
+                Faites savoir à vos collaborateurs présents et futurs qu'il peuvent avoir confiance en vous.
               </p>
-              <a className="btn btn-border" href="https://ringtwice.be/fr/devenir-prestataire">
-                Proposer mes services
-                <svg className="align" fill="currentColor" height={13} viewBox="0 0 13 13" width={13} xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.46387 0.722778L5.91699 1.24231C5.78027 1.37903 5.78027 1.59778 5.91699 1.70715L10.1553 5.94543H0.831055C0.639648 5.94543 0.50293 6.1095 0.50293 6.27356V7.03918C0.50293 7.23059 0.639648 7.36731 0.831055 7.36731H10.1553L5.91699 11.6329C5.78027 11.7423 5.78027 11.9611 5.91699 12.0978L6.46387 12.6173C6.57324 12.754 6.79199 12.754 6.92871 12.6173L12.6436 6.90247C12.7803 6.76575 12.7803 6.57434 12.6436 6.43762L6.92871 0.722778C6.79199 0.58606 6.57324 0.58606 6.46387 0.722778Z" fill="currentColor" />
-                </svg>
-              </a>
             </article>
           </div>
         </section>
         <article className="theme-odd bg-color wrapper article-banner">
           <figure className="article-banner__img">
-            <img srcSet="https://ringtwice.be/assets/support/be-support-client-team@2x-582fa44ab263c252537a6d96adfd17449dd8461e77c5c8efe5e16c94ea35721f.png 2x" width={225} height={225} alt="contact" loading="lazy" importance="low" src="https://ringtwice.be/assets/support/be-support-client-team-182f71f1f990116f21f931e39ba446ec79abc2acdaece82eefc0541c7773137b.png" />
+            <img srcSet={PF + "footbanniere.png"} width="225" height="225" alt="contact" loading="lazy" importance="low"/>
           </figure>
           <div className="article-banner__body">
             <header>

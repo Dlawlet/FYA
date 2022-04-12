@@ -13,19 +13,19 @@ export default function Footbar() {
                         </div>
                         <ul>
                         <li>
-                            <a href="https://ringtwice.be/fr/devenir-prestataire">Devenir prestataire</a>
+                            <a href="">Creer un compte</a>
                         </li>
                         <li>
-                            <a href="/fr/task_creation">Demander un service</a>
+                            <a href="">Consulter des comptes</a>
                         </li>
                         <li>
-                            <a href="/fr/rankings">Meilleurs prestataires</a>
+                            <a href="">Meilleures scores</a>
                         </li>
                         <li>
-                            <a href="/fr/services-ideas">Idées de services</a>
+                            <a href="">Fonctionnement indice</a>
                         </li>
                         <li>
-                            <a href="/fr/share_friends">Invitez vos amis</a>
+                            <a href="">Invitez vos amis</a>
                         </li>
                         </ul>
                     </div>
@@ -35,19 +35,19 @@ export default function Footbar() {
                         </div>
                         <ul>
                         <li>
-                            <a href="/fr/howitworks">Comment ça marche ?</a>
+                            <a href="">Comment ça marche ?</a>
                         </li>
                         <li>
-                            <a href="/fr/pricing">Plans tarifaires</a>
+                            <a href="">Plans tarifaires</a>
                         </li>
                         <li>
-                            <a href="/fr/legal_sharing_economy">FYA, c’est légal ?</a>
+                            <a href="">Ncemh Actus</a>
                         </li>
                         <li>
-                            <a href="/fr/contact_us">Contactez-nous</a>
+                            <a href="">Contactez-nous</a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noreferrer" href="https://listminut.zendesk.com/hc/fr">Aide/FAQ</a>
+                            <a target="_blank" rel="noreferrer" href="">Aide/FAQ</a>
                         </li>
                         </ul>
                     </div>
@@ -57,35 +57,35 @@ export default function Footbar() {
                         </div>
                         <ul>
                         <li>
-                            <a href="/fr/about">FYA</a>
+                            <a href="">Ncemh</a>
                         </li>
                         <li>
-                            <a href="/fr/team">L'équipe</a>
+                            <a href="">L'équipe</a>
                         </li>
                         <li>
-                            <a href="/fr/workforus">Emplois/Stages</a>
+                            <a href="">Emplois/Stages</a>
                         </li>
                         <li>
-                            <a href="/fr/press_room">Espace presse</a>
+                            <a href="">Espace presse</a>
                         </li>
                         <li>
-                            <a href="https://blog.ringtwice.be/">Blog</a>
+                            <a href="">Blog</a>
                         </li>
                         <li>
-                            <a href="/fr/partners">Sites partenaires</a>
+                            <a href="">Sites partenaires</a>
                         </li>
                         </ul>
                     </div>
-                    <div className="fh-links">
+                    {/* <div className="fh-links">
                         <div className="fh-title">
                         Suivez-nous
                         </div>
                         <div className="social-networks">
-                        <a target="_blank" title="Facebook" rel="noreferrer" href="https://www.facebook.com/ringtwice.be"><img width={11} height={20} alt="Facebook" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/facebookb2691b0406771ce5a230.svg" />
-                        </a><a target="_blank" title="Linkedin" rel="noreferrer" href="https://www.linkedin.com/company/2686937"><img width={20} height={20} alt="Linkedin" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/linkedindf4802e013e1660125fb.svg" />
-                        </a><a target="_blank" title="Twitter" rel="noreferrer" href="https://twitter.com/RingTwiceBe"><img width={20} height={16} alt="Twitter" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/twittere100d10ab607f7ed4179.svg" />
-                        </a><a target="_blank" title="Instagram" rel="noreferrer" href="https://www.instagram.com/ringtwice.be/"><img width={20} height={20} alt="Instagram" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/instagram12ab65942cd124d0f413.svg" />
-                        </a><a target="_blank" title="Vimeo" rel="noreferrer" href="https://vimeo.com/ringtwice"><img width={20} height={17} alt="Vimeo" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/vimeoc67e439a07c3bc188071.svg" />
+                        <a target="_blank" title="Facebook" rel="noreferrer" href=""><img width={11} height={20} alt="Facebook" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/facebookb2691b0406771ce5a230.svg" />
+                        </a><a target="_blank" title="Linkedin" rel="noreferrer" href=""><img width={20} height={20} alt="Linkedin" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/linkedindf4802e013e1660125fb.svg" />
+                        </a><a target="_blank" title="Twitter" rel="noreferrer" href=""><img width={20} height={16} alt="Twitter" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/twittere100d10ab607f7ed4179.svg" />
+                        </a><a target="_blank" title="Instagram" rel="noreferrer" href=""><img width={20} height={20} alt="Instagram" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/instagram12ab65942cd124d0f413.svg" />
+                        </a><a target="_blank" title="Vimeo" rel="noreferrer" href=""><img width={20} height={17} alt="Vimeo" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/vimeoc67e439a07c3bc188071.svg" />
                         </a></div>
                         <div className="fh-title fh-t-app">
                         Découvrez notre application mobile
@@ -95,25 +95,22 @@ export default function Footbar() {
                         </a><a target="_blank" title="Google Play" rel="noreferrer" href="https://play.google.com/store/apps/details?id=be.listminut.app"><img width={135} height={45} alt="Google Play" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/googlePlay-fr0df80dceb00cabac83b5.svg" />
                         </a>
                         </div>
-                    </div>
+                    </div> */}
                     </div>
                 
                     <div className="f-review">
                     <a href="/fr/testimonials" title="Avis des utilisateurs">
-                        <div className="f-review-stars">
-                        <img width={120} height={40} alt="Review" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/review73b3fe711c0381efb5b2.svg" />
-                        </div>
                         <div className="f-review-text">
-                        www.FYA.be est évalué 4.92/5 par 4.385 membres
+                        www.Ncemh.com est évalué 4.5/5 par 1376 membres
                         </div>
                     </a>
                     </div>
                     <div className="f-legal">
-                    © 2022 -
-                    - FYA -
-                    <a href="/fr/p/condgen">Conditions d'utilisation</a>
+                    © 2022 -HWork
+                    - Ncemh -
+                    <a href="">Conditions d'utilisation</a>
                     -
-                    <a href="/fr/sitemap">Plan du site</a>
+                    <a href="">Plan du site</a>
                     </div>
                 </div>
                 </footer>

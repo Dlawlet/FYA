@@ -66,12 +66,12 @@ export default function Rightbar({ user }) {
               <Rating onClick={handleRating} ratingValue={rating} /* Available Props */ 
                       fillColorArray={['#EBE007', '#F2F20C', '#D0D40B', '#B7DB00', '#ABF513']} 
                       transition={true}
-                      size={100}
+                      size={200}
               />
             </div>
             <input
               className="rateMessage"
-              type="text"
+              type="textarea"
               minLength="6"
               //ref={commentaire}
             />
