@@ -19,7 +19,8 @@
     overflow: auto;
     background: white;
     display:inline-table;
-    margin-bottom: 2vw;}
+    margin-bottom: 2vw;
+    padding-bottom: 5%;}
 .profileNote {width: 90vw;height: fit-content;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
@@ -27,7 +28,8 @@
   overflow: auto;
   background: white;
   display:inline-table;
-  margin-bottom: 2vw;}
+  margin-bottom: 2vw;
+  padding-bottom: 5%;}
 
 
   
@@ -40,7 +42,7 @@
   background: white;
   margin-bottom: 2vw;
   overflow: auto;
-}
+  padding-bottom: 5%;}
 
 .profileActivity{width: 90vw;height: fit-content;
     border-radius: 10px;
@@ -49,8 +51,7 @@
     overflow: auto;
     background: white;
     margin-bottom: 2vw;
-
-  }
+    padding-bottom: 5%;}
 
 .profileLifePath{width: 90vw;height: fit-content;
   border-radius: 10px;
@@ -59,15 +60,14 @@
   overflow: auto;
   background: white;
   margin-bottom: 2vw;
-
-}
+  padding-bottom: 5%;}
 
 .css-nypl32, [data-css-nypl32] {
-  margin-top: 1vw;
+  margin-top:2.5%;
   margin-bottom: 1vw;
-  margin-left: 1.5vw;
+  margin-left: 5%;
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 5vw;
   line-height: 40px;
   color: rgba(0, 0, 0, 0.90);}
   @media only screen and (min-width: 1024px) {
@@ -88,5 +88,7 @@
     }
     .css-nypl32, [data-css-nypl32]{
       font-size: 2vw;
+      margin-left: 5%;
+      margin-top: 5%;
     }
   }

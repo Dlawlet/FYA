@@ -39,8 +39,8 @@
 }
 
 .profileUserImg{
-    width: 16vw;
-    height: 16vw;
+    width: 25vw;
+    height: 25vw;
     border-radius: 50%;
     position: absolute;
     left: 0;
@@ -66,8 +66,9 @@
 }
 
 .profileInfoName{
-    margin-top: -0.1vw;
+    margin-top: -4vw;
     margin-bottom: 0px;
+    margin-left: 15%;
     font-size: 4vw; 
     font-weight: 600;
     line-height: 40px;
@@ -76,8 +77,10 @@
 
 .profileInfoDesc{
     margin-top: 0px;
+    margin-left: 15%;
     font-weight: 300;
     margin-bottom: 0px;
+    font-size: 250%;
     
 }
 @media only screen and (min-width: 1024px) {

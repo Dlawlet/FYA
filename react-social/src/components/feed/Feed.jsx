@@ -48,27 +48,27 @@ export default function Feed({ user }) {
             <div className="profileCertification">
                 <h2 data-css-nypl32="">Certifications</h2>
                 <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Carte d'identité</span>
+                      <span className="rightbarInfoKey">Carte d'identité</span>
                       <span className="rightbarInfoValue">{user.city}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Domicile</span>
+                      <span className="rightbarInfoKey">Domicile</span>
                       <span className="rightbarInfoValue">{user.from}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Diplome</span>
+                      <span className="rightbarInfoKey">Diplome</span>
                       <span className="rightbarInfoValue">{user.from}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Casier</span>
+                      <span className="rightbarInfoKey">Casier</span>
                       <span className="rightbarInfoValue">{user.from}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Compte Bancaire</span>
+                      <span className="rightbarInfoKey">Compte Bancaire</span>
                       <span className="rightbarInfoValue">{user.from}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey"> ✅ | Profession</span>
+                      <span className="rightbarInfoKey"> Profession</span>
                       <span className="rightbarInfoValue">
                         {user.relationship === 1
                           ? "Etudiant"
@@ -127,27 +127,27 @@ export default function Feed({ user }) {
           <div className="profileActivity">
           <h2 data-css-nypl32="">Activités</h2>
                 <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Carte d'identité</span>
+                      <span className="rightbarInfoKey">Carte d'identité</span>
                       <span className="rightbarInfoValue">{user.city}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Domicile</span>
+                      <span className="rightbarInfoKey">Domicile</span>
                       <span className="rightbarInfoValue">{user.from}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Diplome</span>
+                      <span className="rightbarInfoKey">Diplome</span>
                       <span className="rightbarInfoValue">{user.from}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Casier</span>
+                      <span className="rightbarInfoKey">Casier</span>
                       <span className="rightbarInfoValue">{user.from}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Compte Bancaire</span>
+                      <span className="rightbarInfoKey">Compte Bancaire</span>
                       <span className="rightbarInfoValue">{user.from}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey"> ✅ | Profession</span>
+                      <span className="rightbarInfoKey"> Profession</span>
                       <span className="rightbarInfoValue">
                         {user.relationship === 1
                           ? "Etudiant"
@@ -160,27 +160,27 @@ export default function Feed({ user }) {
           <div className="profileLifePath">
           <h2 data-css-nypl32="">Parcours</h2>  
                 <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Carte d'identité</span>
+                      <span className="rightbarInfoKey">Carte d'identité</span>
                       <span className="rightbarInfoValue">{user.city}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Domicile</span>
+                      <span className="rightbarInfoKey">Domicile</span>
                       <span className="rightbarInfoValue">{user.from}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Diplome</span>
+                      <span className="rightbarInfoKey">Diplome</span>
                       <span className="rightbarInfoValue">{user.from}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Casier</span>
+                      <span className="rightbarInfoKey">Casier</span>
                       <span className="rightbarInfoValue">{user.from}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">✅ | Compte Bancaire</span>
+                      <span className="rightbarInfoKey">Compte Bancaire</span>
                       <span className="rightbarInfoValue">{user.from}</span>
                     </div>
                     <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey"> ✅ | Profession</span>
+                      <span className="rightbarInfoKey"> Profession</span>
                       <span className="rightbarInfoValue">
                         {user.relationship === 1
                           ? "Etudiant"

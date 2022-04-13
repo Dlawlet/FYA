@@ -20,7 +20,6 @@ export default function Rightbar({ user }) {
     return (
       <>
         <h2 data-css-nypl32="">Sommaire</h2>
-        <div className="rightbarInfo">
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">Ville:</span>
             <span className="rightbarInfoValue">{user.city}</span>
@@ -93,7 +92,7 @@ export default function Rightbar({ user }) {
       </div>
     )}
           </Popup>  : <button className="rightbarRatingButton"> Bien joué {user.username} </button> }
-        </div>
+        
         
       </>
     );

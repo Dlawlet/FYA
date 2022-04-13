@@ -19,9 +19,9 @@
 }
 
 .rightbarInfoKey{
-  margin-top: 1.5vw;
-  margin-bottom: 1.5vw;
-  margin-left: 4vw;
+  margin-top: 5%;
+  margin-bottom: 15%;
+  margin-left: 15%;
   font-weight: 600;
   font-size: 3vw;
   line-height: 1.2vw;
@@ -40,13 +40,14 @@
 }
 
 .rightbarRate{
-  margin-top: 2vw;
-  margin-left: 4vw;}
+  margin-top: 5%;
+  margin-left: 15%;
+  font-size: medium;}
 
 .rightbarRatingButton{
  margin-top: 2vw;
   margin-bottom: 3vw;
-  margin-left: 4vw;
+  margin-left: 15%;
   border: none;
   background-color: #1872f2;
   color: white;
