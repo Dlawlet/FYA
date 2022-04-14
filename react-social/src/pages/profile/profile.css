@@ -34,7 +34,7 @@
 
 .profileCoverImg{
     width: 100%;
-    height: 25vw;
+    height: 30vw;
     object-fit: cover;
 }
 
@@ -47,7 +47,7 @@
     right: 1;
     top: 18vw;
     margin-left: 2vw;
-
+    display: block;
     object-fit: cover;
     border: 3px solid white;
     margin-bottom: 0px;
@@ -66,8 +66,7 @@
 }
 
 .profileInfoName{
-    margin-top: -4vw;
-    margin-bottom: 0px;
+    padding-top: 6%;
     margin-left: 15%;
     font-size: 4vw; 
     font-weight: 600;
@@ -79,14 +78,14 @@
     margin-top: 0px;
     margin-left: 15%;
     font-weight: 300;
-    margin-bottom: 0px;
+    padding-bottom: -5%;
     font-size: 250%;
     
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
     .profileInfoName{
         font-size: 3vw;
-        margin-top: 0.5vw;
+        padding-top: 5%;
     }
     .profileRight{
         flex: 25;
@@ -113,13 +112,12 @@
     
     .profileCoverImg{
         width: 100%;
-        height: 25vw;
         object-fit: cover;
     }
     
     .profileUserImg{
-        width: 16vw;
-        height: 16vw;
+        width: 24vw;
+        height: 24vw;
         border-radius: 50%;
         position: absolute;
         left: 0;
@@ -141,12 +139,10 @@
         justify-content: left;
         font-size: 1.25vw;
         margin-left: 19vw;  
-        margin-top: -5vw;
     }
     
     .profileInfoName{
         margin-top: 1vw;
-        margin-bottom: 0.5vw;
         font-size: 3vw; 
         font-weight: 600;
         line-height: 40px;
@@ -155,4 +151,4 @@
     .profileInfoDesc{
         margin-top: 0px;
         font-weight: 300;
-        margin-bottom: 0px;}}
+        margin-bottom: -5%;}}

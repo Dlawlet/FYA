@@ -139,7 +139,7 @@ body {
     height: auto;
     max-width: 100%;
     margin-left: 15%;
-    margin-top: 20%;
+    padding-top: 15%;
 }
 
 .list-inline>li {
@@ -282,6 +282,9 @@ body {
 
     .d-lg-none {
         display: none!important
+    }
+    .img-fluid{
+        padding-top: 1%;
     }
 }
 

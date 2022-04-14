@@ -46,7 +46,7 @@ export default function Profile() {
             </div>
             <div className="profileInfo">
               <h4 className="profileInfoName">{user.username}</h4>
-              <span className="profileInfoDesc">{user.desc}</span>
+              <span className="profileInfoDesc">{user.desc ? user.desc : "let's live in a trustable world"}</span>
             </div>
             <Feed user={user} />
       </div>
