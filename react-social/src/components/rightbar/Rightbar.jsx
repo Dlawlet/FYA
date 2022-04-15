@@ -5,11 +5,14 @@ import Popup from 'reactjs-popup';
 import { AuthContext } from "../../context/AuthContext";
 
 export default function Rightbar({ user }) {
-
+ 
   const { user: currentUser, dispatch } = useContext(AuthContext);
   const [followed, setFollowed] = useState(
     currentUser.followings.includes(user?.id)
   );
+  
+    const stsize=window.innerWidth/15
+
   const ProfileRightbar = () => {
     const [rating, setRating] = useState(0) // initial rating value
     // Catch Rating value
@@ -39,13 +42,14 @@ export default function Rightbar({ user }) {
             </span>
           </div>
           <div className='rightbarRate'>
-              <Rating onClick={handleRating} ratingValue={rating} /* Available Props */ 
+              <Rating className="ratedisplay" onClick={handleRating} ratingValue={rating} /* Available Props */ 
                       fillColorArray={['#EBE007', '#F2F20C', '#D0D40B', '#B7DB00', '#ABF513']} 
-                      readonly={rating >= 0}
+                      readonly={true}
                       initialValue={3.5}
                       fillColor={"#B7DB00"}
                       allowHalfIcon={true}
                       transition={true}
+                      size={55}
               />
           </div>
           { user.username !== currentUser.username ? 
@@ -62,10 +66,7 @@ export default function Rightbar({ user }) {
         <div className="header"> Noter  {user.username} </div>
         <div className="content">
             <div className='profileRating'>
-              <Rating onClick={handleRating} ratingValue={rating} /* Available Props */ 
-                      fillColorArray={['#EBE007', '#F2F20C', '#D0D40B', '#B7DB00', '#ABF513']} 
-                      transition={true}
-                      size={200}
+              <Rating  /* Available Props */ 
               />
             </div>
             <input

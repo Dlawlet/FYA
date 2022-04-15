@@ -43,6 +43,10 @@
   margin-top: 5%;
   margin-left: 15%;
   font-size: medium;}
+svg.star-svg {
+    display: inline;
+
+}
 
 .rightbarRatingButton{
  margin-top: 2vw;
