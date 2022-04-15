@@ -39,8 +39,8 @@
 }
 
 .profileUserImg{
-    width: 25vw;
-    height: 25vw;
+    width: 30vw;
+    height: 30vw;
     border-radius: 50%;
     position: absolute;
     left: 0;
@@ -67,7 +67,7 @@
 
 .profileInfoName{
     padding-top: 6%;
-    margin-left: 15%;
+    margin-left: 18%;
     font-size: 4vw; 
     font-weight: 600;
     line-height: 40px;
@@ -75,8 +75,7 @@
 }
 
 .profileInfoDesc{
-    margin-top: 0px;
-    margin-left: 15%;
+    margin-left: 18%;
     font-weight: 300;
     padding-bottom: -5%;
     font-size: 250%;
@@ -142,6 +141,7 @@
     }
     
     .profileInfoName{
+        margin-left: 10%;
         margin-top: 1vw;
         font-size: 3vw; 
         font-weight: 600;
@@ -149,6 +149,7 @@
     }
     
     .profileInfoDesc{
+        margin-left: 10%;
         margin-top: 0px;
         font-weight: 300;
         margin-bottom: -5%;}}

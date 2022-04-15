@@ -1,13 +1,13 @@
 .feed{
     flex:8;
-  margin-top: 9vw;
+  margin-top: 3vw;
     background: #faf7f4;
 }
 
 .feedWrapper{
     padding-left: 2.5% ;
     padding-right: 2.5% ;
-    padding-top:0.005vw ;
+    padding-top:0.05px;
     padding-bottom: 2.5%;    
 }
 
@@ -79,12 +79,12 @@
 
   @media only screen and (min-width: 1024px) {
     .profileCertification  {
-      width: 43.4vw;
+      width: 43.2vw;
       margin-inline-end: 1.5vw;
       overflow: auto;
       height:31vw}
     .profileNote{
-      width: 43.4vw;
+      width: 43.2vw;
       overflow: auto;
       margin-inline-start: 1.5vw;
       height: 31vw;
@@ -107,4 +107,7 @@
       margin-top: 3%;
       margin-bottom: 1.5%;
     }
+    .feed{
+    margin-top: 9vw;
+  }
   }

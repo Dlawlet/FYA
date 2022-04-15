@@ -427,14 +427,14 @@ export default function Home(){
               <button className="bubble-nav__item btn-seamless theme-even is-active" type="button">
                 <figure className="bubble-nav__shape bubble-shape bg-color">
                   <picture className="bubble-nav__shape-img">
-                    <img srcSet={PF + "marc2.jpg"} alt="Marc" width={70} height={70} loading="lazy" importance="low" src={PF + "marc.jpg"}/>
+                    <img srcSet={PF + "marc2.jpg"} alt="Nsop" width={70} height={70} loading="lazy" importance="low" src={PF + "marc.jpg"}/>
                   </picture>
                   <figcaption>
-                    Marc
+                    Nsop
                   </figcaption>
                 </figure>
                 <span className="bubble-nav__item-label">
-                  Marc
+                  Nsop
                 </span>
               </button>
               <button className="bubble-nav__item btn-seamless theme-odd" type="button">
@@ -488,7 +488,7 @@ export default function Home(){
                         </em>
                       </p>
                       <cite className="round-blockquote__cite">
-                        <strong>Marc</strong>, Bertoua
+                        <strong>Nsop</strong>, Bertoua
                       </cite>
                     </blockquote>
                   </div>
@@ -496,7 +496,7 @@ export default function Home(){
                     <source sizes="(min-width: 992px) calc(1140px / 3.5), calc(100vw - 40px)" srcSet={PF + "marc.jpg"} type="image/jpeg" />
                     <img alt="Gregory" sizes="100vw" loading="lazy" src={PF + "marc.jpg"} />
                     <figcaption className="sr-only">
-                      Marc
+                      Nsop
                     </figcaption>
                   </picture>
                 </div>
