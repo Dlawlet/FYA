@@ -67,7 +67,9 @@ export default function Feed({ user }) {
           </div>
           <div className="profileStatistiques">
           <h2 className="css-nypl324">Statistiques</h2>
-          <Statdiv/> 
+            <div className="feedStatdiv">
+            <Statdiv/> 
+            </div>
           </div>
           <div className="profileActivity">
           <h2 className="css-nypl324">Activités</h2>

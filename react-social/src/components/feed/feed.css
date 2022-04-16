@@ -60,6 +60,7 @@
   padding-bottom: 5%;}
 
 .css-nypl32, [data-css-nypl32] {
+  font-family: Jordana Sans,Helvetica,sans-serif;
   margin-top:2.5%;
   margin-bottom: 1vw;
   margin-left: 7.5%;
@@ -69,6 +70,7 @@
   color: rgba(0, 0, 0, 0.90);}
 
 .css-nypl324, [data-css-nypl32] {
+  font-family: Jordana Sans,Helvetica,sans-serif;
   margin-top:2.5%;
   margin-bottom: 1vw;
   margin-left: 7.5%;
@@ -77,14 +79,19 @@
   line-height: 40px;
   color: rgba(0, 0, 0, 0.90);}
 
+.feedStatdiv{
+  font-family: Jordana Sans,Helvetica,sans-serif;
+  margin: 0% 6% 0% 6%;
+}
+
   @media only screen and (min-width: 1024px) {
     .profileCertification  {
-      width: 43.2vw;
+      width: 43.1vw;
       margin-inline-end: 1.5vw;
       overflow: auto;
       height:31vw}
     .profileNote{
-      width: 43.2vw;
+      width: 43.1vw;
       overflow: auto;
       margin-inline-start: 1.5vw;
       height: 31vw;

@@ -1,4 +1,5 @@
 .rightbarInfoItem{
+  font-family: Jordana Sans,Helvetica,sans-serif;
   margin-top: 1.5vw;
   margin-bottom: 1.5vw;
   font-weight: 600;
@@ -49,7 +50,8 @@ svg.star-svg {
 }
 
 .rightbarRatingButton{
- margin-top: 2vw;
+  font-family: Jordana Sans,Helvetica,sans-serif;
+  margin-top: 2vw;
   margin-left: 15%;
   border: none;
   background-color: #187434;
@@ -76,7 +78,7 @@ svg.star-svg {
 
 .example-warper .button,
 .popup-content .button {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: Jordana Sans,Helvetica,sans-serif;
   color: #000000;
   cursor: pointer;
   padding: 0px 30px;
@@ -155,9 +157,8 @@ svg.star-svg {
 
 .profileRating{
   size: 450vw;
-  align-items: center;
-
-  
+  margin-left: 20%;
+  margin-right: 25%;
 }
  @media only screen and (min-width: 1024px) {
     .rightbarInfoItem, .rightbarInfoValue, .rightbarInfoKey,.rightbarInfoKey2{

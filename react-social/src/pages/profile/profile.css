@@ -56,6 +56,7 @@
 
 
 .profileInfo{
+    font-family: Jordana Sans,Helvetica,sans-serif;
     display: flex;
     align-items:baseline;
     flex-direction: column;
@@ -66,15 +67,17 @@
 }
 
 .profileInfoName{
+    font-family: Jordana Sans,Helvetica,sans-serif;
+    font-size: 6vw;
     padding-top: 6%;
     margin-left: 18%;
-    font-size: 4vw; 
     font-weight: 600;
     line-height: 40px;
     color: rgba(0, 0, 0, 0.90);
 }
 
 .profileInfoDesc{
+    font-family: Jordana Sans,Helvetica,sans-serif;
     margin-left: 18%;
     font-weight: 300;
     padding-bottom: -5%;
@@ -82,10 +85,6 @@
     
 }
 @media only screen and (min-width: 992px) {
-    .profileInfoName{
-        font-size: 3vw;
-        padding-top: 5%;
-    }
     .profileRight{
         flex: 25;
     }
