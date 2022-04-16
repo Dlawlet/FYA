@@ -1,11 +1,15 @@
 const mongoose = require("mongoose");
 
 const Postschema = new mongoose.Schema({
- userId:{
+ userGvId:{
     type:String,
     required:true
  },
- desc: {
+ userRcId:{
+   type:String,
+   required:true
+},
+ review: {
     type:String,
     max:500,
     required:true

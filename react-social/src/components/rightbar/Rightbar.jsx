@@ -1,18 +1,12 @@
 import "./rightbar.css";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { Rating } from 'react-simple-star-rating';
-import Popup from 'reactjs-popup';
+import Ratepopup from "../ratepopup/Ratepopup"
 import { AuthContext } from "../../context/AuthContext";
 
 export default function Rightbar({ user }) {
  
-  const { user: currentUser, dispatch } = useContext(AuthContext);
-  const [followed, setFollowed] = useState(
-    currentUser.followings.includes(user?.id)
-  );
-  
-    const stsize=window.innerWidth/15
-
+  const { user: currentUser} = useContext(AuthContext);
   const ProfileRightbar = () => {
     const [rating, setRating] = useState(0) // initial rating value
     // Catch Rating value
@@ -53,46 +47,7 @@ export default function Rightbar({ user }) {
               />
           </div>
           { user.username !== currentUser.username ? 
-          <Popup trigger={<button className="rightbarRatingButton"> Noter {user.username} </button>}
-            modal
-            lockScroll={true}
-            contentStyle={{maxWidth: '600px',width: '90%',}}
-            nested>
-          {close => (
-      <div className="modal">
-        <button className="close" onClick={close}>
-          &times;
-        </button>
-        <div className="header"> Noter  {user.username} </div>
-        <div className="content">
-            <div className='profileRating'>
-              <Rating  /* Available Props */ 
-              />
-            </div>
-            <input
-              className="rateMessage"
-              type="textarea"
-              minLength="6"
-              //ref={commentaire}
-            />
-        </div>
-        <div className="actions">
-              <button type="button" className="button">
-                Signaler le compte
-              </button>
-          <button
-            type="button"
-            className="button"
-            onClick={() => {
-              console.log('modal closed ');
-              close();
-            }}>
-            Confirmer
-          </button>
-        </div>
-      </div>
-    )}
-          </Popup>  : <button className="rightbarRatingButton"> Bien joué {user.username} </button> }
+          <Ratepopup user ={user}/>  : <button className="rightbarRatingButton"> Bien joué {user.username} </button> }
         
         
       </>

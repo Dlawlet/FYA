@@ -137,7 +137,7 @@ svg.star-svg {
   position: absolute;
   display: block;
   padding: 2px 5px;
-  right: 13%;
+  right: 5%;
   top: 15px;
   font-size: 24px;
   border-radius: 18px;
@@ -160,6 +160,18 @@ svg.star-svg {
   margin-left: 20%;
   margin-right: 25%;
 }
+@media only screen and (min-width: 487px) {
+  .modal > .close {
+    right: 30vw;
+  }
+}
+
+@media only screen and (min-width: 787px) {
+  .modal > .close {
+    right: 20vw;
+  }
+}
+
  @media only screen and (min-width: 1024px) {
     .rightbarInfoItem, .rightbarInfoValue, .rightbarInfoKey,.rightbarInfoKey2{
       font-size: 1.5vw;
@@ -167,6 +179,9 @@ svg.star-svg {
     .rightbarInfoKey2{
       margin-left: 8%;
 
+    }
+    .modal > .close {
+      right: 15vw;
     }
     
   }
