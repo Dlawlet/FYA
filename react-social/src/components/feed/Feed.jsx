@@ -1,28 +1,10 @@
-import { useContext, useEffect, useState } from "react";
 import "./feed.css";
 import Statdiv from "../../components/statdiv/Statdiv"
 import Rightbar from "../../components/rightbar/Rightbar";
-import axios from "axios";
-import { AuthContext } from "../../context/AuthContext";
 
-const data = [];
 
 export default function Feed({ user }) {
-  const [, setPosts] = useState([]);
-  const { user: currentUser, dispatch } = useContext(AuthContext);
-  const [followed, setFollowed] = useState(
-    currentUser.followings.includes(user?.id)
-  );
-  const handleClick = async () => {
-    try {
-      if (followed) {
-       // TODO replace followed with rated
-      } else {
-        // TODO
-      }
-    } catch (err) {
-    }
-  };
+  
 
   const ProfileFeed = () => {
     return (

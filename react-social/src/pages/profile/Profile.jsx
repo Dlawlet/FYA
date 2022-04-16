@@ -6,6 +6,7 @@ import axios from "axios";
 import { useParams } from "react-router";
 import Footbar from "../../components/footbar/Footbar";
 
+
 export default function Profile() {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const [user, setUser] = useState({});
