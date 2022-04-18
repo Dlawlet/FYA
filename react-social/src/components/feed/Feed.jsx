@@ -71,9 +71,11 @@ export default function Feed({ user }) {
           <div className="profileActivity">
           <h2 className="css-nypl3249">Activités</h2>
             <div className="postsActivity">
-                  {posts.map((p) => (
+              {posts.length>0
+              ?    posts.map((p) => (
                   <Post key={p._id} post={p} />
-                ))}
+                ))
+              :   <h2 className="noPost"> les commentaires sur {user.username} apparaitrons ici </h2>}
             </div>
               </div> 
           <div className="profileLifePath">

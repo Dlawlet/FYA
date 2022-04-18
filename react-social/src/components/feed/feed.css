@@ -48,14 +48,23 @@
   background: white;
   margin-bottom: 2vw;
   overflow: hidden;
-  height: 40vw;
+  height: 45vw;
    }
 .postsActivity{
   width: 100%;
-  height: 75%;
+  height: 70%;
   padding-right: 20%;
   overflow-x: auto;
   display: flex;
+}
+.noPost{
+  
+  font-family: Jordana Sans,Helvetica,sans-serif;
+  font-size: 5vw;
+  color: rgba(128, 128, 128, 0.233);
+  margin-left: 15%;
+  margin-top: 5%;
+  text-align: center;
 }
 
 .profileLifePath{width: 90vw;height: fit-content;

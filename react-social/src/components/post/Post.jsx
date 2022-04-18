@@ -12,14 +12,12 @@ export default function Post(post) {
   useEffect(() => {
     const fetchUser = async () => {
       const res = await axios.get(`/users?userId=${post.post.userGvId}`);
-      console.log("yolo0oooooooooooo")
       setUser(res.data);
     };
     fetchUser();
   }, [post.post.userGvId]);
 
   return (
-    console.log(post),
     <div className="post">
       <div className="postWrapper">
         <div className="postTop">
