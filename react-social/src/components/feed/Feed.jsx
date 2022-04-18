@@ -69,10 +69,12 @@ export default function Feed({ user }) {
             </div>
           </div>
           <div className="profileActivity">
-          <h2 className="css-nypl324">Activités</h2>
+          <h2 className="css-nypl3249">Activités</h2>
+            <div className="postsActivity">
                   {posts.map((p) => (
                   <Post key={p._id} post={p} />
                 ))}
+            </div>
               </div> 
           <div className="profileLifePath">
           <h2 className="css-nypl324">Parcours</h2>  
