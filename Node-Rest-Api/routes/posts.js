@@ -87,15 +87,15 @@ router.get("/timeline/:userId", async (req, res) => {
   }
 });
 
-//get user's all posts
+//get userReviver's all posts 
 
 router.get("/profile/:username", async (req, res) => {
   try {
     const user = await User.findOne({ username: req.params.username });
-    const posts = await Post.find({ userGvId: user._id });
+    const posts = await Post.find({ userRcId: user._id });
     res.status(200).json(posts);
   } catch (err) {
-    alert('probleme dans le get all posts')
+    console.log('probleme dans le get all posts')
     res.status(500).json(err);
   }
 });

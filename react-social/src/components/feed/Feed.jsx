@@ -11,11 +11,15 @@ export default function Feed({ user }) {
   const postId = "625a75c85a8b91a4888d47dc"
   useEffect (() => {
     const fetchPosts = async () => {
-      const res = await axios.get("/posts/" + postId);
-      setPosts(res.data);
+      const res = await axios.get("/posts/profile/" + user.username);
+      setPosts(
+        res.data.sort((p1, p2) => {
+          return new Date(p2.createdAt) - new Date(p1.createdAt);
+        })
+      );
     };
     fetchPosts();
-  }, [postId]);
+  }, [user.username]);
 
   const ProfileFeed = () => {
     return (
@@ -66,7 +70,9 @@ export default function Feed({ user }) {
           </div>
           <div className="profileActivity">
           <h2 className="css-nypl324">Activités</h2>
-                <Post post={posts}/>
+                  {posts.map((p) => (
+                  <Post key={p._id} post={p} />
+                ))}
               </div> 
           <div className="profileLifePath">
           <h2 className="css-nypl324">Parcours</h2>  
