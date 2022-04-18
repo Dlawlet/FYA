@@ -92,9 +92,10 @@ router.get("/timeline/:userId", async (req, res) => {
 router.get("/profile/:username", async (req, res) => {
   try {
     const user = await User.findOne({ username: req.params.username });
-    const posts = await Post.find({ userId: user._id });
+    const posts = await Post.find({ userGvId: user._id });
     res.status(200).json(posts);
   } catch (err) {
+    alert('probleme dans le get all posts')
     res.status(500).json(err);
   }
 });

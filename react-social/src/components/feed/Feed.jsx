@@ -1,10 +1,21 @@
 import "./feed.css";
-import Statdiv from "../../components/statdiv/Statdiv"
-import Rightbar from "../../components/rightbar/Rightbar";
+import Statdiv from "../statdiv/Statdiv"
+import Rightbar from "../rightbar/Rightbar";
+import Post from "../post/Post";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 
 export default function Feed({ user }) {
-  
+  const [posts, setPosts] = useState([]);
+  const postId = "625a75c85a8b91a4888d47dc"
+  useEffect (() => {
+    const fetchPosts = async () => {
+      const res = await axios.get("/posts/" + postId);
+      setPosts(res.data);
+    };
+    fetchPosts();
+  }, [postId]);
 
   const ProfileFeed = () => {
     return (
@@ -55,36 +66,7 @@ export default function Feed({ user }) {
           </div>
           <div className="profileActivity">
           <h2 className="css-nypl324">Activités</h2>
-                <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey2">Carte d'identité</span>
-                      <span className="rightbarInfoValue">{user.city}</span>
-                </div>
-                <div className="rightbarInfoItem">
-                  <span className="rightbarInfoKey2">Domicile</span>
-                  <span className="rightbarInfoValue">{user.from}</span>
-                </div>
-                <div className="rightbarInfoItem">
-                  <span className="rightbarInfoKey2">Diplome</span>
-                  <span className="rightbarInfoValue">{user.from}</span>
-                </div>
-                <div className="rightbarInfoItem">
-                  <span className="rightbarInfoKey2">Casier</span>
-                  <span className="rightbarInfoValue">{user.from}</span>
-                </div>
-                <div className="rightbarInfoItem">
-                  <span className="rightbarInfoKey2">Compte Bancaire</span>
-                  <span className="rightbarInfoValue">{user.from}</span>
-                </div>
-                <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey2"> Profession</span>
-                      <span className="rightbarInfoValue">
-                        {user.relationship === 1
-                          ? "Etudiant"
-                          : user.relationship === 2
-                          ? "Proffeseur"
-                          : "-"}
-                      </span>
-          </div>
+                <Post post={posts}/>
               </div> 
           <div className="profileLifePath">
           <h2 className="css-nypl324">Parcours</h2>  
