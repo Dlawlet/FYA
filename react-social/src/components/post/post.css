@@ -3,14 +3,14 @@
     display: block;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -9px rgba(0, 0, 0, 0.68);
     margin: 2% -12% 3% 15%;
     overflow: auto;
 
   }
   
   .postWrapper {
-    padding: 10px;
+    padding: 5%;
   }
   
   .postTop {
@@ -25,34 +25,54 @@
   }
   
   .postProfileImg {
-    width: 5vw;
-    height: 5vw;
+    width: 8vw;
+    height: 8vw;
     border-radius: 50%;
     object-fit: cover;
   }
   
   .postUsername {
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-weight: 500;
     margin: 0 10px;
   }
   
   .postDate{
-      font-size: 1.5vw;
+      font-size:2vw;
   }
   
   .postCenter{
       font-size: 3vw;
+      margin: 1% 0% 0% 10%;
   }
   @media only screen and (min-width: 1024px) {
     .post{
-        min-width: 30vw;
-        display: flex;
-        border-radius: 10px;
-        -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-        box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-        margin: 7% 8% 0% -5%;
-        overflow: hidden;
+      margin: 5% -8% 1% 10%;
+      min-width: 30vw;
+      display: block;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+      box-shadow: 0px 0px 16px -9px rgba(0, 0, 0, 0.68);
+      overflow: auto;
+    }
+    
+    .postProfileImg {
+      width: 5vw;
+      height: 5vw;
+    }
+    
+    .postUsername {
+      font-size: 2vw;
+      margin: 0 10px;
+    }
+    
+    .postDate{
+        font-size:1vw;
+    }
+    
+    .postCenter{
+        font-size: 1.5vw;
+        margin: 5% 0% 0% 10%;
     }
   }
   

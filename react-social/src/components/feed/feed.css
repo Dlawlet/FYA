@@ -52,7 +52,8 @@
    }
 .postsActivity{
   width: 100%;
-  height: 70%;
+  height: 75%;
+  padding-right: 20%;
   overflow-x: auto;
   display: flex;
 }
@@ -89,6 +90,7 @@
 .css-nypl3249, [data-css-nypl32] {
   font-family: Jordana Sans,Helvetica,sans-serif;
   margin-top:2.5%;
+  margin-bottom: -2.5%;
   margin-left: 7.5%;
   font-weight: 600;
   font-size: 5vw;
@@ -117,7 +119,10 @@
       margin-bottom: 2vw;
     }
     .profileActivity{
-      height: 30vw;
+      height: 25vw;
+    }
+    .postsActivity{
+      height: 80%;
     }
 
     .statTitle{
@@ -133,6 +138,11 @@
       margin-left: 3%;
       margin-top: 3%;
       margin-bottom: 1.5%;
+    }
+    .css-nypl3249{
+      font-size: 2vw;
+      margin-left: 3%;
+      margin-top: 3%;
     }
     .feed{
     margin-top: 9vw;
