@@ -20,12 +20,21 @@ class App extends Component {
         xaxis: {
           type: 'datetime'
         } ,
+        yaxis:{
+          min: 0,
+          max: 5,
+          forceNiceScale: true,
+          decimalsInFloat: 2,
+        },
         stroke: {
           curve: 'smooth'
         },
         colors: ['#1e8f53'],
         dataLabels: {
-          enabled: true
+          enabled: true,
+          formatter: function(val) {
+            return val.toFixed(1)
+          }
         },
         grid: {
           borderColor: "#555",
