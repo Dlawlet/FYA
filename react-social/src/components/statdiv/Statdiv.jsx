@@ -51,10 +51,10 @@ class App extends Component {
   }
   async componentDidMount(){
     const dateIndice=[];
-    console.log(this.props.user.ratedata);
-    for (const obj of this.props.user.ratedata)
+    console.log(this.props.user.rateData);
+    for (const obj of this.props.user.rateData)
     {
-      dateIndice.push({x: obj[0], y:parseFloat(obj[1])})
+      dateIndice.push({x: new Date(obj[0]).getTime(), y:parseFloat(obj[1])})
     }
     this.setState({
       series:[{

@@ -64,10 +64,10 @@ export default function Feed({ user }) {
           </div>
           <div className="profileStatistiques">
           <h2 className="css-nypl324">Statistiques</h2>
-            <div className="feedStatdiv">
-            <Statdiv user={user}/> 
+            {user.nbRate >=1   
+            ?<div className="feedStatdiv"><Statdiv user={user}/> </div>
+            :<h2 className="noStat"> {user.username} n'a pas encore d'indice de confiance </h2>}
             </div>
-          </div>
           <div className="profileActivity">
           <h2 className="css-nypl3249">Activités</h2>
             <div className="postsActivity">
