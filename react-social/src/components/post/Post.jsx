@@ -12,6 +12,15 @@ export default function Post(post) {
   const sw = window.innerWidth<890 
   ? 1
   : 2;
+  const color =post.post.rate<=1  // would be cleaner with switches cases
+  ? '#EBE007'
+  : post.post.rate <= 2 
+    ? '#F2F20C' 
+    : post.post.rate <=3
+      ? '#D0D40B'
+      : post.post.rate <=4 
+        ? '#B7DB00'
+        : '#ABF513';
   useEffect(() => {
     const fetchUser = async () => {
       const res = await axios.get(`/users?userId=${post.post.userGvId}`);
@@ -48,7 +57,7 @@ export default function Post(post) {
                         fillColorArray={['#EBE007', '#F2F20C', '#D0D40B', '#B7DB00', '#ABF513']} 
                         readonly={true}
                         initialValue={post.post.rate}
-                        fillColor={"#B7DB00"}
+                        fillColor={color}
                         allowHalfIcon={true}
                         transition={true}
                         size={21*sw}

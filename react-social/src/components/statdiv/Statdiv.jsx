@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 import "./statdiv.css";
@@ -5,7 +6,7 @@ import "./statdiv.css";
 class App extends Component {
   constructor(props) {
     super(props);
-
+    
     this.state = {
       options: {
         chart: {
@@ -38,24 +39,7 @@ class App extends Component {
         
       },
       
-      series: [{
-        name: "indice de confiance",
-        data: [{
-          x: new Date('2022-02-12').getTime(),
-          y: 2.5
-        }, {
-          x: new Date('2022-02-20').getTime(),
-          y: 3
-        },
-        {
-          x: new Date('2022-03-4').getTime(),
-          y: 3
-        },
-        {
-          x: new Date('2022-03-18').getTime(),
-          y: 4
-        }]
-      }],
+       series: [],
 
       responsive: [{
         breakpoint: undefined,
@@ -65,18 +49,33 @@ class App extends Component {
     };
 
   }
+  async componentDidMount(){
+    const dateIndice=[];
+    console.log(this.props.user.ratedata);
+    for (const obj of this.props.user.ratedata)
+    {
+      dateIndice.push({x: obj[0], y:parseFloat(obj[1])})
+    }
+    this.setState({
+      series:[{
+        name:"Indice de confiance",
+        data:dateIndice,
+      }]
+    })
+    console.log(dateIndice)
 
+  }
   render() {
     return (
       <div className="app">
         <div className="row">
           <div className="mixed-chart">
             <Chart
-              
               options={this.state.options}
               series={this.state.series}
               type="area"
             />
+            
           </div>
         </div>
       </div>

@@ -530,7 +530,7 @@ export default function Home(){
                 </h3>
               </header>
               <p className="mb-2 text-muted">
-                Faites savoir à vos collaborateurs présents et futurs qu'il peuvent avoir confiance en vous.
+                Faites savoir à vos collaborateurs présents et futurs qu'ils peuvent avoir confiance en vous.
               </p>
             </article>
           </div>

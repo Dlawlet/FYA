@@ -51,7 +51,11 @@ export default function Rightbar({ user }) {
               />
           </div>
           { user.username !== currentUser.username ? 
-          <Ratepopup user ={user}/>  : <button className="rightbarRatingButton"> Bien joué {user.username} </button> }
+          <Ratepopup user ={user}/>  : <button className="rightbarRatingButton"> 
+          {user.rate <= 2.5
+          ? "Bienvenue "
+          : "Bravo "} 
+          {user.username} </button> }
         
         
       </>
