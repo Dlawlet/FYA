@@ -3,17 +3,21 @@ import { useContext, useState } from "react";
 import { Rating } from 'react-simple-star-rating';
 import Ratepopup from "../ratepopup/Ratepopup"
 import { AuthContext } from "../../context/AuthContext";
+import { renderMatches } from "react-router";
 
 export default function Rightbar({ user }) {
  
   const { user: currentUser} = useContext(AuthContext);
+  const color = user.rate<=1  // would be cleaner with switches cases
+  ? '#EBE007'
+  : user.rate <= 2 
+    ? '#F2F20C' 
+    : user.rate <=3
+      ? '#D0D40B'
+      : user.rate <=4 
+        ? '#B7DB00'
+        : '#ABF513';
   const ProfileRightbar = () => {
-    const [rating, setRating] = useState(0) // initial rating value
-    // Catch Rating value
-    const handleRating = (rate: number) => {
-      setRating(rate)
-      // other logic
-  }
     return (
       <>
         <h2 data-css-nypl32="">Sommaire</h2>
@@ -36,11 +40,11 @@ export default function Rightbar({ user }) {
             </span>
           </div>
           <div className='rightbarRate'>
-              <Rating className="ratedisplay" ratingValue={rating} /* Available Props */ 
+              <Rating className="ratedisplay"
                       fillColorArray={['#EBE007', '#F2F20C', '#D0D40B', '#B7DB00', '#ABF513']} 
                       readonly={true}
                       initialValue={user.rate}
-                      fillColor={"#B7DB00"}
+                      fillColor={color}
                       allowHalfIcon={true}
                       transition={true}
                       size={55}
