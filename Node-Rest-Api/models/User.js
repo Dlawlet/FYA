@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+console.log(new Date().toLocaleDateString('fr-FR'));const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema(
   {
@@ -31,6 +31,10 @@ const UserSchema = new mongoose.Schema(
     rate: {
       type: Number,
       default:0
+    },
+    rateData:{
+      type: Array,
+      default:[]
     },
     nbRate: {
       type: Number,
