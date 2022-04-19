@@ -36,10 +36,10 @@ export default function Rightbar({ user }) {
             </span>
           </div>
           <div className='rightbarRate'>
-              <Rating className="ratedisplay" onClick={handleRating} ratingValue={rating} /* Available Props */ 
+              <Rating className="ratedisplay" ratingValue={rating} /* Available Props */ 
                       fillColorArray={['#EBE007', '#F2F20C', '#D0D40B', '#B7DB00', '#ABF513']} 
                       readonly={true}
-                      initialValue={3.5}
+                      initialValue={user.rate}
                       fillColor={"#B7DB00"}
                       allowHalfIcon={true}
                       transition={true}

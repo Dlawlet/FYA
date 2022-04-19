@@ -26,8 +26,20 @@ export default function Rightbar({ user }) {
        }
        try {
            await axios.post("/posts",newReview);
+           // calcul du nouveau rate => TODO : à remplacer par une IA qui calculera la note
+           const newRate = ((user.rate*user.nbRate)+(newReview.rate * user.certifLevel))/(user.nbRate+1)
+           console.log(user.nbRate)
+           user.nbRate++
+           console.log(user.nbRate)
+           user.rate=newRate
+           console.log(user)
+           console.log(user.password)
+           await axios.put("/users/"+user._id, 
+                {userId : user._id, // Attention secu vulnerability
+                  nbRate: user.nbRate,
+                  rate: user.rate,})
            console.log('modal closed ');
-           window.location.reload()
+           //window.location.reload()
        } catch (error) {
            
        }
