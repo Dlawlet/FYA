@@ -21,7 +21,6 @@ export default function Profile() {
   }, [username]);
 
   return (
-    console.log(user),
     <>
       <div className="topbar" style={{ zIndex: 10 }}>
       <Topbar /></div>
