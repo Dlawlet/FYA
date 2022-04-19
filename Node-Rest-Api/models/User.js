@@ -28,6 +28,18 @@ const UserSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
+    rate: {
+      type: Number,
+      default:0
+    },
+    nbRate: {
+      type: Number,
+      default:0
+    },
+    certifLevel: {
+      type: Number,
+      default:1
+    },
     Raters: {
       type: Array,
       default: [],
