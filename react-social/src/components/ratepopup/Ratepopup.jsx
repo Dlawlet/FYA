@@ -37,7 +37,6 @@ export default function Rightbar({ user }) {
                   nbRate: user.nbRate,
                   rate: user.rate,
                   rateData: user.rateData})
-           console.log('modal closed ');
            window.location.reload()
        } catch (error) {
            

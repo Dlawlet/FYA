@@ -60,7 +60,6 @@ class App extends Component {
   }
   async componentDidMount(){
     const dateIndice=[];
-    console.log(this.props.user.rateData);
     for (const obj of this.props.user.rateData)
     {
       dateIndice.push({x: new Date(obj[0]).getTime(), y:parseFloat(obj[1])})
@@ -71,7 +70,6 @@ class App extends Component {
         data:dateIndice,
       }]
     })
-    console.log(dateIndice)
 
   }
   render() {

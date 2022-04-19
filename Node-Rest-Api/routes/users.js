@@ -4,24 +4,19 @@ const bcrypt = require("bcrypt");
 
 //update user
 router.put("/:id", async(req, res)=>{
-    console.log("dans le put 1")
     if(req.body.userId === req.params.id || req.body.isAdmin){
-        console.log("dans le put 2")
         if (req.body.password){
-            console.log("dans le put 3")
             try{
                 const salt = await bcrypt.genSalt(10);
                 req.body.password = await bcrypt.hash(req.body.password, salt);
-                console.log("dans le put 4")
             }catch(err){
                 return res.status(500).json(err);
             }
-        } else{console.log(6)}
+        }
         try{
             
             const user = await User.findByIdAndUpdate(req.params.id, {$set: req.body,});
             res.status(200).json("Account have been updated")
-            console.log("dans le put 5")
         } catch( err ){
             return res.status(500).json(err)
         }

@@ -1,4 +1,4 @@
-console.log(new Date().toLocaleDateString('fr-FR'));const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema(
   {

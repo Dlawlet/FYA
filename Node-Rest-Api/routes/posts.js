@@ -95,7 +95,6 @@ router.get("/profile/:username", async (req, res) => {
     const posts = await Post.find({ userRcId: user._id });
     res.status(200).json(posts);
   } catch (err) {
-    console.log('probleme dans le get all posts')
     res.status(500).json(err);
   }
 });
