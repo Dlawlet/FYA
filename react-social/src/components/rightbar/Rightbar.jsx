@@ -1,9 +1,8 @@
 import "./rightbar.css";
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import { Rating } from 'react-simple-star-rating';
 import Ratepopup from "../ratepopup/Ratepopup"
 import { AuthContext } from "../../context/AuthContext";
-import { renderMatches } from "react-router";
 
 export default function Rightbar({ user }) {
  

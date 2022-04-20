@@ -22,7 +22,7 @@ export default function Login() {
         <div className="Login__Content-sc-5wufj1-1 VxNKD">
           <div className="Login__MainContainer-sc-5wufj1-2 jAcvoZ">
             <a href="/" className="Login__LogoLink-sc-5wufj1-3 rujQf snip-a">
-              <img src={PF + "Ncem.png"} className="Login__LogoImage-sc-5wufj1-4 iyoYoL snip-img" />
+              <img src={PF + "Ncem.png"} className="Login__LogoImage-sc-5wufj1-4 iyoYoL snip-img" alt ="Logo" />
             </a>
             <div className="Login__MainContent-sc-5wufj1-5 llzQuc">
               <h1 className="Login__Heading-sc-5wufj1-6 fuZfmB snip-h1">

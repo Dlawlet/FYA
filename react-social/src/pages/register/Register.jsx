@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useContext, useRef } from "react";
 import "./register.css";
-import { useNavigate } from "react-router";
 import { AuthContext } from "../../context/AuthContext";
 import { CircularProgress} from "@material-ui/core";
 
@@ -11,7 +10,6 @@ export default function Register() {
   const email = useRef();
   const password = useRef();
   const passwordAgain = useRef();
-  const history = useNavigate();
   const { isFetching} = useContext(AuthContext);
 
   const handleClick = async (e) => {
@@ -42,6 +40,7 @@ export default function Register() {
         <img
           src={PF + "Ncem.png"}
           className="Signup__LogoImage-nzwlft-4 dFpMSY snip-img"
+          alt="logo"
         />
       </a>
       <div className="Signup__MainContent-nzwlft-5 iQIiZr">
@@ -140,11 +139,11 @@ export default function Register() {
             </button>
             <p className="Signup___StyledP-nzwlft-17 hrbmRe snip-p">
               I agree to abide by Ncem's
-              <a href="#" className="Signup___StyledA-nzwlft-18 fldQHk snip-a">
+              <a href="/" className="Signup___StyledA-nzwlft-18 fldQHk snip-a">
                 Terms of Service
               </a>
               and its
-              <a href="#" className="Signup___StyledA2-nzwlft-19 lgQnZH snip-a">
+              <a href="/" className="Signup___StyledA2-nzwlft-19 lgQnZH snip-a">
                 Privacy Policy
               </a>
             </p>

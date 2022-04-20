@@ -508,7 +508,7 @@ export default function Home(){
           <figure className="section__banner">
             <picture className="img-ratio img-ratio-section-banner">
               <source media="(min-width: 992px)" sizes="100vw" srcSet={PF + "collaboration.jpg"} type="image/jpeg" />
-              <img srcSet={PF + "collaboration.jpg"} />
+              <img srcSet={PF + "collaboration.jpg"} alt="banner" />
             </picture>
           </figure>
           <div className="floating-frame__list">

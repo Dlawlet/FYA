@@ -8,7 +8,6 @@ import axios from "axios";
 
 export default function Feed({ user }) {
   const [posts, setPosts] = useState([]);
-  const postId = "625a75c85a8b91a4888d47dc"
   useEffect (() => {
     const fetchPosts = async () => {
       const res = await axios.get("/posts/profile/" + user.username);

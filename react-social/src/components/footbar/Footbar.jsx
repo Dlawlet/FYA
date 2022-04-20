@@ -13,19 +13,19 @@ export default function Footbar() {
                         </div>
                         <ul>
                         <li>
-                            <a href="">Creer un compte</a>
+                            <a href="/">Creer un compte</a>
                         </li>
                         <li>
-                            <a href="">Consulter des comptes</a>
+                            <a href="/">Consulter des comptes</a>
                         </li>
                         <li>
-                            <a href="">Meilleures scores</a>
+                            <a href="/">Meilleures scores</a>
                         </li>
                         <li>
-                            <a href="">Fonctionnement indice</a>
+                            <a href="/">Fonctionnement indice</a>
                         </li>
                         <li>
-                            <a href="">Invitez vos amis</a>
+                            <a href="/">Invitez vos amis</a>
                         </li>
                         </ul>
                     </div>
@@ -35,19 +35,19 @@ export default function Footbar() {
                         </div>
                         <ul>
                         <li>
-                            <a href="">Comment ça marche ?</a>
+                            <a href="/">Comment ça marche ?</a>
                         </li>
                         <li>
-                            <a href="">Plans tarifaires</a>
+                            <a href="/">Plans tarifaires</a>
                         </li>
                         <li>
-                            <a href="">Ncemh Actus</a>
+                            <a href="/">Ncemh Actus</a>
                         </li>
                         <li>
-                            <a href="">Contactez-nous</a>
+                            <a href="/">Contactez-nous</a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noreferrer" href="">Aide/FAQ</a>
+                            <a target="_blank" rel="noreferrer" href="/">Aide/FAQ</a>
                         </li>
                         </ul>
                     </div>
@@ -57,22 +57,22 @@ export default function Footbar() {
                         </div>
                         <ul>
                         <li>
-                            <a href="">Ncemh</a>
+                            <a href="/">Ncemh</a>
                         </li>
                         <li>
-                            <a href="">L'équipe</a>
+                            <a href="/">L'équipe</a>
                         </li>
                         <li>
-                            <a href="">Emplois/Stages</a>
+                            <a href="/">Emplois/Stages</a>
                         </li>
                         <li>
-                            <a href="">Espace presse</a>
+                            <a href="/">Espace presse</a>
                         </li>
                         <li>
-                            <a href="">Blog</a>
+                            <a href="/">Blog</a>
                         </li>
                         <li>
-                            <a href="">Sites partenaires</a>
+                            <a href="/">Sites partenaires</a>
                         </li>
                         </ul>
                     </div>
@@ -81,11 +81,11 @@ export default function Footbar() {
                         Suivez-nous
                         </div>
                         <div className="social-networks">
-                        <a target="_blank" title="Facebook" rel="noreferrer" href=""><img width={11} height={20} alt="Facebook" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/facebookb2691b0406771ce5a230.svg" />
-                        </a><a target="_blank" title="Linkedin" rel="noreferrer" href=""><img width={20} height={20} alt="Linkedin" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/linkedindf4802e013e1660125fb.svg" />
-                        </a><a target="_blank" title="Twitter" rel="noreferrer" href=""><img width={20} height={16} alt="Twitter" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/twittere100d10ab607f7ed4179.svg" />
-                        </a><a target="_blank" title="Instagram" rel="noreferrer" href=""><img width={20} height={20} alt="Instagram" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/instagram12ab65942cd124d0f413.svg" />
-                        </a><a target="_blank" title="Vimeo" rel="noreferrer" href=""><img width={20} height={17} alt="Vimeo" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/vimeoc67e439a07c3bc188071.svg" />
+                        <a target="_blank" title="Facebook" rel="noreferrer" href="/"><img width={11} height={20} alt="Facebook" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/facebookb2691b0406771ce5a230.svg" />
+                        </a><a target="_blank" title="Linkedin" rel="noreferrer" href="/"><img width={20} height={20} alt="Linkedin" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/linkedindf4802e013e1660125fb.svg" />
+                        </a><a target="_blank" title="Twitter" rel="noreferrer" href="/"><img width={20} height={16} alt="Twitter" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/twittere100d10ab607f7ed4179.svg" />
+                        </a><a target="_blank" title="Instagram" rel="noreferrer" href="/"><img width={20} height={20} alt="Instagram" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/instagram12ab65942cd124d0f413.svg" />
+                        </a><a target="_blank" title="Vimeo" rel="noreferrer" href="/"><img width={20} height={17} alt="Vimeo" loading="lazy" src="https://ringtwice.be/packs/assets/images/footer/vimeoc67e439a07c3bc188071.svg" />
                         </a></div>
                         <div className="fh-title fh-t-app">
                         Découvrez notre application mobile
@@ -108,9 +108,9 @@ export default function Footbar() {
                     <div className="f-legal">
                     © 2022 -HWork
                     - Ncemh -
-                    <a href="">Conditions d'utilisation</a>
+                    <a href="/">Conditions d'utilisation</a>
                     -
-                    <a href="">Plan du site</a>
+                    <a href="/">Plan du site</a>
                     </div>
                 </div>
                 </footer>

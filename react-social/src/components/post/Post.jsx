@@ -2,8 +2,7 @@ import "./post.css";
 import { format } from "timeago.js";
 import { Link } from "react-router-dom";
 import { Rating } from 'react-simple-star-rating';
-import { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../../context/AuthContext";
+import {useEffect, useState } from "react";
 import axios from "axios";
 
 export default function Post(post) {
