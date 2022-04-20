@@ -29,34 +29,24 @@ export default function Feed({ user }) {
                 <h2 data-css-nypl32="">Certifications</h2>
                 <div className="rightbarInfoItem">
                       <span className="rightbarInfoKey">Carte d'identité</span>
-                      <span className="rightbarInfoValue">{user.city}</span>
+                      <span className="rightbarInfoValue">{user.cniCheck?"vérifiée":"Non vérifée"}</span>
                     </div>
                     <div className="rightbarInfoItem">
                       <span className="rightbarInfoKey">Domicile</span>
-                      <span className="rightbarInfoValue">{user.from}</span>
+                      <span className="rightbarInfoValue">{user.houseCheck?"vérifiée":"Non vérifée"}</span>
                     </div>
                     <div className="rightbarInfoItem">
                       <span className="rightbarInfoKey">Diplome</span>
-                      <span className="rightbarInfoValue">{user.from}</span>
-                    </div>
-                    <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey">Casier</span>
-                      <span className="rightbarInfoValue">{user.from}</span>
+                      <span className="rightbarInfoValue">{user.eduCheck?"vérifiée":"Non vérifée"}</span>
                     </div>
                     <div className="rightbarInfoItem">
                       <span className="rightbarInfoKey">Compte Bancaire</span>
-                      <span className="rightbarInfoValue">{user.from}</span>
+                      <span className="rightbarInfoValue">{user.bankCheck?"vérifiée":"Non vérifée"}</span>
                     </div>
                     <div className="rightbarInfoItem">
                       <span className="rightbarInfoKey"> Profession</span>
-                      <span className="rightbarInfoValue">
-                        {user.relationship === 1
-                          ? "Etudiant"
-                          : user.relationship === 2
-                          ? "Proffeseur"
-                          : "-"}
-                      </span>
-          </div>
+                      <span className="rightbarInfoValue">{user.workCheck?"vérifiée":"Non vérifée"}</span>
+                    </div>
               </div>
             <div  className="profileNote">
             <Rightbar user={user} /> </div>
@@ -79,37 +69,9 @@ export default function Feed({ user }) {
               </div> 
           <div className="profileLifePath">
           <h2 className="css-nypl324">Parcours</h2>  
-                <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey2">Carte d'identité</span>
-                      <span className="rightbarInfoValue">{user.city}</span>
-                    </div>
-                    <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey2">Domicile</span>
-                      <span className="rightbarInfoValue">{user.from}</span>
-                    </div>
-                    <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey2">Diplome</span>
-                      <span className="rightbarInfoValue">{user.from}</span>
-                    </div>
-                    <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey2">Casier</span>
-                      <span className="rightbarInfoValue">{user.from}</span>
-                    </div>
-                    <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey2">Compte Bancaire</span>
-                      <span className="rightbarInfoValue">{user.from}</span>
-                    </div>
-                    <div className="rightbarInfoItem">
-                      <span className="rightbarInfoKey2"> Profession</span>
-                      <span className="rightbarInfoValue">
-                        {user.relationship === 1
-                          ? "Etudiant"
-                          : user.relationship === 2
-                          ? "Proffeseur"
-                          : "-"}
-                      </span>
-          </div>
-              
+                {user.parcours
+                ?  user.parcours
+                :  <h2 className="noStat"> Parcours de {user.username} indisponible </h2> }
           </div>  
         </div>
       </div>

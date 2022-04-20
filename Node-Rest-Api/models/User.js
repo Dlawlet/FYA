@@ -68,14 +68,6 @@ const UserSchema = new mongoose.Schema(
       type: String,
       max: 50,
     },
-    relationship: {
-      type: Number,
-      enum: [1, 2, 3],
-    },
-    certifLevel: {
-      type: Number,
-      default:1
-    },
     cniCheck: {
       type: Boolean,
       default: false,
@@ -89,6 +81,14 @@ const UserSchema = new mongoose.Schema(
       default: false,
     },
     houseLocation: {
+      type: String,
+      default: "",
+    },
+    workCheck: {
+      type: Boolean,
+      default: false,
+    },
+    workPicture: {
       type: String,
       default: "",
     },
