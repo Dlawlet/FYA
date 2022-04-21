@@ -1,0 +1,521 @@
+.Topbar {
+    background:black;
+    height: 7vw}
+.text-block-59 {
+    width: 80px;
+    margin-left: 20px;
+    color: rgba(33, 33, 33, 0.87);
+  }
+  
+  .text-field {
+    width: 47%;
+    margin-bottom: 0px;
+    padding: 24px 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.18);
+    border-radius: 3px;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  
+  .text-field:hover {
+    border-color: rgba(0, 0, 0, 0.32);
+  }
+  
+  .text-field:focus {
+    border-color: rgba(0, 0, 0, 0.54);
+  }
+  
+  .text-field.password {
+    width: 100%;
+  }
+  
+  .text-field._2 {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .text-field._2-copy {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+
+  .buttontoggle {
+    position: relative;
+    z-index: 2;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .settings-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    box-shadow: none;
+  }
+  
+  .account-settings-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 64px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-bottom: 1px none #dbdbdb;
+    background-color: #fff;
+  }
+  
+  .account-settings-box.last {
+    border-bottom-style: none;
+  }
+  
+  .text-field-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 16px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  .text-field-box._2 {
+    margin-bottom: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .text-field-box.bio {
+    margin-bottom: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 45px;
+    padding-right: 30px;
+    padding-left: 30px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    border-radius: 5px;
+    background-color: #18a175;
+    font-size: 16px;
+  }
+  
+  .button:hover {
+    background-color: #18a175;
+  }
+  
+  .button:active {
+    opacity: 0.8;
+  }
+  
+  .button.hide {
+    display: none;
+  }
+  
+  .togglebutton {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 55px;
+    height: 20px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #e9e9e9;
+    text-decoration: none;
+  }
+   
+   .heading {
+    margin-top: 0px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  
+  .text-block-29 {
+    margin-left: 30px;
+    color: #616161;
+    font-size: 16px;
+  }
+  
+  
+  .second-container {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .settings-container {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 750px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .desktop-menu-button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0.85;
+    -webkit-transition: background-color 200ms ease;
+    transition: background-color 200ms ease;
+    color: #393f4b;
+    text-decoration: none;
+  }
+  
+  
+  .form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+ 
+ 
+  .home-v-line {
+    width: 1px;
+    height: 18px;
+    background-color: #ced2da;
+  }
+  
+  .div-block-64 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .div-block-174 {
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #e0e6eb;
+  }
+  
+  .section {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #212121;
+  }
+  
+  .text-block-28 {
+    margin-left: 15px;
+    color: #757575;
+    font-size: 13px;
+  }
+  
+  .content-block {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-left: 72px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  
+  .social-accounts-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 650px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  
+  
+  .div-block-172 {
+    width: 220px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .div-block-172._2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    max-width: 300px;
+    padding: 12px 23px 12px 22px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  
+  @media screen and (max-width: 991px) {
+    .text-field {
+      width: 49%;
+    }
+    .Topbar {
+        background:black;
+        height: 14vw}
+  }
+  
+  @media screen and (max-width: 767px) {
+    .Topbar {
+        background:black;
+        height: 20vw}
+    .text-field {
+      margin-bottom: 0px;
+    }
+  
+    .text-field._2 {
+      width: 100%;
+    }
+  
+    .text-field._2-copy {
+      width: 100%;
+    }
+  
+    .bottom-links-box {
+      padding-right: 16px;
+    }
+    .settings-block {
+      width: 100%;
+    }
+  
+    .account-settings-box {
+      width: 100%;
+    }
+      
+    .text-field-box.bio {
+      margin-top: 0%;
+    }
+  
+    .togglebutton {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+    }
+
+    .second-container {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  
+    .home-v-line {
+      display: none;
+    }
+  
+    .text-block-28 {
+      margin-bottom: 0px;
+    }
+  
+    .content-block {
+      padding-left: 0px;
+    }
+  
+    .content-block.settings {
+      padding-top: 56px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 479px) {.Topbar {
+    background:black;
+    height: 20vw}
+    
+    .text-field {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .text-field._2 {
+      width: 100%;
+    }
+  
+    .text-field._2-copy {
+      width: 100%;
+    }
+  
+    .bottom-links-box {
+      padding-left: 16px;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  
+    .settings-block {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  
+    .account-settings-box {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+   .text-field-box {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  
+    .text-field-box._2 {
+      margin-bottom: 5px;
+    }
+  
+    .text-field-box.bio {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  
+    .second-container {
+      padding-top: 56px;
+    }
+  
+    .text-block-28 {
+      margin-left: 10px;
+    }
+  
+    .content-block {
+      padding-left: 0px;
+    }
+    }
