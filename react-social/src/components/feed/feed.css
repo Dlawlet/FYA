@@ -1,6 +1,6 @@
 .feed{
     flex:8;
-  margin-top: 3vw;
+  margin-top: 3.8vw;
     background: #faf7f4;
 }
 
@@ -166,5 +166,6 @@
     .feed{
     margin-top: 9vw;
   }
+  
   
   }

@@ -47,12 +47,16 @@ export default function Profile() {
                 alt=""
               />
             </div>
-            <div className="profileInfo">
-              <h4 className="profileInfoName">{user.username}</h4>
-              <span className="profileInfoDesc">{user.desc ? user.desc : "let's live in a trustable world"}</span>
-                {true == true
-                ? <button className="profileUpdateButton"> modifier</button>
-                : null} 
+            <div className="profileInfoZone">
+              <div className="profileInfo">
+                <h4 className="profileInfoName">{user.username}</h4>
+                <span className="profileInfoDesc">{user.desc ? user.desc : "let's live in a trustable world"}</span> 
+              </div>
+              <div className="profileModifier">
+                  {user._id == currentUser._id
+                      ? <button className="profileUpdateButton"> modifier</button>
+                      : null}
+              </div>
             </div>
             <Feed user={user} />
       </div >
