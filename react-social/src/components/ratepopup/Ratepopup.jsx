@@ -5,7 +5,7 @@ import { AuthContext } from "../../context/AuthContext";
 import axios from 'axios';
 
 
-export default function Rightbar({ user }) {
+export default function Ratepopup({ user }) {
  
     const review = useRef();
     const { user: currentUser} = useContext(AuthContext);
