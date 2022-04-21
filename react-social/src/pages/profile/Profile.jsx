@@ -53,9 +53,10 @@ export default function Profile() {
                 <span className="profileInfoDesc">{user.desc ? user.desc : "let's live in a trustable world"}</span> 
               </div>
               <div className="profileModifier">
-                  {user._id == currentUser._id
-                      ? <button className="profileUpdateButton"> modifier</button>
-                      : null}
+                  {user._id === currentUser._id
+                      ? <button className="profileUpdateButton" onClick={() => {window.location.href='/Update'}}> modifier</button>
+                      : null
+                      }
               </div>
             </div>
             <Feed user={user} />

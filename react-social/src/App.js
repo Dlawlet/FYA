@@ -2,6 +2,7 @@ import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
 import Login from"./pages/login/Login";
 import Register from"./pages/register/Register";
+import Update from"./pages/update/Update";
 import {
   BrowserRouter as Router,
   Routes,
@@ -21,6 +22,7 @@ function App() {
         <Route path="/profile/:username" caseSensitive={false} element={user ? <Profile /> : <Login/>} />
         <Route path="/login" caseSensitive={false} element={user ?  <Navigate to ="/" /> : <Login /> } />
         <Route path="/register" caseSensitive={false} element={user ?  <Navigate to ="/" /> :  <Register />} />
+        <Route path="/update" caseSensitive={false} element={user ? <Update /> : <Login/>} />
       </Routes>
     </Router>
   );
