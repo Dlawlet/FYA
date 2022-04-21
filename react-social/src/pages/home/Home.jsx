@@ -12,6 +12,7 @@ export default function Home(){
 
     return (
     <>
+       <div>
         <header className="hero">
           <Topbar/>
           <div className="wrapper hero-cta__wrapper">
@@ -554,6 +555,7 @@ export default function Home(){
             </p>
           </div>
         </article>
+      </div> 
       <Footbar/>
     </>
     );

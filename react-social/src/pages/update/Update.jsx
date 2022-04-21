@@ -49,21 +49,7 @@ export default function Update(){
                         required=""
                     />
                     </div>
-                    <div className="text-field-box _2">
-                    <input
-                        type="text"
-                        className="- w-input"
-                        maxLength={256}
-                        name="Username-2"
-                        data-name="Username 2"
-                        placeholder="Display Name"
-                        id="Username-2"
-                        required=""
-                    />
-                    <div className="text-block-28">
-                        Only letters and numbers with no spaces.
-                    </div>
-                    </div>
+                    
                     <div className="text-field-box">
                     <input
                         type="email"

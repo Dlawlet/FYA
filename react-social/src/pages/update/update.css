@@ -2,12 +2,14 @@
     background:black;
     height: 7vw}
 .text-block-59 {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     width: 80px;
     margin-left: 20px;
     color: rgba(33, 33, 33, 0.87);
   }
   
   .text-field {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     width: 47%;
     margin-bottom: 0px;
     padding: 24px 12px;
@@ -46,6 +48,7 @@
   
 
   .buttontoggle {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     position: relative;
     z-index: 2;
     width: 26px;
@@ -57,6 +60,7 @@
   
   
   .settings-block {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -74,6 +78,7 @@
   }
   
   .account-settings-box {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -89,10 +94,12 @@
   }
   
   .account-settings-box.last {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     border-bottom-style: none;
   }
   
   .text-field-box {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -105,6 +112,7 @@
   }
   
   .text-field-box._2 {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     margin-bottom: 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -114,6 +122,7 @@
   }
   
   .text-field-box.bio {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     margin-bottom: 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -123,6 +132,7 @@
   }
   
   .button {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -155,6 +165,7 @@
   }
   
   .togglebutton {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -176,6 +187,7 @@
   }
    
    .heading {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     margin-top: 0px;
     margin-bottom: 32px;
     font-size: 24px;
@@ -184,6 +196,7 @@
   }
   
   .text-block-29 {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     margin-left: 30px;
     color: #616161;
     font-size: 16px;
@@ -191,6 +204,7 @@
   
   
   .second-container {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -213,6 +227,7 @@
   }
   
   .settings-container {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -227,6 +242,7 @@
   }
   
   .desktop-menu-button {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -252,6 +268,7 @@
   
   
   .form {
+    font-family: Jordana Sans,Helvetica,sans-serif;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -287,7 +304,7 @@
     background-color: #e0e6eb;
   }
   
-  .section {
+  .sectionUpdate {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
