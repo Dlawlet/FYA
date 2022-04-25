@@ -12,6 +12,13 @@ export default function Update(){
     const name = useRef();
     const lastName = useRef();
     const email = useRef();
+
+    const country = useRef();const city = useRef();
+    const descr = useRef();const work = useRef();
+    const parcours = useRef(); 
+
+    const newpasword = useRef();
+
     const submitHandler1 = async (e) =>{
         e.preventDefault()
         try {
@@ -35,7 +42,55 @@ export default function Update(){
             alert('Oops! Something went wrong, Please try again');
         }
         
-     }
+    }
+    const submitHandler2 = async (e) =>{
+        e.preventDefault()
+        try {
+            await axios.put("/users/"+user._id, 
+                {userId : user._id, // Attention secu vulnerability
+                 username:
+                    name.current.value
+                    ? lastName.current.value
+                        ? name.current.value +" "+lastName.current.value
+                        :name.current.value
+                    :lastName.current.value
+                        ? lastName.current.value
+                        : user.username,
+                 email: 
+                    email.current.value
+                    ? email.current.value
+                    : user.email})
+            alert('Thank you! Your Account infos have been updated!');
+            {localStorage.clear("token");window.location.href='/login'} // Need to be handle differently
+        } catch (error) {
+            alert('Oops! Something went wrong, Please try again');
+        }
+        
+    }
+    const submitHandler3 = async (e) =>{
+        e.preventDefault()
+        try {
+            await axios.put("/users/"+user._id, 
+                {userId : user._id, // Attention secu vulnerability
+                 username:
+                    name.current.value
+                    ? lastName.current.value
+                        ? name.current.value +" "+lastName.current.value
+                        :name.current.value
+                    :lastName.current.value
+                        ? lastName.current.value
+                        : user.username,
+                 email: 
+                    email.current.value
+                    ? email.current.value
+                    : user.email})
+            alert('Thank you! Your Account infos have been updated!');
+            {localStorage.clear("token");window.location.href='/login'} // Need to be handle differently
+        } catch (error) {
+            alert('Oops! Something went wrong, Please try again');
+        }
+        
+    }
 
     return (
     <>
@@ -45,13 +100,12 @@ export default function Update(){
     <div>
         <div className="second-container">
           <div className="settings-block">
-            <div className="account-settings-box">
-                <h2 className="heading">Account Info</h2>
+            {user.cniCheck
+            ?""
+            :<div className="account-settings-box">
+                <h2 className="heading">Info Utilisateur</h2>
                 <div className="form-block w-form">
                 <form
-                    id="email-form"
-                    name="email-form"
-                    data-name="Email Form"
                     className="form"
                     onSubmit={submitHandler1}
                 >
@@ -100,15 +154,13 @@ export default function Update(){
                 </form>
                 
                 </div>
-            </div>
+            </div>}
             <div className="account-settings-box">
-                <h2 className="heading">Profile Details</h2>
+                <h2 className="heading">Details Profile</h2>
                 <div className="form-block w-form">
                 <form
-                    id="email-form"
-                    name="email-form"
-                    data-name="Email Form"
                     className="form"
+                    onSubmit={submitHandler2}
                 >
                     <div className="text-field-box">
                     <input
@@ -117,7 +169,7 @@ export default function Update(){
                         maxLength={256}
                         name="Name-5"
                         data-name="Name 5"
-                        placeholder="Country"
+                        placeholder="Pays"
                         id="Name-5"
                     />
                     <input
@@ -126,7 +178,7 @@ export default function Update(){
                         maxLength={256}
                         name="Name-6"
                         data-name="Name 6"
-                        placeholder="City"
+                        placeholder="Ville"
                         id="Name-6"
                     />
                     </div>
@@ -137,7 +189,7 @@ export default function Update(){
                         maxLength={256}
                         name="Username-2"
                         data-name="Username 2"
-                        placeholder="Title"
+                        placeholder="Profession"
                         id="Username-2"
                     />
                     </div>
@@ -145,59 +197,37 @@ export default function Update(){
                     <input
                         type="text"
                         className="text-field _2 w-input"
-                        maxLength={256}
+                        maxLength={237}
                         name="Email-2"
                         data-name="Email 2"
-                        placeholder="Website"
+                        placeholder="phrase d'accroche"
                         id="Email-2"
                     />
                     </div>
                     <div className="text-field-box bio">
                     <textarea
-                        placeholder="Bio"
-                        maxLength={5000}
+                        placeholder="Parcours de Vie"
+                        maxLength={500}
                         id="field"
                         name="field"
                         data-name="Field"
                         className="text-field _2-copy w-input"
                         defaultValue={""}
                     />
-                    <div className="text-block-28">Max 140 characters.</div>
+                    <div className="text-block-28">Max 500 charactères.</div>
                     </div>
-                    <div className="text-field-box _2">
-                    <input
-                        type="text"
-                        className="text-field _2 w-input"
-                        maxLength={256}
-                        name="Username-2"
-                        data-name="Username 2"
-                        placeholder="Interests"
-                        id="Username-2"
-                    />
-                    <div className="text-block-28">
-                        Fields you're passionate about or would like to explore.
-                    </div>
-                    </div>
-                    <input
+                    <button
                     type="submit"
                     defaultValue="Save changes"
                     data-wait="Please wait..."
-                    className="button hide w-button"
-                    />
-                    <a href="#" className="button w-button">
-                    Save changes
-                    </a>
+                    className="button w-button "
+                    >Save changes
+                    </button>
                 </form>
-                <div className="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                </div>
-                <div className="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                </div>
                 </div>
             </div>
-            <div className="account-settings-box">
-                {/*<h2 className="heading">Linked Accounts</h2>
+            <div >{/*className="account-settings-box">
+                <h2 className="heading">Linked Accounts</h2>
                 <div className="social-accounts-wrapper">
                 <div className="social-accounts">
                     <img
@@ -258,7 +288,7 @@ export default function Update(){
                 </div>
     </div>*/}
             </div>
-            <div className="account-settings-box">
+            <div >{/*className="account-settings-box">
                 <h2 className="heading">Public Profile</h2>
                 <div className="div-block-64">
                 <a
@@ -272,9 +302,9 @@ export default function Update(){
                 <div className="text-block-29">
                     Allow members of the platform to view your profile.
                 </div>
-                </div>
+</div>*/}
             </div>
-            <div className="account-settings-box">
+            <div >{/*className="account-settings-box">
                 <h2 className="heading">Connections</h2>
                 <div className="div-block-64">
                 <a
@@ -288,16 +318,14 @@ export default function Update(){
                 <div className="text-block-29">
                     Allow members of the platform to send you a connection request.
                 </div>
-                </div>
+                </div>*/}
             </div>
             <div className="account-settings-box last">
-                <h2 className="heading">Change Password</h2>
+                <h2 className="heading">Changer Mot de passe</h2>
                 <div className="form-block w-form">
                 <form
-                    id="email-form"
-                    name="email-form"
-                    data-name="Email Form"
                     className="form"
+                    onSubmit={submitHandler3}
                 >
                     <div className="text-field-box _2">
                     <div className="text-field-box">
@@ -307,7 +335,7 @@ export default function Update(){
                         maxLength={256}
                         name="Password-4"
                         data-name="Password 4"
-                        placeholder="Old Password"
+                        placeholder="Ancien Mot de passe"
                         id="Password-4"
                         required=""
                         />
@@ -319,7 +347,7 @@ export default function Update(){
                         maxLength={256}
                         name="Password-3"
                         data-name="Password 3"
-                        placeholder="New Password"
+                        placeholder="Nouveau Mot de passe"
                         id="Password-3"
                         required=""
                         />
@@ -331,28 +359,20 @@ export default function Update(){
                         maxLength={256}
                         name="Password-2"
                         data-name="Password 2"
-                        placeholder="Repeat New Password"
+                        placeholder="Repéter Nouveau Mot de Passe"
                         id="Password-2"
                         required=""
                         />
                     </div>
                     </div>
-                    <input
+                    <button
                     type="submit"
                     defaultValue="Save changes"
                     data-wait="Please wait..."
-                    className="button hide w-button"
-                    />
-                    <a href="#" className="button w-button">
-                    Save changes
-                    </a>
+                    className="button w-button "
+                    >Save changes
+                    </button>
                 </form>
-                <div className="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                </div>
-                <div className="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                </div>
                 </div>
             </div>
             </div>

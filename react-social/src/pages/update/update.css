@@ -75,6 +75,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
     box-shadow: none;
+    width: 50vw;
   }
   
   .account-settings-box {

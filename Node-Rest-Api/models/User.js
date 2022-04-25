@@ -88,6 +88,10 @@ const UserSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    work: {
+      type: String,
+      default: "",
+    },
     workPicture: {
       type: String,
       default: "",
@@ -105,6 +109,10 @@ const UserSchema = new mongoose.Schema(
       default: false,
     },
     eduPdf: {
+      type: String,
+      default: "",
+    },
+    Parcours: {
       type: String,
       default: "",
     },
