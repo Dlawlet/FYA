@@ -17,7 +17,8 @@ export default function Update(){
     const descr = useRef();const work = useRef();
     const parcours = useRef(); 
 
-    const newpasword = useRef();
+    const newpassw = useRef(); //const passw = useRef(); TODO
+    const Rnewpassw= useRef();
 
     const submitHandler1 = async (e) =>{
         e.preventDefault()
@@ -48,18 +49,26 @@ export default function Update(){
         try {
             await axios.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
-                 username:
-                    name.current.value
-                    ? lastName.current.value
-                        ? name.current.value +" "+lastName.current.value
-                        :name.current.value
-                    :lastName.current.value
-                        ? lastName.current.value
-                        : user.username,
-                 email: 
-                    email.current.value
-                    ? email.current.value
-                    : user.email})
+                desc: 
+                    descr.current.value
+                    ? descr.current.value
+                    : user.desc,
+                city: 
+                    city.current.value
+                    ? city.current.value
+                    : user.city,
+                from: 
+                    country.current.value
+                    ? country.current.value
+                    : user.from,
+                work: 
+                    work.current.value
+                    ? work.current.value
+                    : user.work,
+                parcours: 
+                    parcours.current.value
+                    ? parcours.current.value
+                    : user.parcours})
             alert('Thank you! Your Account infos have been updated!');
             {localStorage.clear("token");window.location.href='/login'} // Need to be handle differently
         } catch (error) {
@@ -69,26 +78,18 @@ export default function Update(){
     }
     const submitHandler3 = async (e) =>{
         e.preventDefault()
-        try {
+        if (Rnewpassw.current.value !== newpassw.current.value) {
+            Rnewpassw.current.setCustomValidity("les mots de passe ne correspondent pas!");}
+        else {try {
             await axios.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
-                 username:
-                    name.current.value
-                    ? lastName.current.value
-                        ? name.current.value +" "+lastName.current.value
-                        :name.current.value
-                    :lastName.current.value
-                        ? lastName.current.value
-                        : user.username,
-                 email: 
-                    email.current.value
-                    ? email.current.value
-                    : user.email})
-            alert('Thank you! Your Account infos have been updated!');
+                 password : Rnewpassw.current.value
+                 })
+            alert('merci! Vos Informations ont été mises à jour!');
             {localStorage.clear("token");window.location.href='/login'} // Need to be handle differently
         } catch (error) {
             alert('Oops! Something went wrong, Please try again');
-        }
+        }}
         
     }
 
@@ -170,7 +171,7 @@ export default function Update(){
                         name="Name-5"
                         data-name="Name 5"
                         placeholder="Pays"
-                        id="Name-5"
+                        ref={country}
                     />
                     <input
                         type="text"
@@ -179,7 +180,7 @@ export default function Update(){
                         name="Name-6"
                         data-name="Name 6"
                         placeholder="Ville"
-                        id="Name-6"
+                        ref={city}
                     />
                     </div>
                     <div className="text-field-box _2">
@@ -190,7 +191,7 @@ export default function Update(){
                         name="Username-2"
                         data-name="Username 2"
                         placeholder="Profession"
-                        id="Username-2"
+                        ref={work}
                     />
                     </div>
                     <div className="text-field-box">
@@ -201,7 +202,7 @@ export default function Update(){
                         name="Email-2"
                         data-name="Email 2"
                         placeholder="phrase d'accroche"
-                        id="Email-2"
+                        ref={descr}
                     />
                     </div>
                     <div className="text-field-box bio">
@@ -212,7 +213,7 @@ export default function Update(){
                         name="field"
                         data-name="Field"
                         className="text-field _2-copy w-input"
-                        defaultValue={""}
+                        ref={parcours}
                     />
                     <div className="text-block-28">Max 500 charactères.</div>
                     </div>
@@ -328,7 +329,7 @@ export default function Update(){
                     onSubmit={submitHandler3}
                 >
                     <div className="text-field-box _2">
-                    <div className="text-field-box">
+                    <div>{/* className="text-field-box">
                         <input
                         type="password"
                         className="text-field password w-input"
@@ -337,31 +338,36 @@ export default function Update(){
                         data-name="Password 4"
                         placeholder="Ancien Mot de passe"
                         id="Password-4"
-                        required=""
-                        />
+                        required
+                        ref={passw}
+                        />*/}
                     </div>
                     <div className="text-field-box">
-                        <input
+                        <input       // TODO add a div section to check the current password
                         type="password"
                         className="text-field password w-input"
-                        maxLength={256}
+                        maxLength={25}
+                        minLength={6}
                         name="Password-3"
                         data-name="Password 3"
                         placeholder="Nouveau Mot de passe"
                         id="Password-3"
-                        required=""
+                        required
+                        ref={newpassw}
                         />
                     </div>
                     <div className="text-field-box">
                         <input
                         type="password"
                         className="text-field password w-input"
-                        maxLength={256}
+                        maxLength={25}
+                        minLength={6}
                         name="Password-2"
                         data-name="Password 2"
                         placeholder="Repéter Nouveau Mot de Passe"
                         id="Password-2"
-                        required=""
+                        required
+                        ref={Rnewpassw}
                         />
                     </div>
                     </div>

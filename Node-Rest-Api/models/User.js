@@ -112,7 +112,7 @@ const UserSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    Parcours: {
+    parcours: {
       type: String,
       default: "",
     },
