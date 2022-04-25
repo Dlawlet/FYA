@@ -16,13 +16,25 @@ export default function Update(){
         e.preventDefault()
         try {
             await axios.put("/users/"+user._id, 
-                 {userId : user._id, // Attention secu vulnerability
-                   username:name.current.value + " " + lastName.current.value,
-                   email: email.current.value})
+                {userId : user._id, // Attention secu vulnerability
+                 username:
+                    name.current.value
+                    ? lastName.current.value
+                        ? name.current.value +" "+lastName.current.value
+                        :name.current.value
+                    :lastName.current.value
+                        ? lastName.current.value
+                        : user.username,
+                 email: 
+                    email.current.value
+                    ? email.current.value
+                    : user.email})
             alert('Thank you! Your Account infos have been updated!');
+            {localStorage.clear("token");window.location.href='/login'} // Need to be handle differently
         } catch (error) {
             alert('Oops! Something went wrong, Please try again');
         }
+        
      }
 
     return (
