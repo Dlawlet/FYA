@@ -1,13 +1,29 @@
 import "./update.css"
 import Topbar from "../../components/topbar/Topbar";
-import React from 'react';
+import React, { useContext, useRef } from 'react';
 import Footbar from "../../components/footbar/Footbar";
+import { AuthContext } from "../../context/AuthContext";
+import axios from "axios";
 
 
 export default function Update(){
-
+    const { user: user} = useContext(AuthContext);
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
-
+    const name = useRef();
+    const lastName = useRef();
+    const email = useRef();
+    const submitHandler1 = async (e) =>{
+        e.preventDefault()
+        try {
+            await axios.put("/users/"+user._id, 
+                 {userId : user._id, // Attention secu vulnerability
+                   username:name.current.value + " " + lastName.current.value,
+                   email: email.current.value})
+            alert('Thank you! Your Account infos have been updated!');
+        } catch (error) {
+            alert('Oops! Something went wrong, Please try again');
+        }
+     }
 
     return (
     <>
@@ -16,8 +32,7 @@ export default function Update(){
     </div>
     <div>
         <div className="second-container">
-        <div className="settings-container">
-            <div className="settings-block">
+          <div className="settings-block">
             <div className="account-settings-box">
                 <h2 className="heading">Account Info</h2>
                 <div className="form-block w-form">
@@ -26,6 +41,7 @@ export default function Update(){
                     name="email-form"
                     data-name="Email Form"
                     className="form"
+                    onSubmit={submitHandler1}
                 >
                     <div className="text-field-box">
                     <input
@@ -36,7 +52,7 @@ export default function Update(){
                         data-name="Name 5"
                         placeholder="Name"
                         id="Name-5"
-                        required=""
+                        ref={name}
                     />
                     <input
                         type="text"
@@ -46,7 +62,7 @@ export default function Update(){
                         data-name="Name 6"
                         placeholder="Last Name"
                         id="Name-6"
-                        required=""
+                        ref={lastName}
                     />
                     </div>
                     
@@ -59,25 +75,18 @@ export default function Update(){
                         data-name="Email 2"
                         placeholder="Email"
                         id="Email-2"
-                        required=""
+                       ref={email}
                     />
                     </div>
-                    <input
+                    <button
                     type="submit"
                     defaultValue="Save changes"
                     data-wait="Please wait..."
-                    className="button hide w-button"
-                    />
-                    <a href="#" className="button w-button">
-                    Save changes
-                    </a>
+                    className="button w-button "
+                    >Save changes
+                    </button>
                 </form>
-                <div className="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                </div>
-                <div className="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                </div>
+                
                 </div>
             </div>
             <div className="account-settings-box">
@@ -335,7 +344,7 @@ export default function Update(){
                 </div>
             </div>
             </div>
-        </div>
+        
         </div>
 
     </div>

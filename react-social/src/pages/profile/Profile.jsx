@@ -24,7 +24,7 @@ export default function Profile() {
 
   return (
     <>
-      <div className="topbar" style={{ zIndex: 10 }}>
+      <div className="topbar">
       <Topbar /></div>
       <div className="profileRightTop">
             <div className="profileCover">
@@ -61,7 +61,8 @@ export default function Profile() {
             </div>
             <Feed user={user} />
       </div >
-      <Footbar/>
+      <div>
+      <Footbar/></div>
     </>
-  );
+  )
 }
