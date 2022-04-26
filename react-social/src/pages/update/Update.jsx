@@ -1,6 +1,6 @@
 import "./update.css"
 import Topbar from "../../components/topbar/Topbar";
-import React, { useContext, useRef } from 'react';
+import React, { useContext, useRef, useState  } from 'react';
 import Footbar from "../../components/footbar/Footbar";
 import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
@@ -12,6 +12,9 @@ export default function Update(){
     const name = useRef();
     const lastName = useRef();
     const email = useRef();
+
+    
+    const [file, setFile] = useState(null);
 
     const country = useRef();const city = useRef();
     const descr = useRef();const work = useRef();
@@ -44,6 +47,21 @@ export default function Update(){
         }
         
     }
+    const submitHandlerImg1 = async (e) => {
+        e.preventDefault();
+        if (file) {
+          const data = new FormData();
+          const fileName = Date.now() + file.name;
+          data.append("name", fileName);
+          data.append("file", file);
+          try {
+            await axios.post("/upload", data);
+          } catch (err) {}
+        }
+        try {
+          window.location.reload();
+        } catch (err) {}
+      }
     const submitHandler2 = async (e) =>{
         e.preventDefault()
         try {
@@ -76,6 +94,21 @@ export default function Update(){
         }
         
     }
+    const submitHandlerImg2 = async (e) => {
+        e.preventDefault();
+        if (file) {
+          const data = new FormData();
+          const fileName = Date.now() + file.name;
+          data.append("name", fileName);
+          data.append("file", file);
+          try {
+            await axios.post("/upload", data);
+          } catch (err) {}
+        }
+        try {
+          window.location.reload();
+        } catch (err) {}
+      }
     const submitHandler3 = async (e) =>{
         e.preventDefault()
         if (Rnewpassw.current.value !== newpassw.current.value) {
@@ -157,12 +190,49 @@ export default function Update(){
                 </div>
             </div>}
             <div className="account-settings-box">
+                <h2 className="heading">Images de Profile</h2>
+                <div className="form-block w-form">
+                <form className="form" onSubmit={submitHandlerImg1}>
+                    <div className="text-field-box _2">
+                        <label htmlFor="file" >
+                        <span style={{color:"gray"}}>Photo d'utilisateur</span>
+                        <input
+                            className="text-field _2 w-input"
+                            style={{ }}
+                            type="file"
+                            id="file"
+                            accept=".png,.jpeg,.jpg"
+                            onChange={(e) => setFile(e.target.files[0])}
+                        />
+                        </label>
+                    </div>
+                    <div className="text-field-box _2">
+                        <label htmlFor="file" >
+                        <span  style={{color:"gray"}}>Photo de couverture</span>
+                        <input
+                            className="text-field _2 w-input"
+                            style={{ }}
+                            type="file"
+                            id="file"
+                            accept=".png,.jpeg,.jpg"
+                            onChange={(e) => setFile(e.target.files[0])}
+                        />
+                        </label>
+                    </div>
+                    <button
+                        type="submit"
+                        defaultValue="Save changes"
+                        data-wait="Please wait..."
+                        className="button w-button "
+                        >Save changes
+                    </button>
+                </form>
+                </div>
+            </div>
+            <div className="account-settings-box">
                 <h2 className="heading">Details Profile</h2>
                 <div className="form-block w-form">
-                <form
-                    className="form"
-                    onSubmit={submitHandler2}
-                >
+                <form className="form" onSubmit={submitHandler2}>
                     <div className="text-field-box">
                     <input
                         type="text"
@@ -223,6 +293,72 @@ export default function Update(){
                     data-wait="Please wait..."
                     className="button w-button "
                     >Save changes
+                    </button>
+                </form>
+                </div>
+            </div>
+            <div className="account-settings-box">
+                <h2 className="heading">Documents de Certification</h2>
+                <div className="form-block w-form">
+                <form  className="form" onSubmit={submitHandlerImg2}>
+                    <div className="text-field-box _2">
+                        <label htmlFor="file" >
+                        <span style={{color:"gray"}}>Carte Nationale d'identité</span>
+                        <input
+                            className="text-field _2 w-input"
+                            style={{ }}
+                            type="file"
+                            id="file"
+                            accept=".png,.jpeg,.jpg"
+                            onChange={(e) => setFile(e.target.files[0])}
+                        />
+                        </label>
+                    </div>
+                    <div className="text-field-box _2">
+                        <label htmlFor="file" >
+                        <span  style={{color:"gray"}}>Plus Haut Diplome</span>
+                        <input
+                            className="text-field _2 w-input"
+                            style={{ }}
+                            type="file"
+                            id="file"
+                            accept=".png,.jpeg,.jpg"
+                            onChange={(e) => setFile(e.target.files[0])}
+                        />
+                        </label>
+                    </div>
+                    <div className="text-field-box _2">
+                        <label htmlFor="file" >
+                        <span  style={{color:"gray"}}>Contrat de Travail</span>
+                        <input
+                            className="text-field _2 w-input"
+                            style={{ }}
+                            type="file"
+                            id="file"
+                            accept=".png,.jpeg,.jpg"
+                            onChange={(e) => setFile(e.target.files[0])}
+                        />
+                        </label>
+                    </div>
+                    <div className="text-field-box _2">
+                        <label htmlFor="file" >
+                        <span  style={{color:"gray"}}>Fiches de Paye Récentes</span>
+                        <input
+                            className="text-field _2 w-input"
+                            style={{ }}
+                            type="file"
+                            id="file"
+                            accept=".png,.jpeg,.jpg"
+                            onChange={(e) => setFile(e.target.files[0])}
+                        />
+                        </label>
+                    </div>
+                    <button
+                        type="submit"
+                        defaultValue="Save changes"
+                        data-wait="Please wait..."
+                        className="button w-button "
+                        >Save changes
                     </button>
                 </form>
                 </div>

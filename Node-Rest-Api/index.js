@@ -29,7 +29,7 @@ app.use(morgan("common"));
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "public/images");
+    cb(null, "public/images/person");
   },
   filename: (req, file, cb) => {
     cb(null, req.body.name);
