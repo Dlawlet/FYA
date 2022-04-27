@@ -60,6 +60,9 @@ export default function Update(){
           data.append("file", file1);
           try {
             await axios.post("/upload", data);
+            await axios.put("/users/"+user._id, 
+                {userId : user._id, // Attention secu vulnerability
+                 profilePicture: "/person/"+fileName,})
           } catch (err) { alert('Oops! Something went wrong, Please try again');}
         }
         if (file2) {
@@ -70,12 +73,16 @@ export default function Update(){
             data.append("file", file2);
             try {
               await axios.post("/upload", data);
+              await axios.put("/users/"+user._id, 
+                {userId : user._id, // Attention secu vulnerability
+                 coverPicture: "/person/"+fileName,})
             } catch (err) { alert('Oops! Something went wrong, Please try again');}
           }
         /* try {
         window.location.reload();
         } catch (err) {}; */
-        alert('merci! Vos Informations ont été mises à jour!');
+        alert('Profile mis à jour!, veuillez vous reconnecter!');
+        localStorage.clear("token");window.location.href='/login' // Need to be handle differently
           
       }
     const submitHandler2 = async (e) =>{
