@@ -129,7 +129,8 @@ export default function Update(){
             await axios.post("/upload", data);
             await axios.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
-                 checkWaiting: true,})
+                 checkWaiting: true,
+                 cniPicture: "/person/"+fileName})
           } catch (err) { alert('Oops! Something went wrong, Please try again');}
         }
         if (file2) {
@@ -142,7 +143,8 @@ export default function Update(){
               await axios.post("/upload", data);
               await axios.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
-                 checkWaiting: true,})
+                 checkWaiting: true,
+                 eduPdf: "/person/"+fileName})
             } catch (err) { alert('Oops! Something went wrong, Please try again');}
           }
           if (file3) {
@@ -155,7 +157,8 @@ export default function Update(){
               await axios.post("/upload", data);
               await axios.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
-                 checkWaiting: true,})
+                 checkWaiting: true,
+                 workPicture: "/person/"+fileName})
             } catch (err) { alert('Oops! Something went wrong, Please try again');}
           }
           if (file4) {
@@ -168,7 +171,8 @@ export default function Update(){
               await axios.post("/upload", data);
               await axios.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
-                 checkWaiting: true,})
+                 checkWaiting: true,
+                 bankPdf: "/person/"+fileName})
             } catch (err) { alert('Oops! Something went wrong, Please try again');}
           }
           alert('merci! Vos Informations ont été mises à jour!');
