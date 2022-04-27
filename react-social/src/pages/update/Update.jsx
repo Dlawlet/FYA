@@ -7,14 +7,16 @@ import axios from "axios";
 
 
 export default function Update(){
-    const { user: user} = useContext(AuthContext);
-    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+    const {user} = useContext(AuthContext);
     const name = useRef();
     const lastName = useRef();
     const email = useRef();
 
     
-    const [file, setFile] = useState(null);
+    const [file1, setFile1] = useState(null);
+    const [file2, setFile2] = useState(null);
+    const [file3, setFile3] = useState(null);
+    const [file4, setFile4] = useState(null);
 
     const country = useRef();const city = useRef();
     const descr = useRef();const work = useRef();
@@ -41,7 +43,7 @@ export default function Update(){
                     ? email.current.value
                     : user.email})
             alert('Thank you! Your Account infos have been updated!');
-            {localStorage.clear("token");window.location.href='/login'} // Need to be handle differently
+            localStorage.clear("token");window.location.href='/login' // Need to be handle differently
         } catch (error) {
             alert('Oops! Something went wrong, Please try again');
         }
@@ -49,18 +51,32 @@ export default function Update(){
     }
     const submitHandlerImg1 = async (e) => {
         e.preventDefault();
-        if (file) {
+        if (file1) {
           const data = new FormData();
-          const fileName = Date.now() + file.name;
+          const [extension] = (file1.name).split('.').reverse();
+          const fileName = user._id + "userImg." +extension;
+
           data.append("name", fileName);
-          data.append("file", file);
+          data.append("file", file1);
           try {
             await axios.post("/upload", data);
-          } catch (err) {}
+          } catch (err) { alert('Oops! Something went wrong, Please try again');}
         }
-        try {
-          window.location.reload();
-        } catch (err) {}
+        if (file2) {
+            const data = new FormData();
+            const [extension] = (file2.name).split('.').reverse();
+            const fileName = user._id + "userCover." + extension;
+            data.append("name", fileName);
+            data.append("file", file2);
+            try {
+              await axios.post("/upload", data);
+            } catch (err) { alert('Oops! Something went wrong, Please try again');}
+          }
+        /* try {
+        window.location.reload();
+        } catch (err) {}; */
+        alert('merci! Vos Informations ont été mises à jour!');
+          
       }
     const submitHandler2 = async (e) =>{
         e.preventDefault()
@@ -88,7 +104,7 @@ export default function Update(){
                     ? parcours.current.value
                     : user.parcours})
             alert('Thank you! Your Account infos have been updated!');
-            {localStorage.clear("token");window.location.href='/login'} // Need to be handle differently
+            localStorage.clear("token");window.location.href='/login' // Need to be handle differently
         } catch (error) {
             alert('Oops! Something went wrong, Please try again');
         }
@@ -96,18 +112,47 @@ export default function Update(){
     }
     const submitHandlerImg2 = async (e) => {
         e.preventDefault();
-        if (file) {
+        if (file1) {
           const data = new FormData();
-          const fileName = Date.now() + file.name;
+          const [extension] = (file1.name).split('.').reverse();
+          const fileName = user._id + "cni." + extension;
           data.append("name", fileName);
-          data.append("file", file);
+          data.append("file", file1);
           try {
             await axios.post("/upload", data);
-          } catch (err) {}
+          } catch (err) { alert('Oops! Something went wrong, Please try again');}
         }
-        try {
-          window.location.reload();
-        } catch (err) {}
+        if (file2) {
+            const data = new FormData();
+            const [extension] = (file2.name).split('.').reverse();
+            const fileName = user._id + "Diploma." + extension;
+            data.append("name", fileName);
+            data.append("file", file2);
+            try {
+              await axios.post("/upload", data);
+            } catch (err) { alert('Oops! Something went wrong, Please try again');}
+          }
+          if (file3) {
+            const data = new FormData();
+            const [extension] = (file3.name).split('.').reverse();
+            const fileName = user._id + "work." + extension;
+            data.append("name", fileName);
+            data.append("file", file3);
+            try {
+              await axios.post("/upload", data);
+            } catch (err) { alert('Oops! Something went wrong, Please try again');}
+          }
+          if (file4) {
+            const data = new FormData();
+            const [extension] = (file4.name).split('.').reverse();
+            const fileName = user._id + "Salary." + extension;
+            data.append("name", fileName);
+            data.append("file", file4);
+            try {
+              await axios.post("/upload", data);
+            } catch (err) { alert('Oops! Something went wrong, Please try again');}
+          }
+          alert('merci! Vos Informations ont été mises à jour!');
       }
     const submitHandler3 = async (e) =>{
         e.preventDefault()
@@ -119,7 +164,7 @@ export default function Update(){
                  password : Rnewpassw.current.value
                  })
             alert('merci! Vos Informations ont été mises à jour!');
-            {localStorage.clear("token");window.location.href='/login'} // Need to be handle differently
+            localStorage.clear("token"); window.location.href='/login' // Need to be handle differently
         } catch (error) {
             alert('Oops! Something went wrong, Please try again');
         }}
@@ -202,7 +247,7 @@ export default function Update(){
                             type="file"
                             id="file"
                             accept=".png,.jpeg,.jpg"
-                            onChange={(e) => setFile(e.target.files[0])}
+                            onChange={(e) => setFile1(e.target.files[0])}
                         />
                         </label>
                     </div>
@@ -215,7 +260,7 @@ export default function Update(){
                             type="file"
                             id="file"
                             accept=".png,.jpeg,.jpg"
-                            onChange={(e) => setFile(e.target.files[0])}
+                            onChange={(e) => setFile2(e.target.files[0])}
                         />
                         </label>
                     </div>
@@ -310,7 +355,7 @@ export default function Update(){
                             type="file"
                             id="file"
                             accept=".png,.jpeg,.jpg"
-                            onChange={(e) => setFile(e.target.files[0])}
+                            onChange={(e) => setFile1(e.target.files[0])}
                         />
                         </label>
                     </div>
@@ -323,7 +368,7 @@ export default function Update(){
                             type="file"
                             id="file"
                             accept=".png,.jpeg,.jpg"
-                            onChange={(e) => setFile(e.target.files[0])}
+                            onChange={(e) => setFile2(e.target.files[0])}
                         />
                         </label>
                     </div>
@@ -336,7 +381,7 @@ export default function Update(){
                             type="file"
                             id="file"
                             accept=".png,.jpeg,.jpg"
-                            onChange={(e) => setFile(e.target.files[0])}
+                            onChange={(e) => setFile3(e.target.files[0])}
                         />
                         </label>
                     </div>
@@ -349,7 +394,7 @@ export default function Update(){
                             type="file"
                             id="file"
                             accept=".png,.jpeg,.jpg"
-                            onChange={(e) => setFile(e.target.files[0])}
+                            onChange={(e) => setFile4(e.target.files[0])}
                         />
                         </label>
                     </div>
