@@ -116,6 +116,10 @@ const UserSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
+    checkWaiting:{
+      type: Boolean,
+      default: false,
+    }
   },
   { timestamps: true }
 );

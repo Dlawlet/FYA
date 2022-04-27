@@ -120,6 +120,9 @@ export default function Update(){
           data.append("file", file1);
           try {
             await axios.post("/upload", data);
+            await axios.put("/users/"+user._id, 
+                {userId : user._id, // Attention secu vulnerability
+                 checkWaiting: true,})
           } catch (err) { alert('Oops! Something went wrong, Please try again');}
         }
         if (file2) {
@@ -130,6 +133,9 @@ export default function Update(){
             data.append("file", file2);
             try {
               await axios.post("/upload", data);
+              await axios.put("/users/"+user._id, 
+                {userId : user._id, // Attention secu vulnerability
+                 checkWaiting: true,})
             } catch (err) { alert('Oops! Something went wrong, Please try again');}
           }
           if (file3) {
@@ -140,6 +146,9 @@ export default function Update(){
             data.append("file", file3);
             try {
               await axios.post("/upload", data);
+              await axios.put("/users/"+user._id, 
+                {userId : user._id, // Attention secu vulnerability
+                 checkWaiting: true,})
             } catch (err) { alert('Oops! Something went wrong, Please try again');}
           }
           if (file4) {
@@ -150,6 +159,9 @@ export default function Update(){
             data.append("file", file4);
             try {
               await axios.post("/upload", data);
+              await axios.put("/users/"+user._id, 
+                {userId : user._id, // Attention secu vulnerability
+                 checkWaiting: true,})
             } catch (err) { alert('Oops! Something went wrong, Please try again');}
           }
           alert('merci! Vos Informations ont été mises à jour!');
