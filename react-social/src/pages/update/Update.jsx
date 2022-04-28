@@ -377,7 +377,7 @@ export default function Update(){
                             style={{ }}
                             type="file"
                             id="file"
-                            accept=".png,.jpeg,.jpg"
+                            accept=".png,.jpeg,.jpg,.pdf"
                             onChange={(e) => setFile1(e.target.files[0])}
                         />
                         </label>
@@ -390,7 +390,7 @@ export default function Update(){
                             style={{ }}
                             type="file"
                             id="file"
-                            accept=".png,.jpeg,.jpg"
+                            accept=".png,.jpeg,.jpg,.pdf"
                             onChange={(e) => setFile2(e.target.files[0])}
                         />
                         </label>
@@ -403,7 +403,7 @@ export default function Update(){
                             style={{ }}
                             type="file"
                             id="file"
-                            accept=".png,.jpeg,.jpg"
+                            accept=".png,.jpeg,.jpg,.pdf"
                             onChange={(e) => setFile3(e.target.files[0])}
                         />
                         </label>
@@ -416,7 +416,7 @@ export default function Update(){
                             style={{ }}
                             type="file"
                             id="file"
-                            accept=".png,.jpeg,.jpg"
+                            accept=".png,.jpeg,.jpg,.pdf"
                             onChange={(e) => setFile4(e.target.files[0])}
                         />
                         </label>

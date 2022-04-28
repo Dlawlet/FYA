@@ -2,13 +2,13 @@ import Topbar from "../../components/topbar/Topbar";
 import "./home.css"
 import React from 'react';
 import Footbar from "../../components/footbar/Footbar";
+import Searchbar from "../../components/searchbar/Searchbar";
 import ReactPlayer from 'react-player'
 
 
 export default function Home(){
 
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
-
 
     return (
     <>
@@ -26,33 +26,14 @@ export default function Home(){
             <h1 className="page-title hero-cta">
               Des collaborateurs de confiance, à deux pas de chez vous.
             </h1>
-            <form action="#" className="hero-form hero-cta" method="get">
-              <div className="form-input-wrapper js-search js-search-modal-toggle">
-                <label className="sr-only" id="search">
-                  Rechercher un talent
-                </label>
-                <input autoComplete="off" className="form-input form-input--icon" disabled id="search" placeholder="Quel talent recherchez-vous ?" type="text" />
-                <button aria-labelledby="heroSearchLabel" className="btn form-input-icon" type="button">
-                  <span className="d-none d-lg-inline me-1" id="heroSearchLabel">
-                    Rechercher
-                  </span>
-                  <svg fill="none" height={15} viewBox="0 0 14 15" width={14} xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.8906 13.5742L10.582 10.2656C10.5 10.2109 10.418 10.1562 10.3359 10.1562H9.98047C10.8281 9.17188 11.375 7.85938 11.375 6.4375C11.375 3.32031 8.80469 0.75 5.6875 0.75C2.54297 0.75 0 3.32031 0 6.4375C0 9.58203 2.54297 12.125 5.6875 12.125C7.10938 12.125 8.39453 11.6055 9.40625 10.7578V11.1133C9.40625 11.1953 9.43359 11.2773 9.48828 11.3594L12.7969 14.668C12.9336 14.8047 13.1523 14.8047 13.2617 14.668L13.8906 14.0391C14.0273 13.9297 14.0273 13.7109 13.8906 13.5742ZM5.6875 10.8125C3.25391 10.8125 1.3125 8.87109 1.3125 6.4375C1.3125 4.03125 3.25391 2.0625 5.6875 2.0625C8.09375 2.0625 10.0625 4.03125 10.0625 6.4375C10.0625 8.87109 8.09375 10.8125 5.6875 10.8125Z" fill="white" />
-                  </svg>
-                </button>
-              </div>
-              <a className="link link-nowrap" href="/register"> {/* need to check if logout  */}
-                Je souhaite m'inscrire
-                <i className="icon-arrow-right" />
-              </a>
-            </form>
+            <Searchbar />
           </div>
           <picture className="hero-img">
             <img  alt="Des collaborateurs de confiance Ncemh" className="hero-img__img" size="150vw" src={PF+"img5.jpg"}/>
           </picture> 
         </header>
         <nav className="sticky-head js-sticky-nav">
-          <div className="sticky-head__inner">
+          {/* <div className="sticky-head__inner">
             <figure className="sticky-head__logo">
               <figcaption className="sr-only">
                 Ncemh
@@ -62,8 +43,9 @@ export default function Home(){
               <label className="sr-only" id="searchSticky">
                 Rechercher un talent
               </label>
+              <form onSubmit={searchHandler}>
               <input autoComplete="off" className="form-input form-input--icon" disabled id="searchSticky" placeholder="Quel talent recherchez-vous ?" type="text" />
-              <button aria-label="Rechercher" className="btn form-input-icon" type="button">
+              <button aria-label="Rechercher" className="btn form-input-icon" type="submit">
                 <span className="d-none">
                   Rechercher
                 </span>
@@ -71,6 +53,7 @@ export default function Home(){
                   <path d="M13.8906 13.5742L10.582 10.2656C10.5 10.2109 10.418 10.1562 10.3359 10.1562H9.98047C10.8281 9.17188 11.375 7.85938 11.375 6.4375C11.375 3.32031 8.80469 0.75 5.6875 0.75C2.54297 0.75 0 3.32031 0 6.4375C0 9.58203 2.54297 12.125 5.6875 12.125C7.10938 12.125 8.39453 11.6055 9.40625 10.7578V11.1133C9.40625 11.1953 9.43359 11.2773 9.48828 11.3594L12.7969 14.668C12.9336 14.8047 13.1523 14.8047 13.2617 14.668L13.8906 14.0391C14.0273 13.9297 14.0273 13.7109 13.8906 13.5742ZM5.6875 10.8125C3.25391 10.8125 1.3125 8.87109 1.3125 6.4375C1.3125 4.03125 3.25391 2.0625 5.6875 2.0625C8.09375 2.0625 10.0625 4.03125 10.0625 6.4375C10.0625 8.87109 8.09375 10.8125 5.6875 10.8125Z" fill="white" />
                 </svg>
               </button>
+              </form>
             </div>
             <button aria-label="Ouvrir menu" className="sticky-head__nav-toggle js-menu-toggle btn-seamless d-xl-none" type="button">
               <i className="hamburger-icon" />
@@ -78,7 +61,7 @@ export default function Home(){
                 Ouvrir menu
               </span>
             </button>
-          </div>
+          </div> */}
         </nav>
        
         <section className="section swiper js-swiper-usps word-slider__container">
