@@ -1,0 +1,84 @@
+.usercard {
+    font-family: Jordana Sans,Helvetica,sans-serif;
+    min-width: 50vw;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -9px rgba(0, 0, 0, 0.68);
+    margin: 2% -12% 3% 15%;
+    overflow: auto;
+
+  }
+  
+  .usercardWrapper {
+    padding: 5%;
+  }
+  
+  .usercardTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .usercardTopLeft {
+    display: flex;
+    align-items: center;
+  }
+  
+  .usercardProfileImg {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .usercardUsername {
+    font-size: 2.5vw;
+    font-weight: 500;
+    margin: 0 10px;
+  }
+  
+  .usercardCenter{
+      font-size: 3vw;
+      margin: 1% 0% 0% 10%;
+  }
+  .usercardText{
+    margin-top: 5%;
+    margin-left: 5%;
+    display: block;
+    overflow:auto;
+  }
+  @media only screen and (min-width: 890px) {
+    .usercard{
+      margin: 5% -8% 1% 10%;
+      min-width: 30vw;
+      display:flex;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+      box-shadow: 0px 0px 16px -9px rgba(0, 0, 0, 0.68);
+      overflow: auto;
+    }
+    
+    .usercardProfileImg {
+      width: 5vw;
+      height: 5vw;
+    }
+    
+    .usercardUsername {
+      font-size: 2vw;
+      margin: 0 10px;
+    }
+   
+    
+    .usercardCenter{
+        font-size: 1.5vw;
+        margin: 5% 0% 0% 10%;
+        display: inline;
+        
+    }
+    .usercardText{
+      margin-top: 5%;
+      margin-left: 11%;
+      display: block;
+    }
+  }
+  
