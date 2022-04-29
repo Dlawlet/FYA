@@ -16,7 +16,7 @@ export default function Home(){
         <header className="hero">
           <Topbar/>
           <div className="wrapper hero-cta__wrapper">
-            <a className="hero-banner" href="https://youtube.com" rel="opener" target="_self">
+            <a className="hero-banner" href="/" rel="opener" target="_self">
               <span className="pill theme-even bg-color">
                 Nouveau
               </span>

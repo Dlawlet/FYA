@@ -4,6 +4,7 @@ import Login from"./pages/login/Login";
 import Register from"./pages/register/Register";
 import Update from"./pages/update/Update";
 import Search from"./pages/search/Search";
+import Enterprise from"./pages/enterprise/Enterprise";
 import {
   BrowserRouter as Router,
   Routes,
@@ -24,7 +25,8 @@ function App() {
         <Route path="/login" caseSensitive={false} element={user ?  <Navigate to ="/" /> : <Login /> } />
         <Route path="/register" caseSensitive={false} element={user ?  <Navigate to ="/" /> :  <Register />} />
         <Route path="/update" caseSensitive={false} element={user ? <Update /> : <Login/>} />
-        <Route path="/search/:username" caseSensitive={false} element={user ? <Search /> : <Login/>} />
+        <Route path="/search/:username" caseSensitive={false} element={<Search />} />
+        <Route path="/enterprise" caseSensitive={false} element={<Enterprise /> } />
       </Routes>
     </Router>
   );

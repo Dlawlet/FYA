@@ -29,7 +29,7 @@ export default function Topbar() {
     <div className="topbar__nav">
       <ul className="topbar__nav-list">
         <li className="topbar__nav-item">
-          <a className="btn btn-border-light" href="https://youtube.com">
+          <a className="btn btn-border-light" href="/enterprise">
             Entreprises
           </a>
         </li>
@@ -40,7 +40,7 @@ export default function Topbar() {
           </button>
         </li>
         <li className="topbar__nav-item">
-         <Link to={user? `/profile/${user.username}` : 'https://youtube.com' }>
+         <Link to={user? `/profile/${user.username}` : '/login' }>
            <img title="Se connecter / S'inscrire"
               src={ user?
                 user.profilePicture
