@@ -57,6 +57,15 @@
   overflow-x: auto;
   display: flex;
 }
+.parcourstxt{white-space: pre-wrap;}
+.parcoursdiv{
+  margin-bottom: 1.5vw;
+  margin-left: 12vw;
+  font-weight: 300;
+  font-size: 3vw;
+  line-height: 3.5vw;
+  color: rgba(62, 62, 62, 0.9);
+}
 .noPost{
   
   font-family: Jordana Sans,Helvetica,sans-serif;
@@ -165,7 +174,16 @@
     }
     .feed{
     margin-top: 9vw;
-  }
-  
+    }
+
+    .parcoursdiv{
+      margin-left: 8%;
+      font-weight: 400;
+      margin-top: 1.5vw;
+      margin-bottom: 1.5vw;
+      font-size: 2.2vw;
+      line-height: 2.7vw;
+      color: rgba(62, 62, 62, 0.9);
+    }
   
   }

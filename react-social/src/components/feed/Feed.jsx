@@ -68,10 +68,11 @@ export default function Feed({ user }) {
             </div>
               </div> 
           <div className="profileLifePath">
-          <h2 className="css-nypl324">Parcours</h2>  
+          <h2 className="css-nypl324">Parcours</h2>
+              <div className = "parcoursdiv">
                 {user.parcours
-                ?  user.parcours
-                :  <h2 className="noStat"> Parcours de {user.username} indisponible </h2> }
+                ?  <p className="parcourstxt"> {user.parcours} </p>
+                :  <h2 className="noStat"> Parcours de {user.username} indisponible </h2> }</div>
           </div>  
         </div>
       </div>
