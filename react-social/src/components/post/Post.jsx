@@ -52,13 +52,11 @@ export default function Post(post) {
           </div>
         </div>
         <div className="postCenter">
-          <Rating className="ratedisplay" ratingValue={post.rate} /* Available Props */ 
-                        fillColorArray={['#EBE007', '#F2F20C', '#D0D40B', '#B7DB00', '#ABF513']} 
+          <Rating className="ratedisplay"  /* Available Props */ 
                         readonly={true}
                         initialValue={post.post.rate}
                         fillColor={color}
                         allowHalfIcon={true}
-                        transition={true}
                         size={21*sw}
                         showTooltip
                         tooltipStyle={{fontSize:"80%"}}

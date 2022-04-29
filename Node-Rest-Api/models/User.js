@@ -7,7 +7,6 @@ const UserSchema = new mongoose.Schema(
       require: true,
       min: 3,
       max: 20,
-      unique: true,
     },
     email: {
       type: String,
@@ -30,7 +29,7 @@ const UserSchema = new mongoose.Schema(
     },
     rate: {
       type: Number,
-      default:0
+      default:0.0,
     },
     rateData:{
       type: Array,
@@ -59,6 +58,7 @@ const UserSchema = new mongoose.Schema(
     desc: {
       type: String,
       max: 50,
+      default:"let's live in a trustable world"
     },
     city: {
       type: String,

@@ -6,7 +6,7 @@ export default function Searchbar(post) {
     const search = useRef();
     const searchHandler = async (e) =>{
         e.preventDefault()
-        window.location.href='/search'
+        window.location.href='/search/'+search.current.value;
         
       }
 
@@ -23,10 +23,6 @@ export default function Searchbar(post) {
                   </svg>
                 </button>
               </div>
-               <a className="link link-nowrap" href="/register"> {/* need to check if logout */} 
-                Je souhaite m'inscrire
-                <i className="icon-arrow-right" />
-              </a> 
             </form>
   
   );

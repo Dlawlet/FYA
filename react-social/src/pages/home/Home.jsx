@@ -27,6 +27,10 @@ export default function Home(){
               Des collaborateurs de confiance, à deux pas de chez vous.
             </h1>
             <Searchbar />
+            <a className="link link-nowrap" href="/register"> {/* need to check if logout */} 
+                Je souhaite m'inscrire
+                <i className="icon-arrow-right" />
+            </a> 
           </div>
           <picture className="hero-img">
             <img  alt="Des collaborateurs de confiance Ncemh" className="hero-img__img" size="150vw" src={PF+"img5.jpg"}/>
