@@ -10,13 +10,10 @@ import { useParams } from "react-router";
 
 export default function Search(){
     const searchedUser = useParams().username;
-
-    console.log(searchedUser)
     const [users, setUsers] = useState([]);
     useEffect (() => {
         const fetchUsers = async () => {
         const res = await axios.get("/users/search/" + searchedUser);
-        console.log(res)
         setUsers(res.data);
         };
         fetchUsers();

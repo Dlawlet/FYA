@@ -26,9 +26,7 @@ export default function Register() {
         await axios.post("/auth/register", user);
         window.location.href='/login';
         // history.push("/login");
-      } catch (err) {
-        console.log(err);
-      }
+      } catch (err) {}
     }
   };
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;

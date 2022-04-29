@@ -58,6 +58,7 @@ export default function Post(post) {
                         fillColor={color}
                         allowHalfIcon={true}
                         size={21*sw}
+                        tooltipDefaultText="Pas d'indice de confiance"
                         showTooltip
                         tooltipStyle={{fontSize:"80%"}}
                 />

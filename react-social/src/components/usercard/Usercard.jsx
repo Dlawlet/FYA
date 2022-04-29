@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function Usercard(user) {
-    console.log(user.user.rate)
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const sw = window.innerWidth<890 
   ? 1
@@ -46,14 +45,13 @@ export default function Usercard(user) {
         </div>
         
         <div className="usercardCenter">
-        
-            {console.log(user.user.rate)}
           <Rating className="ratedisplay"  /* Available Props */ 
                         readonly={true}
                         initialValue={user.user.rate}
                         fillColor={color}
                         allowHalfIcon={true}
                         size={30*sw}
+                        tooltipDefaultText="Pas d'indice de confiance"
                         showTooltip
                         tooltipStyle={{fontSize:"80%"}}
                 />

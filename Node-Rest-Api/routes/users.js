@@ -58,7 +58,7 @@ router.get("/", async(req,res)=> {
 
 router.get("/search/:username", async (req, res) => {
     try {
-      const user = await User.find({ username: req.params.username });
+      const user = await User.find({username: {$regex: new RegExp(`^${req.params.username}$`, 'i')}});
       res.status(200).json(user);
     } catch (err) {
       res.status(500).json(err);
