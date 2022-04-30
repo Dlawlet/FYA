@@ -13,7 +13,7 @@ export default function Searchbar(post) {
   return (
     <form onSubmit={searchHandler} className="hero-form hero-cta">
               <div className="form-input-wrapper js-search js-search-modal-toggle">
-                <input className="form-input form-input--icon"  id="search" placeholder="Quel talent recherchez-vous ?" type="text" ref={search}/>
+                <input className="form-input form-input--icon" style={{fontSize:"100%"}}  id="search" placeholder="Quel talent recherchez-vous ?" type="text" ref={search}/>
                 <button aria-labelledby="heroSearchLabel" className="btn form-input-icon" type="submit">
                   <span className="d-none d-lg-inline me-1" id="heroSearchLabel">
                     Rechercher

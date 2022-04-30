@@ -2,6 +2,10 @@
     background-color: #faf7f4;
     padding-bottom: 10%;
 }
+.Topbar{
+    margin-top: -1%;
+    padding-top: 1%;
+}
 .searchbar{
     padding-left: 2vw;
     padding-right: 2vw;
