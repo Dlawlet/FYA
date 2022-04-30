@@ -54,7 +54,7 @@ export default function Profile() {
               </div>
               <div className="profileModifier">
                   {user._id === currentUser._id
-                      ? <button className="profileUpdateButton" onClick={() => {window.location.href='/Update'}}> modifier</button>
+                      ? <button className="profileUpdateButton" onClick={() => {window.location.href='/Update'}}> ⚙Paramètres</button>
                       : null
                       }
               </div>

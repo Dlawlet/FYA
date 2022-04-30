@@ -14,8 +14,8 @@ export default function Rightbar({ user }) {
     : user.rate <=3
       ? '#D0D40B'
       : user.rate <=4 
-        ? '#B7DB00'
-        : '#ABF513';
+        ? '#91ad02'
+        : '#7eb312';
   const ProfileRightbar = () => {
     return (
       <>
@@ -40,7 +40,7 @@ export default function Rightbar({ user }) {
           </div>
           <div className='rightbarRate'>
               <Rating className="ratedisplay"
-                      fillColorArray={['#EBE007', '#F2F20C', '#D0D40B', '#B7DB00', '#ABF513']} 
+                      fillColorArray={['#EBE007', '#F2F20C', '#D0D40B', '#91ad02', '#7eb312']} 
                       readonly={true}
                       initialValue={user.rate}
                       fillColor={color}

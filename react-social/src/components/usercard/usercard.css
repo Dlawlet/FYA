@@ -42,7 +42,7 @@
   
   .usercardCenter{
       font-size: 3vw;
-      margin: 1% 0% 0% 10%;
+      margin: 1% 0% 0% 0%;
   }
   .usercardText{
     margin-top: -3%;
@@ -73,12 +73,12 @@
     
     .usercardCenter{
         font-size: 1.5vw;
-        margin: 5% 0% 0% 10%;
-        display: inline;
+        margin: 0% 0% 0% -1%;
+        display: block;
         
     }
     .usercardText{
-      margin-top: -2%;
+      margin-top: 1%;
       margin-left: 0%;
       font-size: 1.5vw;
       display: block;

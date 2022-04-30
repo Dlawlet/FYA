@@ -86,6 +86,8 @@
 }
 
 .profileUpdateButton{
+    
+  line-height: 4rem; 
     font-family: Jordana Sans,Helvetica,sans-serif;
     margin-top: 5%;
     margin-left: 41%;

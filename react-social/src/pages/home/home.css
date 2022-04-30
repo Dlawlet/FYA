@@ -1135,7 +1135,7 @@ button.swiper-pagination-bullet {
 @media(min-width: 992px) {
     .hero {
         min-height:2vh;
-        height:80vh;
+        height:70vh;
     }
 
     .hero,.hero-cta__wrapper {

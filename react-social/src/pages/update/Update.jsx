@@ -201,6 +201,7 @@ export default function Update(){
     </div>
     <div>
         <div className="second-container">
+        <h2 className="heading" style={{fontSize:"170%",marginLeft:"5%",marginBottom:"8rem"}}>Paramètres et Certifications de Votre Compte</h2>
           <div className="settings-block">
             {user.cniCheck
             ?""

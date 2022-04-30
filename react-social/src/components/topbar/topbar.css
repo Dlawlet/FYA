@@ -105,15 +105,15 @@
   }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 702px) {
   .topbar__nav-item--lang {
       order:-1
   }
 }
 
 .topbarImg {
-  width: 4vw;
-  height: 4vw;
+  width: 2.5vw;
+  height: 2.5vw;
   border-radius: 35%;
   object-fit: cover;
   cursor: pointer;

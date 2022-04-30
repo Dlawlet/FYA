@@ -18,8 +18,8 @@ export default function Post(post) {
     : post.post.rate <=3
       ? '#D0D40B'
       : post.post.rate <=4 
-        ? '#B7DB00'
-        : '#ABF513';
+        ? '#91ad02'
+        : '#7eb312';
   useEffect(() => {
     const fetchUser = async () => {
       const res = await axios.get(`/users?userId=${post.post.userGvId}`);
@@ -62,7 +62,7 @@ export default function Post(post) {
                         showTooltip
                         tooltipStyle={{fontSize:"80%"}}
                 />
-          <span className="postText">{post.post?.review}</span>
+          <span className="postText" >{post.post?.review}</span>
         </div>
       </div>
     </div>

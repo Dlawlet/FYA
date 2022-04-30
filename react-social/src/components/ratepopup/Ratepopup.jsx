@@ -58,8 +58,8 @@ export default function Ratepopup({ user }) {
         <div className="content">
             <div className='profileRating'>
               <Rating className="ratedisplay" onClick={handleRating} ratingValue={rating} /* Available Props */ 
-                      fillColorArray={['#EBE007', '#F2F20C', '#D0D40B', '#B7DB00', '#ABF513']} 
-                      fillColor={"#B7DB00"}
+                      fillColorArray={['#EBE007', '#F2F20C', '#D0D40B', '#91ad02', '#7eb312']} 
+                      fillColor={"#91ad02"}
                       allowHalfIcon={true}
                       transition={true}
                       />

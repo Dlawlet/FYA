@@ -33,7 +33,7 @@ export default function Home(){
             </a> 
           </div>
           <picture className="hero-img">
-            <img  alt="Des collaborateurs de confiance Ncemh" className="hero-img__img" size="150vw" src={PF+"img5.jpg"}/>
+            <img  alt="Des collaborateurs de confiance Ncemh" className="hero-img__img"  src={PF+"img5.jpg"}/>
           </picture> 
         </header>
         <nav className="sticky-head js-sticky-nav">
@@ -68,58 +68,38 @@ export default function Home(){
           </div> */}
         </nav>
        
-        <section className="section swiper js-swiper-usps word-slider__container">
+        <section className="section swiper js-swiper-usps word-slider__container" style={{paddingBottom:"2%"}}>
           <ul className="swiper-wrapper wrapper word-slider__item-list">
-            <li className="swiper-slide word-slider__item js-tooltip-toggle">
-              <svg fill="currentColor" height={23} viewBox="0 0 22 23" width={22} xmlns="http://www.w3.org/2000/svg">
+            <li className="js-tooltip-toggle" style={{marginRight:"35%",marginLeft:"1%"}}>
+              <svg fill="black" height={100} viewBox="0 10 25 5" width={100} xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.00391 10.6758C6.78906 10.4609 6.44531 10.4609 6.27344 10.6758L5.28516 11.6211C5.07031 11.8359 5.07031 12.1797 5.28516 12.3516L9.19531 16.3047C9.36719 16.5195 9.71094 16.5195 9.92578 16.3047L17.3164 8.95703C17.5312 8.74219 17.5312 8.39844 17.3164 8.22656L16.3711 7.23828C16.1562 7.02344 15.8555 7.02344 15.6406 7.23828L9.58203 13.2539L7.00391 10.6758ZM20.0234 4.35938L11.7734 0.921875C11.5156 0.835938 11.2578 0.792969 11 0.792969C10.6992 0.792969 10.4414 0.835938 10.1836 0.921875L1.93359 4.35938C1.16016 4.70312 0.6875 5.43359 0.6875 6.25C0.6875 14.8008 5.58594 20.6875 10.1836 22.6211C10.6992 22.8359 11.2578 22.8359 11.7734 22.6211C15.4688 21.0742 21.3125 15.7891 21.3125 6.25C21.3125 5.43359 20.7969 4.70312 20.0234 4.35938ZM11 20.6875C6.78906 18.9688 2.75 13.5547 2.75 6.25L11 2.8125L19.25 6.25C19.25 13.7266 14.9961 19.0117 11 20.6875Z" />
               </svg>
               Profils vérifiés
-              <div className="tooltip js-tooltip">
-                <div className="tooltip__inner">
-                  Vous voulez savoir à qui vous avez à faire ? Nous aussi ! C’est pourquoi nous vérifions l’identité de nos membres.
-                </div>
-              </div>
+              
             </li>
-            <li className="swiper-slide word-slider__item js-tooltip-toggle">
-              <svg fill="currentColor" height={29} viewBox="0 0 36 29" width={36} xmlns="http://www.w3.org/2000/svg">
+            <li className="js-tooltip-toggle" style={{marginRight:"35%"}}>
+              <svg fill="purple" height={100} viewBox="0 10 36 8" width={126} xmlns="http://www.w3.org/2000/svg">
                 <path d="M34.6279 15.3665L28.3389 12.9056C28.1201 12.7962 27.6279 12.6868 27.0811 12.9056L20.792 15.3665C20.2451 15.5853 19.8623 16.1321 19.8623 16.679C19.8623 22.804 23.5811 27.015 27.0811 28.3821C27.6279 28.6009 28.0654 28.4915 28.3389 28.3821C31.1279 27.2884 35.6123 23.515 35.6123 16.679C35.6123 16.1321 35.2295 15.5853 34.6279 15.3665ZM27.7373 25.8118V15.4759L32.9326 17.4993C32.6045 22.2571 29.5967 24.8821 27.7373 25.8118ZM20.0811 25.8665H3.2373V24.4993C3.2373 21.8743 5.31543 19.7415 7.94043 19.7415C8.76074 19.7415 10.0186 20.6165 12.8623 20.6165C15.4326 20.6165 16.6904 19.9056 17.5107 19.7962C17.3467 18.9759 17.2373 18.1009 17.2373 17.1712C15.8154 17.39 15.0498 17.9915 12.8076 17.9915C10.2373 17.9915 9.52637 17.1165 7.94043 17.1165C3.89355 17.1165 0.612305 20.4525 0.612305 24.4993V25.8665C0.612305 27.3431 1.76074 28.4915 3.2373 28.4915H22.4326C21.5576 27.7806 20.792 26.9056 20.0811 25.8665ZM12.8623 16.2415C17.1826 16.2415 20.7373 12.7415 20.7373 8.36652C20.7373 4.0462 17.1826 0.491516 12.8623 0.491516C8.4873 0.491516 4.9873 4.0462 4.9873 8.36652C4.9873 12.7415 8.4873 16.2415 12.8623 16.2415ZM12.8623 3.11652C15.7061 3.11652 18.1123 5.52277 18.1123 8.36652C18.1123 11.265 15.7061 13.6165 12.8623 13.6165C9.96387 13.6165 7.6123 11.265 7.6123 8.36652C7.6123 5.52277 9.96387 3.11652 12.8623 3.11652Z" fill="currentColor" />
               </svg>
               Service assuré
               <div className="tooltip js-tooltip">
-                <div className="tooltip__inner">
+                {/* <div className="tooltip__inner">
                   Une personne assurée en vaut deux ! C’est pourquoi tous vos services sont couverts par une assurance corporelle et matérielle.
-                </div>
+                </div> */}
               </div>
             </li>
-            <li className="swiper-slide word-slider__item js-tooltip-toggle">
-              <svg fill="currentColor" height={28} viewBox="0 0 28 28" width={28} xmlns="http://www.w3.org/2000/svg">
+            <li className="js-tooltip-toggle" style={{marginRight:"30%"}}>
+              <svg fill="black" height={100} viewBox="-3 10 35 8" width={125} xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.5889 27.5625C21.0264 27.5625 27.1514 21.4922 27.1514 14C27.1514 6.5625 21.0264 0.4375 13.5889 0.4375C6.09668 0.4375 0.0263672 6.5625 0.0263672 14C0.0263672 21.4922 6.09668 27.5625 13.5889 27.5625ZM7.90137 23.4062L10.8545 20.4531C12.5498 21.2188 14.5732 21.2188 16.2686 20.4531L19.2217 23.4062C15.7764 25.4844 11.3467 25.4844 7.90137 23.4062ZM17.9639 14C17.9639 16.4609 15.9951 18.375 13.5889 18.375C11.1279 18.375 9.21387 16.4609 9.21387 14C9.21387 11.5938 11.1279 9.625 13.5889 9.625C15.9951 9.625 17.9639 11.5938 17.9639 14ZM22.9404 19.6875L19.9873 16.7344C20.7529 15.0391 20.7529 13.0156 19.9873 11.3203L22.9404 8.36719C25.0186 11.8125 25.0186 16.2422 22.9404 19.6875ZM19.2217 4.64844L16.2686 7.60156C14.5732 6.83594 12.5498 6.83594 10.8545 7.60156L7.90137 4.64844C11.3467 2.57031 15.7764 2.57031 19.2217 4.64844ZM4.18262 8.36719L7.13574 11.3203C6.37012 13.0156 6.37012 15.0391 7.13574 16.7344L4.18262 19.6875C2.10449 16.2422 2.10449 11.8125 4.18262 8.36719Z" fill="#333333" />
               </svg>
               Service encadré
               <div className="tooltip js-tooltip">
-                <div className="tooltip__inner">
+               {/*  <div className="tooltip__inner">
                   Nous ne nous arrêtons pas à la mise en relation. Nous vous encadrons depuis votre inscription jusqu’à la déclaration des services.
-                </div>
+                </div> */}
               </div>
             </li>
           </ul>
-          <button className="swiper-button-prev btn-seamless word-slider__btn word-slider__btn-prev d-lg-none" type="button">
-            <svg fill="currentColor" height={14} viewBox="0 0 8 14" width={8} xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.21875 13.8125L7.84375 13.2188C7.96875 13.0625 7.96875 12.8125 7.84375 12.6875L2.1875 7L7.84375 1.34375C7.96875 1.21875 7.96875 0.96875 7.84375 0.8125L7.21875 0.21875C7.0625 0.0625 6.84375 0.0625 6.6875 0.21875L0.125 6.75C0 6.90625 0 7.125 0.125 7.28125L6.6875 13.8125C6.84375 13.9688 7.0625 13.9688 7.21875 13.8125Z" />
-            </svg>
-            <span className="sr-only">
-              Previous
-            </span>
-          </button>
-          <button className="swiper-button-next btn-seamless word-slider__btn word-slider__btn-next d-lg-none" type="button">
-            <svg fill="currentColor" height={14} viewBox="0 0 8 14" width={8} xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.75 0.21875L0.125 0.8125C0 0.96875 0 1.21875 0.125 1.34375L5.78125 7L0.125 12.6875C0 12.8125 0 13.0625 0.125 13.2188L0.75 13.8125C0.90625 13.9688 1.125 13.9688 1.28125 13.8125L7.84375 7.28125C7.96875 7.125 7.96875 6.90625 7.84375 6.75L1.28125 0.21875C1.125 0.0625 0.90625 0.0625 0.75 0.21875Z" />
-            </svg>
-            <span className="sr-only">
-              Next
-            </span>
-          </button>
         </section>
         <section className="section">
           <header>
@@ -304,11 +284,11 @@ export default function Home(){
         <section className="section">
           <header>
             <h2 className="section-title">
-              Une communauté qui s'entraide
+              Créons une Communauté Digne de Confiance
             </h2>
           </header>
           <div className="wrapper">
-            <div className="video-placeholder__wrapper wrapper--lg">
+            <div>{/*className="video-placeholder__wrapper wrapper--lg">
               <figure className="  video-placeholder" >
               <ReactPlayer
               width={'100%'}
@@ -322,9 +302,9 @@ export default function Home(){
               </figure>
               <span className="bubble-shape theme-odd bg-color video-placeholder__shape" />
               <span className="bubble-shape theme-even bg-color video-placeholder__shape" />
-            </div>
-            <ol className="insentive__list section section-spoiled">
-              <li className="insentive border-bottom-sm">
+            */}</div>
+            <ol className="insentive__list  section-spoiled">
+              <li className="insentive border-bottom-sm" style={{width:"100"}}>
                 <h3 className="element-title insentive__title">
                   Un collaborateur a besoin d'aide
                 </h3>
@@ -332,20 +312,21 @@ export default function Home(){
                   Vous avez des projets et souhaitez vous rassurer du sérieux de vos futurs partenaires.
                 </p>
               </li>
-              <li className="insentive border-bottom-sm">
+              <li className="insentive border-bottom-sm"  style={{width:"100%"}}>
                 <h3 className="element-title insentive__title">
                   Consulter le profil de votre futur collaborateur
                 </h3>
                 <p>
-                  De multiples critères de confiance tels que les avis, le profil, les certifications... viennent s'ajouter à l'indice de confiance
+                  De multiples critères de confiance tels que les avis, le profil, les certifications...
+                  viennent s'ajouter à l'indice de confiance, pour vous orienter au mieux
                 </p>
               </li>
-              <li className="insentive border-bottom-sm">
+              <li className="insentive border-bottom-sm" style={{width:"100%"}}>
                 <h3 className="element-title insentive__title">
                   Evaluer vos rencontres
                 </h3>
                 <p>
-                  Laissez  un avis à ceux avec qui vous interagissez afin d'aider la communauté.
+                  Laissez  un avis à ceux et celles avec qui vous interagissez afin d'aider la communauté.
                 </p>
               </li>
             </ol>

@@ -16,8 +16,8 @@ export default function Usercard(user) {
     : user.user.rate <=3
       ? '#D0D40B'
       : user.user.rate <=4 
-        ? '#B7DB00'
-        : '#ABF513';
+        ? '#91ad02'
+        : '#7eb312';
 
   return (
     
