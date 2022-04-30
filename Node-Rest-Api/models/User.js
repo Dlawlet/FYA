@@ -41,7 +41,7 @@ const UserSchema = new mongoose.Schema(
     },
     certifLevel: {
       type: Number,
-      default:1
+      default:0.2
     },
     Raters: {
       type: Array,
