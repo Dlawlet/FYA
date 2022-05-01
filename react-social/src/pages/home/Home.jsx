@@ -303,7 +303,7 @@ export default function Home(){
               <span className="bubble-shape theme-even bg-color video-placeholder__shape" />
             */}</div>
             <ol className="insentive__list  section-spoiled">
-              <li className="insentive border-bottom-sm" style={{width:"100"}}>
+              <li className="insentive border-bottom-sm" style={{width:"100%"}}>
                 <h3 className="element-title insentive__title">
                   Un collaborateur a besoin d'aide
                 </h3>
