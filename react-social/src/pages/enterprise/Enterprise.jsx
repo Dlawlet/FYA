@@ -262,13 +262,13 @@ export default function Enterprise(){
             Ajout aux trustables Socities bilboard
             </li>
             <li className="PointsList__Point-sc-1qu728y-1 PlanColumn__PointListPoint-sc-1u5iaqg-8 SpAY rMoXh">
-            Lorem Ipsum
+            Verification des locaux 
             </li>
             <li className="PointsList__Point-sc-1qu728y-1 PlanColumn__PointListPoint-sc-1u5iaqg-8 SpAY rMoXh">
-            Lorem Ipsum
+            Vérification des partenaires majeures
             </li>
             <li className="PointsList__Point-sc-1qu728y-1 PlanColumn__PointListPoint-sc-1u5iaqg-8 SpAY rMoXh">
-            Lorem Ipsum
+            Vérification de l'engagement
             </li>
           </ul>
         </div>
