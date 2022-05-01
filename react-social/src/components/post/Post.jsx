@@ -21,7 +21,7 @@ export default function Post(post) {
         ? '#91ad02'
         : '#7eb312';
   useEffect(() => {
-    const fetchUser = async () => {
+    ;const fetchUser = async () => {
       const res = await axiosInstance.get(`/users?userId=${post.post.userGvId}`);
       setUser(res.data);
     };

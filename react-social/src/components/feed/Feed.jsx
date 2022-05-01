@@ -9,7 +9,7 @@ import { axiosInstance } from "../../../config";
 export default function Feed({ user }) {
   const [posts, setPosts] = useState([]);
   useEffect (() => {
-    const fetchPosts = async () => {
+    ;const fetchPosts = async () => {
       const res = await axiosInstance.get("/posts/profile/" + user.username);
       setPosts(
         res.data.sort((p1, p2) => {

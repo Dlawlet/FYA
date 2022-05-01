@@ -12,7 +12,7 @@ export default function Search(){
     const searchedUser = useParams().username;
     const [users, setUsers] = useState([]);
     useEffect (() => {
-        const fetchUsers = async () => {
+        ;const fetchUsers = async () => {
         const res = await axiosInstance.get("/users/search/" + searchedUser);
         setUsers(res.data);
         };
