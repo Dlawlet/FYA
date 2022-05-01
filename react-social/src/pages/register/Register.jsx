@@ -1,8 +1,8 @@
-import axios from "axios";
 import { useContext, useRef } from "react";
 import "./register.css";
 import { AuthContext } from "../../context/AuthContext";
 import { CircularProgress} from "@material-ui/core";
+import { axiosInstance } from "../../../config";
 
 
 export default function Register() {
@@ -23,7 +23,7 @@ export default function Register() {
         password: password.current.value,
       };
       try {
-        await axios.post("/auth/register", user);
+        await axiosInstance.post("/auth/register", user);
         window.location.href='/login';
         // history.push("/login");
       } catch (err) {}

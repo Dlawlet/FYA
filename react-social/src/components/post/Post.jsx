@@ -3,7 +3,7 @@ import { format } from "timeago.js";
 import { Link } from "react-router-dom";
 import { Rating } from 'react-simple-star-rating';
 import {useEffect, useState } from "react";
-import axios from "axios";
+import { axiosInstance } from "../../../config";
 
 export default function Post(post) {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
@@ -22,7 +22,7 @@ export default function Post(post) {
         : '#7eb312';
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get(`/users?userId=${post.post.userGvId}`);
+      const res = await axiosInstance.get(`/users?userId=${post.post.userGvId}`);
       setUser(res.data);
     };
     fetchUser();

@@ -3,7 +3,7 @@ import Topbar from "../../components/topbar/Topbar";
 import React, { useContext, useRef, useState  } from 'react';
 import Footbar from "../../components/footbar/Footbar";
 import { AuthContext } from "../../context/AuthContext";
-import axios from "axios";
+import { axiosInstance } from "../../../config";
 
 
 export default function Update(){
@@ -28,7 +28,7 @@ export default function Update(){
     const submitHandler1 = async (e) =>{
         e.preventDefault()
         try {
-            await axios.put("/users/"+user._id, 
+            await axiosInstance.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
                  username:
                     name.current.value
@@ -59,8 +59,8 @@ export default function Update(){
           data.append("name", fileName);
           data.append("file", file1);
           try {
-            await axios.post("/upload", data);
-            await axios.put("/users/"+user._id, 
+            await axiosInstance.post("/upload", data);
+            await axiosInstance.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
                  profilePicture: "/person/"+fileName,})
           } catch (err) { alert('Oops! Something went wrong, Please try again');}
@@ -72,8 +72,8 @@ export default function Update(){
             data.append("name", fileName);
             data.append("file", file2);
             try {
-              await axios.post("/upload", data);
-              await axios.put("/users/"+user._id, 
+              await axiosInstance.post("/upload", data);
+              await axiosInstance.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
                  coverPicture: "/person/"+fileName,})
             } catch (err) { alert('Oops! Something went wrong, Please try again');}
@@ -88,7 +88,7 @@ export default function Update(){
     const submitHandler2 = async (e) =>{
         e.preventDefault()
         try {
-            await axios.put("/users/"+user._id, 
+            await axiosInstance.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
                 desc: 
                     descr.current.value
@@ -126,8 +126,8 @@ export default function Update(){
           data.append("name", fileName);
           data.append("file", file1);
           try {
-            await axios.post("/upload", data);
-            await axios.put("/users/"+user._id, 
+            await axiosInstance.post("/upload", data);
+            await axiosInstance.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
                  checkWaiting: true,
                  cniPicture: "/person/"+fileName})
@@ -140,8 +140,8 @@ export default function Update(){
             data.append("name", fileName);
             data.append("file", file2);
             try {
-              await axios.post("/upload", data);
-              await axios.put("/users/"+user._id, 
+              await axiosInstance.post("/upload", data);
+              await axiosInstance.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
                  checkWaiting: true,
                  eduPdf: "/person/"+fileName})
@@ -154,8 +154,8 @@ export default function Update(){
             data.append("name", fileName);
             data.append("file", file3);
             try {
-              await axios.post("/upload", data);
-              await axios.put("/users/"+user._id, 
+              await axiosInstance.post("/upload", data);
+              await axiosInstance.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
                  checkWaiting: true,
                  workPicture: "/person/"+fileName})
@@ -168,8 +168,8 @@ export default function Update(){
             data.append("name", fileName);
             data.append("file", file4);
             try {
-              await axios.post("/upload", data);
-              await axios.put("/users/"+user._id, 
+              await axiosInstance.post("/upload", data);
+              await axiosInstance.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
                  checkWaiting: true,
                  bankPdf: "/person/"+fileName})
@@ -182,7 +182,7 @@ export default function Update(){
         if (Rnewpassw.current.value !== newpassw.current.value) {
             Rnewpassw.current.setCustomValidity("les mots de passe ne correspondent pas!");}
         else {try {
-            await axios.put("/users/"+user._id, 
+            await axiosInstance.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
                  password : Rnewpassw.current.value
                  })

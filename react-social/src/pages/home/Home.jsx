@@ -3,7 +3,6 @@ import "./home.css"
 import React from 'react';
 import Footbar from "../../components/footbar/Footbar";
 import Searchbar from "../../components/searchbar/Searchbar";
-import ReactPlayer from 'react-player'
 
 
 export default function Home(){

@@ -3,14 +3,14 @@ import Statdiv from "../statdiv/Statdiv"
 import Rightbar from "../rightbar/Rightbar";
 import Post from "../post/Post";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import { axiosInstance } from "../../../config";
 
 
 export default function Feed({ user }) {
   const [posts, setPosts] = useState([]);
   useEffect (() => {
     const fetchPosts = async () => {
-      const res = await axios.get("/posts/profile/" + user.username);
+      const res = await axiosInstance.get("/posts/profile/" + user.username);
       setPosts(
         res.data.sort((p1, p2) => {
           return new Date(p2.createdAt) - new Date(p1.createdAt);

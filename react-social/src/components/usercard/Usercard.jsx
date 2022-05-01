@@ -1,8 +1,6 @@
 import "./usercard.css"
 import { Link } from "react-router-dom";
-import { Rating } from 'react-simple-star-rating'
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { Rating } from 'react-simple-star-rating';
 
 export default function Usercard(user) {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;

@@ -4,8 +4,8 @@ import React, { useEffect, useState} from 'react';
 import Footbar from "../../components/footbar/Footbar";
 import Usercard from "../../components/usercard/Usercard";
 import Searchbar from "../../components/searchbar/Searchbar";
-import axios from "axios";
 import { useParams } from "react-router";
+import { axiosInstance } from "../../../config";
 
 
 export default function Search(){
@@ -13,7 +13,7 @@ export default function Search(){
     const [users, setUsers] = useState([]);
     useEffect (() => {
         const fetchUsers = async () => {
-        const res = await axios.get("/users/search/" + searchedUser);
+        const res = await axiosInstance.get("/users/search/" + searchedUser);
         setUsers(res.data);
         };
         fetchUsers();

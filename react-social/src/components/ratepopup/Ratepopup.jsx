@@ -2,7 +2,8 @@ import Popup from 'reactjs-popup';
 import { Rating } from 'react-simple-star-rating';
 import {useRef, useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
-import axios from 'axios';
+import { axiosInstance } from '../../../config';
+
 
 
 export default function Ratepopup({ user }) {
@@ -25,14 +26,14 @@ export default function Ratepopup({ user }) {
            review : review.current.value
        }
        try {
-           await axios.post("/posts",newReview);
+           await axiosInstance.post("/posts",newReview);
            // calcul du nouveau rate => TODO : à remplacer par une IA qui calculera la note
            const newRate = ((user.rate*user.nbRate)+(newReview.rate * user.certifLevel))/(user.nbRate+1)
            user.nbRate++
            user.rate=newRate
            
            user.rateData.push([new Date().toLocaleDateString('en-US'),user.rate])
-           await axios.put("/users/"+user._id, 
+           await axiosInstance.put("/users/"+user._id, 
                 {userId : user._id, // Attention secu vulnerability
                   nbRate: user.nbRate,
                   rate: user.rate,
