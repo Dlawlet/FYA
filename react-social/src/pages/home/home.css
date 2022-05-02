@@ -4,7 +4,7 @@
     font-family: Jordana Sans;
     font-style: normal;
     font-weight: 400;
-    src: url(https://www.ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Book57e64ffeed31546ddd09.woff2) format("woff2"),url(https://www.ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Bookf8cc35cc772a0f8bd0d2.woff) format("woff")
+    src: url(./fonts/jordana/JornadaSans-Book57e64ffeed31546ddd09.woff2) format("woff2"),url(./fonts/jordana/JornadaSans-Bookf8cc35cc772a0f8bd0d2.woff) format("woff")
 }
 
 @font-face {
