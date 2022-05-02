@@ -1,9 +1,10 @@
-@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap";@font-face {
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap";
+@font-face {
     font-display: swap;
     font-family: Jordana Sans;
     font-style: normal;
     font-weight: 400;
-    src: url(https://ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Book57e64ffeed31546ddd09.woff2) format("woff2"),url(https://ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Bookf8cc35cc772a0f8bd0d2.woff) format("woff")
+    src: url(https://www.ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Book57e64ffeed31546ddd09.woff2) format("woff2"),url(https://www.ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Bookf8cc35cc772a0f8bd0d2.woff) format("woff")
 }
 
 @font-face {
@@ -11,7 +12,7 @@
     font-family: Jordana Sans;
     font-style: normal;
     font-weight: 700;
-    src: url(https://ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Bold1a3cdf9d25bd3644aa96.woff2) format("woff2"),url(https://ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Bold20a8c15817334e9fa08e.woff) format("woff")
+    src: url(https://www.ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Bold1a3cdf9d25bd3644aa96.woff2) format("woff2"),url(https://www.ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Bold20a8c15817334e9fa08e.woff) format("woff")
 }
 
 @font-face {
@@ -19,7 +20,7 @@
     font-family: Jordana Sans;
     font-style: normal;
     font-weight: 300;
-    src: url(https://ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Lightdfed1005e2a95f093ddc.woff2) format("woff2"),url(https://ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Light1ae51720400882ba59c1.woff) format("woff")
+    src: url(https://www.ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Lightdfed1005e2a95f093ddc.woff2) format("woff2"),url(https://www.ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Light1ae51720400882ba59c1.woff) format("woff")
 }
 
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
@@ -990,13 +991,13 @@ button.swiper-pagination-bullet {
 }
 
 .icon-arrow-right {
-    background: transparent url(https://ringtwice.be/packs/assets/images/icons/white/arrow-right2998dc0fa298fc43d5b5.svg) 50% no-repeat;
+    background: transparent url(https://www.ringtwice.be/packs/assets/images/icons/white/arrow-right2998dc0fa298fc43d5b5.svg) 50% no-repeat;
     transform: translateY(2px)
 }
 
 .icon-play {
     fill: #fff;
-    background: transparent url(https://ringtwice.be/packs/assets/images/landing/play0a7d08eaefab7c465523.svg) 58% no-repeat;
+    background: transparent url(https://www.ringtwice.be/packs/assets/images/landing/play0a7d08eaefab7c465523.svg) 58% no-repeat;
     background-size: 40%;
     border: 3px solid #fff;
     border-radius: 100%;
@@ -1047,7 +1048,7 @@ button.swiper-pagination-bullet {
 }
 
 .target-mask {
-    background: url(https://ringtwice.be/packs/assets/images/landing/mask-corner-top-left77161743dbfcdda1e930.svg) no-repeat 0 0,url(https://ringtwice.be/packs/assets/images/landing/mask-corner-top-rightbd089d806ea9680d1a11.svg) no-repeat 100% 0,url(https://ringtwice.be/packs/assets/images/landing/mask-corner-bottom-left4413c68e8cc5698cf06b.svg) no-repeat 0 100%,url(https://ringtwice.be/packs/assets/images/landing/mask-corner-bottom-right6bf980786c393cc2cef9.svg) no-repeat 100% 100%;
+    background: url(https://www.ringtwice.be/packs/assets/images/landing/mask-corner-top-left77161743dbfcdda1e930.svg) no-repeat 0 0,url(https://www.ringtwice.be/packs/assets/images/landing/mask-corner-top-rightbd089d806ea9680d1a11.svg) no-repeat 100% 0,url(https://www.ringtwice.be/packs/assets/images/landing/mask-corner-bottom-left4413c68e8cc5698cf06b.svg) no-repeat 0 100%,url(https://www.ringtwice.be/packs/assets/images/landing/mask-corner-bottom-right6bf980786c393cc2cef9.svg) no-repeat 100% 100%;
     background-size: 50%;
     display: block;
     left: 50%;

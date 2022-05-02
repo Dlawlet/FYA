@@ -6,6 +6,7 @@ import { AuthContext } from "../../context/AuthContext";
 import { axiosInstance } from "../../config";
 
 
+
 export default function Update(){
     const {user} = useContext(AuthContext);
     const name = useRef();
