@@ -50,8 +50,7 @@ router.get("/", async(req,res)=> {
     const { password, updatedAt, ...other } = user._doc;
     res.status(200).json(other);}
     catch(err){
-        res.status(500).json(err);
-        console.log("you are not authenticated")
+        return res.status(500).json("You are not authenticated!");
     }
 });
 
