@@ -5,7 +5,7 @@ import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Footbar from "../../components/footbar/Footbar";
 import { AuthContext } from "../../context/AuthContext";
-import { axiosInstance } from "../../../config";
+import { axiosInstance } from "../../config";
 
 
 export default function Profile() {
