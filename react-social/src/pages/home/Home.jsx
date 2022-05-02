@@ -32,7 +32,7 @@ export default function Home(){
             </a> 
           </div>
           <picture className="hero-img">
-            <img  alt="Des collaborateurs de confiance Ncemh" className="hero-img__img"  src={PF+"img5.jpg"}/>
+            <img  alt="Des collaborateurs de confiance Ncemh" className="hero-img__img"  src={PF+"site/img5.jpg"}/>
           </picture> 
         </header>
         <nav className="sticky-head js-sticky-nav">
@@ -124,8 +124,8 @@ export default function Home(){
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "laura.jpg"} type="image/jpeg" />
-                <img alt="Laura" sizes="100vw" loading="lazy" src={PF + "laura.jpg"}/>
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "site/laura.jpg"} type="image/jpeg" />
+                <img alt="Laura" sizes="100vw" loading="lazy" src={PF + "site/laura.jpg"}/>
               </picture>
             </article>
             <article className="worker x-25-lg theme-even">
@@ -146,8 +146,8 @@ export default function Home(){
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "mathias.jpg"} type="image/jpeg" />
-                <img alt="Mathias" sizes="100vw" loading="lazy" src={PF + "mathias.jpg"} />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "site/mathias.jpg"} type="image/jpeg" />
+                <img alt="Mathias" sizes="100vw" loading="lazy" src={PF + "site/mathias.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-odd">
@@ -167,8 +167,8 @@ export default function Home(){
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "kunge.jpg"} type="image/jpeg" />
-                <img alt="Kunga" sizes="100vw" loading="lazy" src={PF + "kunge.jpg"} />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "site/kunge.jpg"} type="image/jpeg" />
+                <img alt="Kunga" sizes="100vw" loading="lazy" src={PF + "site/kunge.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-even">
@@ -188,8 +188,8 @@ export default function Home(){
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "sophie.jpg"} type="image/jpeg" />
-                <img alt="Sophie" sizes="100vw" loading="lazy" src={PF + "sophie.jpg"} />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "site/sophie.jpg"} type="image/jpeg" />
+                <img alt="Sophie" sizes="100vw" loading="lazy" src={PF + "site/sophie.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-odd d-none d-lg-flex">
@@ -209,8 +209,8 @@ export default function Home(){
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "olivier.jpg"} type="image/jpeg" />
-                <img alt="Olivier" sizes="100vw" loading="lazy" src={PF + "olivier.jpg"} />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "site/olivier.jpg"} type="image/jpeg" />
+                <img alt="Olivier" sizes="100vw" loading="lazy" src={PF + "site/olivier.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-even d-none d-lg-flex">
@@ -230,8 +230,8 @@ export default function Home(){
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "andre.jpg"} type="image/jpeg" />
-                <img alt="Andrée" sizes="100vw" loading="lazy" src={PF + "andre.jpg"} />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "site/andre.jpg"} type="image/jpeg" />
+                <img alt="Andrée" sizes="100vw" loading="lazy" src={PF + "site/andre.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-odd d-none d-lg-flex">
@@ -251,8 +251,8 @@ export default function Home(){
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "loukou.jpg"} type="image/jpeg" />
-                <img alt="Loukou" sizes="100vw" loading="lazy" src={PF + "loukou.jpg"} />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "site/loukou.jpg"} type="image/jpeg" />
+                <img alt="Loukou" sizes="100vw" loading="lazy" src={PF + "site/loukou.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-even d-none d-lg-flex">
@@ -273,8 +273,8 @@ export default function Home(){
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "gregory.jpg"} type="image/jpeg" />
-                <img alt="Gregory" sizes="100vw" loading="lazy" src={PF + "gregory.jpg"} />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "site/gregory.jpg"} type="image/jpeg" />
+                <img alt="Gregory" sizes="100vw" loading="lazy" src={PF + "site/gregory.jpg"} />
               </picture>
             </article>
           </div>
@@ -297,7 +297,7 @@ export default function Home(){
                 muted: true
               }}}}
               controls
-              url = {PF + "collabvid.mp4"}/>
+              url = {PF + "site/collabvid.mp4"}/>
               </figure>
               <span className="bubble-shape theme-odd bg-color video-placeholder__shape" />
               <span className="bubble-shape theme-even bg-color video-placeholder__shape" />
@@ -394,7 +394,7 @@ export default function Home(){
               <button className="bubble-nav__item btn-seamless theme-even is-active" type="button">
                 <figure className="bubble-nav__shape bubble-shape bg-color">
                   <picture className="bubble-nav__shape-img">
-                    <img srcSet={PF + "marc2.jpg"} alt="Nsop" width={70} height={70} loading="lazy" importance="low" src={PF + "marc.jpg"}/>
+                    <img srcSet={PF + "site/marc2.jpg"} alt="Nsop" width={70} height={70} loading="lazy" importance="low" src={PF + "site/marc.jpg"}/>
                   </picture>
                   <figcaption>
                     Nsop
@@ -460,8 +460,8 @@ export default function Home(){
                     </blockquote>
                   </div>
                   <picture className="round-blockquote__img bubble-shape">
-                    <source sizes="(min-width: 992px) calc(1140px / 3.5), calc(100vw - 40px)" srcSet={PF + "marc.jpg"} type="image/jpeg" />
-                    <img alt="Gregory" sizes="100vw" loading="lazy" src={PF + "marc.jpg"} />
+                    <source sizes="(min-width: 992px) calc(1140px / 3.5), calc(100vw - 40px)" srcSet={PF + "site/marc.jpg"} type="image/jpeg" />
+                    <img alt="Gregory" sizes="100vw" loading="lazy" src={PF + "site/marc.jpg"} />
                     <figcaption className="sr-only">
                       Nsop
                     </figcaption>
@@ -474,8 +474,8 @@ export default function Home(){
         <section className="section pt-0 text-center floating-frame__container">
           <figure className="section__banner">
             <picture className="img-ratio img-ratio-section-banner">
-              <source media="(min-width: 992px)" sizes="100vw" srcSet={PF + "collaboration.jpg"} type="image/jpeg" />
-              <img srcSet={PF + "collaboration.jpg"} alt="banner" />
+              <source media="(min-width: 992px)" sizes="100vw" srcSet={PF + "site/collaboration.jpg"} type="image/jpeg" />
+              <img srcSet={PF + "site/collaboration.jpg"} alt="banner" />
             </picture>
           </figure>
           <div className="floating-frame__list">
@@ -504,7 +504,7 @@ export default function Home(){
         </section>
         <article className="theme-odd bg-color wrapper article-banner">
           <figure className="article-banner__img">
-            <img srcSet={PF + "footbanniere.png"} width="225" height="225" alt="contact" loading="lazy" importance="low"/>
+            <img srcSet={PF + "site/footbanniere.png"} width="225" height="225" alt="contact" loading="lazy" importance="low"/>
           </figure>
           <div className="article-banner__body">
             <header>

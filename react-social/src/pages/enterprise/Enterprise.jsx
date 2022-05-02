@@ -21,12 +21,12 @@ export default function Enterprise(){
             </h1></div>
          
           <picture className="hero-img">
-            <img  alt="Des collaborateurs de confiance Ncemh" className="hero-img__img" size="10vw" src={PF+"enterprisebanner.jpg"}/>
+            <img  alt="Des collaborateurs de confiance avec Ncemh" className="hero-img__img" size="10vw" src={PF+"site/enterprisebanner.jpg"}/>
           </picture> 
         </header>
         <div className="EnterpriseWrapper">
         <div className="engage1">
-         <div style={{backgroundImage:{PF}+"enterprisebanner.jpg", zIndex:"1"}}></div>
+         <div style={{backgroundImage:{PF}+"site/enterprisebanner.jpg", zIndex:"1"}}></div>
         <div className="Background__StyledBackground-sc-budbx4-0 dVIVHi snipcss-yaqFy">
         <div className="Spacing-sc-nd6fy-0 gtEqxs">
           <div className="LeftRight__ContentWrapper-sc-15hur3s-0 jyNkZg">

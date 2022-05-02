@@ -990,21 +990,6 @@ button.swiper-pagination-bullet {
     width: 1em
 }
 
-.icon-arrow-right {
-    background: transparent url(https://www.ringtwice.be/packs/assets/images/icons/white/arrow-right2998dc0fa298fc43d5b5.svg) 50% no-repeat;
-    transform: translateY(2px)
-}
-
-.icon-play {
-    fill: #fff;
-    background: transparent url(https://www.ringtwice.be/packs/assets/images/landing/play0a7d08eaefab7c465523.svg) 58% no-repeat;
-    background-size: 40%;
-    border: 3px solid #fff;
-    border-radius: 100%;
-    font-size: 2em;
-    height: 63px;
-    width: 63px
-}
 
 @media(min-width: 992px) {
     .icon-play {
@@ -1047,16 +1032,6 @@ button.swiper-pagination-bullet {
     border-radius: 79% 71% 78% 70%/85% 71% 78% 68%
 }
 
-.target-mask {
-    background: url(https://www.ringtwice.be/packs/assets/images/landing/mask-corner-top-left77161743dbfcdda1e930.svg) no-repeat 0 0,url(https://www.ringtwice.be/packs/assets/images/landing/mask-corner-top-rightbd089d806ea9680d1a11.svg) no-repeat 100% 0,url(https://www.ringtwice.be/packs/assets/images/landing/mask-corner-bottom-left4413c68e8cc5698cf06b.svg) no-repeat 0 100%,url(https://www.ringtwice.be/packs/assets/images/landing/mask-corner-bottom-right6bf980786c393cc2cef9.svg) no-repeat 100% 100%;
-    background-size: 50%;
-    display: block;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 50%
-}
 
 @media(min-width: 992px) {
     .target-mask {

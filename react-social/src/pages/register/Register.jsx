@@ -36,7 +36,7 @@ export default function Register() {
     <div className="Signup__MainContainer-nzwlft-2 bCuFza">
       <a href="/" className="Signup__LogoLink-nzwlft-3 kTNIBg snip-a">
         <img
-          src={PF + "Ncem.png"}
+          src={PF + "site/Ncem.png"}
           className="Signup__LogoImage-nzwlft-4 dFpMSY snip-img"
           alt="logo"
         />
@@ -156,7 +156,7 @@ export default function Register() {
       </div>
     </div>
     <div className="Signup__IllustrationContainer-nzwlft-15 iaihZH">
-      <div style={{backgroundImage : `url(${PF + 'register.png'})`}} className="Signup__IllustrationImage-nzwlft-16 cxbRat"></div>
+      <div style={{backgroundImage : `url(${PF + 'site/register.png'})`}} className="Signup__IllustrationImage-nzwlft-16 cxbRat"></div>
     </div>
   </div>
 </div>
