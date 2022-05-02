@@ -167,8 +167,8 @@ export default function Home(){
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "site/kunge.jpg"} type="image/jpeg" />
-                <img alt="Kunga" sizes="100vw" loading="lazy" src={PF + "site/kunge.jpg"} />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "site/Kunge.jpg"} type="image/jpeg" />
+                <img alt="Kunga" sizes="100vw" loading="lazy" src={PF + "site/Kunge.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-even">
@@ -230,8 +230,8 @@ export default function Home(){
                 </div>
               </div>
               <picture className="worker-img">
-                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "site/andre.jpg"} type="image/jpeg" />
-                <img alt="Andrée" sizes="100vw" loading="lazy" src={PF + "site/andre.jpg"} />
+                <source sizes="(min-width: 992px) calc(1140px/4), 50vw" srcSet={PF + "site/Andre.jpg"} type="image/jpeg" />
+                <img alt="Andrée" sizes="100vw" loading="lazy" src={PF + "site/Andre.jpg"} />
               </picture>
             </article>
             <article className="worker x-25-lg theme-odd d-none d-lg-flex">

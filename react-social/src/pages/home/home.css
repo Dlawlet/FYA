@@ -12,7 +12,7 @@
     font-family: Jordana Sans;
     font-style: normal;
     font-weight: 700;
-    src: url(https://www.ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Bold1a3cdf9d25bd3644aa96.woff2) format("woff2"),url(https://www.ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Bold20a8c15817334e9fa08e.woff) format("woff")
+    src: url(./fonts//jordana/JornadaSans-Bold1a3cdf9d25bd3644aa96.woff2) format("woff2"),url(./fonts//jordana/JornadaSans-Bold20a8c15817334e9fa08e.woff) format("woff")
 }
 
 @font-face {
@@ -20,7 +20,7 @@
     font-family: Jordana Sans;
     font-style: normal;
     font-weight: 300;
-    src: url(https://www.ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Lightdfed1005e2a95f093ddc.woff2) format("woff2"),url(https://www.ringtwice.be/packs/assets/fonts/jordana/JornadaSans-Light1ae51720400882ba59c1.woff) format("woff")
+    src: url(./fonts//jordana/JornadaSans-Lightdfed1005e2a95f093ddc.woff2) format("woff2"),url(./fonts//jordana/JornadaSans-Light1ae51720400882ba59c1.woff) format("woff")
 }
 
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
