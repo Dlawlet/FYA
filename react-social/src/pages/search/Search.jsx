@@ -5,7 +5,7 @@ import Footbar from "../../components/footbar/Footbar";
 import Usercard from "../../components/usercard/Usercard";
 import Searchbar from "../../components/searchbar/Searchbar";
 import { useParams } from "react-router";
-import { axiosInstance } from "../../../config";
+import { axiosInstance } from "../../config";
 
 
 export default function Search(){

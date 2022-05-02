@@ -3,7 +3,7 @@ import Statdiv from "../statdiv/Statdiv"
 import Rightbar from "../rightbar/Rightbar";
 import Post from "../post/Post";
 import { useEffect, useState } from "react";
-import { axiosInstance } from "../../../config";
+import { axiosInstance } from "../../config";
 
 
 export default function Feed({ user }) {

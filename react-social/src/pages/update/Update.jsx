@@ -3,7 +3,7 @@ import Topbar from "../../components/topbar/Topbar";
 import React, { useContext, useRef, useState  } from 'react';
 import Footbar from "../../components/footbar/Footbar";
 import { AuthContext } from "../../context/AuthContext";
-import { axiosInstance } from "../../../config";
+import { axiosInstance } from "../../config";
 
 
 export default function Update(){

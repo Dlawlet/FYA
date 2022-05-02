@@ -2,7 +2,7 @@ import Popup from 'reactjs-popup';
 import { Rating } from 'react-simple-star-rating';
 import {useRef, useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
-import { axiosInstance } from '../../../config';
+import { axiosInstance } from '../../config';
 
 
 

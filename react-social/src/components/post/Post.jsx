@@ -3,7 +3,7 @@ import { format } from "timeago.js";
 import { Link } from "react-router-dom";
 import { Rating } from 'react-simple-star-rating';
 import {useEffect, useState } from "react";
-import { axiosInstance } from "../../../config";
+import { axiosInstance } from "../../config";
 
 export default function Post(post) {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;

@@ -2,7 +2,7 @@ import { useContext, useRef } from "react";
 import "./register.css";
 import { AuthContext } from "../../context/AuthContext";
 import { CircularProgress} from "@material-ui/core";
-import { axiosInstance } from "../../../config";
+import { axiosInstance } from "../../config";
 
 
 export default function Register() {
